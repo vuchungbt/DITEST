@@ -1,0 +1,30 @@
+<xmap>
+<doc type="fftrg" name="XRFtoLookup">
+<message></message>
+<exd>../jobs/DITEST/exd_XRFExc.xml#XRFExc</exd>
+<Directory>@targetfolder</Directory>
+<FileName>XRFNodeElement.txt</FileName>
+<ExdDataDependency>True</ExdDataDependency>
+<writeidentifiers>Yes</writeidentifiers>
+<TruncateTrailDelimiters>Yes</TruncateTrailDelimiters>
+<fileopenmode>w</fileopenmode>
+<AppendOutputListFile>False</AppendOutputListFile>
+<CloseFileBeforePostProcessing>False</CloseFileBeforePostProcessing><recordend>NEWLINE</recordend>
+<offsetbegin>0</offsetbegin>
+<node type="record" name="Line" level="1">
+<node type="field" order="1" name="Segment">
+<separator>TAB</separator>
+<functions FunctionCount="2">
+<function type="Nextrow" exd="XRFExc" table="Exc"/>
+<function type="Getvalue" exd="XRFExc" table="Exc" field="Segment"/>
+</functions>
+</node>
+<node type="field" order="2" name="Description">
+<separator>TAB</separator>
+<functions FunctionCount="1">
+<function type="Getvalue" exd="XRFExc" table="Exc" field="Descripton"/>
+</functions>
+</node>
+</node>
+</doc>
+</xmap>

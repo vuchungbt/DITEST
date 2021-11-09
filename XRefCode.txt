@@ -1,0 +1,11 @@
+[OPTION]
+Standard	EDIFACT
+Transaction	INVOIC
+Version	D07A
+ProjectName	FLACONI
+TransactionName	INVOIC
+PartnerTransactionName	ORDERS
+[LISTCODE]
+RFFNAD	VA,FC,IT,API
+NAD01	SU,UC,IV,BY,DP
+DTM01PAT	12,13,209,265

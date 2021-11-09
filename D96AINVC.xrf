@@ -1,0 +1,2079 @@
+
+                      Interpreted Map for D96AINVC
+
+
+
+----- BGM  Seg # 0001  Level 0 --------------------------------------------
+----- Beginning Of Message ------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0001   4  6        BGM Seq#
+BGM0101    A      0001  10  3        Document/Message Name Coded
+BGM0102    A      0001  13  3        Code List Qualifier
+BGM0103    A      0001  16  3        Code List Responsible Agency
+BGM0104    A      0001  19 35        Document/Message Name
+BGM02      A      0001  54 35        Document/Message Number
+BGM03      A      0001  89  3        Message Function Coded
+BGM04      A      0001  92  3        Response Type Coded
+BGM05      A      0001  95  8        Post Date
+BGM06      A      0001 103  8        Reformatted Date
+BGM07      D      0001 111  6        Receipt Date
+BGM08      T      0001 117  4        Receipt Time
+BGM09      A      0001 121  9        Network
+BGM10      A      0001 130  9        Trading Partner
+BGM11      A      0001 139 15        Their Address
+BGM12      A      0001 154 15        Your Address
+BGM13      A      0001 169 15        Control No.
+BGM14      D      0001 184  6        Send Date
+BGM15      T      0001 190  4        Send Time
+BGM16      A      0001 194  6        Standard
+BGM17      A      0001 200  6        Version
+BGM18      A      0001 206  2        Group
+BGM19      A      0001 208 15        Their Address
+BGM20      A      0001 223 15        Your Address
+BGM21      A      0001 238 15        Set Control No.
+BGM22      A      0001 253 15        Group Control No.
+BGM23      D      0001 268  6        Send Date
+BGM24      T      0001 274  4        Send Time
+BGM25      A      0001 278  9        Status
+
+----- DTM  Seg # 0002  Level 1 --------------------------------------------
+----- Date/Time/Period ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0002   4  6        DTM Seq#
+DTM0101    A      0002  10  3        Date/Time/Period Qualifier
+DTM0102    A      0002  13 35        Date/Time/Period
+DTM0103    A      0002  48  3        Date/Time/Period Format Qual
+
+----- PAI  Seg # 0003  Level 1 --------------------------------------------
+----- Payment Instructions ------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0003   4  6        PAI Seq#
+PAI0101    A      0003  10  3        Payment Conditions Coded
+PAI0102    A      0003  13  3        Payment Guarantee Coded
+PAI0103    A      0003  16  3        Payment Means Coded
+PAI0104    A      0003  19  3        Code List Qualifier
+PAI0105    A      0003  22  3        Code List Responsible Agency
+PAI0106    A      0003  25  3        Payment Channel Coded
+
+----- ALI  Seg # 0004  Level 1 --------------------------------------------
+----- Additional Information ----------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0004   4  6        ALI Seq#
+ALI01      A      0004  10  3        Country Of Origin Coded
+ALI02      A      0004  13  3        Type Of Duty Regime Coded
+ALI03      A      0004  16  3        Special Conditions Coded
+ALI04      A      0004  19  3        Special Conditions Coded
+ALI05      A      0004  22  3        Special Conditions Coded
+ALI06      A      0004  25  3        Special Conditions Coded
+ALI07      A      0004  28  3        Special Conditions Coded
+
+----- IMD  Seg # 0005  Level 1 --------------------------------------------
+----- Item Description ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0005   4  6        IMD Seq#
+IMD01      A      0005  10  3        Item Description Type Coded
+IMD02      A      0005  13  3        Item Characteristic Coded
+IMD0301    A      0005  16 17        Item Description Identificat
+IMD0302    A      0005  33  3        Code List Qualifier
+IMD0303    A      0005  36  3        Code List Responsible Agency
+IMD0304    A      0005  39 35        Item Description
+IMD0305    A      0005  74 35        Item Description
+IMD0306    A      0005 109  3        Language Coded
+IMD04      A      0005 112  3        Surface/Layer Indicator Code
+
+----- FTX  Seg # 0006  Level 1 --------------------------------------------
+----- Free Text -----------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0006   4  6        FTX Seq#
+FTX01      A      0006  10  3        Text Subject Qualifier
+FTX02      A      0006  13  3        Text Function Coded
+FTX0301    A      0006  16  3        Free Text Coded
+FTX0302    A      0006  19  3        Code List Qualifier
+FTX0303    A      0006  22  3        Code List Responsible Agency
+FTX0401    A      0006  25 70        Free Text
+FTX0402    A      0006  95 70        Free Text
+FTX0403    A      0006 165 70        Free Text
+FTX0404    A      0006 235 70        Free Text
+FTX0405    A      0006 305 70        Free Text
+FTX05      A      0006 375  3        Language Coded
+
+----- RFF  Seg # 0007  Level 1 --------------------------------------------
+----- Reference -----------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0007   4  6        RFF Seq#
+RFF0101    A      0007  10  3        Reference Qualifier
+RFF0102    A      0007  13 35        Reference Number
+RFF0103    A      0007  48  6        Line Number
+RFF0104    A      0007  54 35        Reference Version Number
+
+----- DTM  Seg # 0008  Level 2 --------------------------------------------
+----- Date/Time/Period ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0008   4  6        DTM Seq#
+DTM0101    A      0008  10  3        Date/Time/Period Qualifier
+DTM0102    A      0008  13 35        Date/Time/Period
+DTM0103    A      0008  48  3        Date/Time/Period Format Qual
+
+----- NAD  Seg # 0009  Level 1 --------------------------------------------
+----- Name And Address ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0009   4  6        NAD Seq#
+NAD01      A      0009  10  3        Party Qualifier
+NAD0201    A      0009  13 35        Party Id. Identification
+NAD0202    A      0009  48  3        Code List Qualifier
+NAD0203    A      0009  51  3        Code List Responsible Agency
+NAD0301    A      0009  54 35        Name And Address Line
+NAD0302    A      0009  89 35        Name And Address Line
+NAD0303    A      0009 124 35        Name And Address Line
+NAD0304    A      0009 159 35        Name And Address Line
+NAD0305    A      0009 194 35        Name And Address Line
+NAD0401    A      0009 229 35        Party Name
+NAD0402    A      0009 264 35        Party Name
+NAD0403    A      0009 299 35        Party Name
+NAD0404    A      0009 334 35        Party Name
+NAD0405    A      0009 369 35        Party Name
+NAD0406    A      0009 404  3        Party Name Format Coded
+NAD0501    A      0009 407 35        Street And Number/P.O. Box
+NAD0502    A      0009 442 35        Street And Number/P.O. Box
+NAD0503    A      0009 477 35        Street And Number/P.O. Box
+NAD0504    A      0009 512 35        Street And Number/P.O. Box
+NAD06      A      0009 547 35        City Name
+NAD07      A      0009 582  9        Country Sub-Entity Identific
+NAD08      A      0009 591  9        Postcode Identification
+NAD09      A      0009 600  3        Country Coded
+
+----- LOC  Seg # 0010  Level 2 --------------------------------------------
+----- Place/Location Identificatio ----------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0010   4  6        LOC Seq#
+LOC01      A      0010  10  3        Place/Location Qualifier
+LOC0201    A      0010  13 25        Place/Location Identificatio
+LOC0202    A      0010  38  3        Code List Qualifier
+LOC0203    A      0010  41  3        Code List Responsible Agency
+LOC0204    A      0010  44 70        Place/Location
+LOC0301    A      0010 114 25        Related Place/Location One I
+LOC0302    A      0010 139  3        Code List Qualifier
+LOC0303    A      0010 142  3        Code List Responsible Agency
+LOC0304    A      0010 145 70        Related Place/Location One
+LOC0401    A      0010 215 25        Related Place/Location Two I
+LOC0402    A      0010 240  3        Code List Qualifier
+LOC0403    A      0010 243  3        Code List Responsible Agency
+LOC0404    A      0010 246 70        Related Place/Location Two
+LOC05      A      0010 316  3        Relation Coded
+
+----- FII  Seg # 0011  Level 2 --------------------------------------------
+----- Financial Institution Inform ----------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0011   4  6        FII Seq#
+FII01      A      0011  10  3        Party Qualifier
+FII0201    A      0011  13 35        Account Holder Number
+FII0202    A      0011  48 35        Account Holder Name
+FII0203    A      0011  83 35        Account Holder Name
+FII0204    A      0011 118  3        Currency Coded
+FII0301    A      0011 121 11        Institution Name Identificat
+FII0302    A      0011 132  3        Code List Qualifier
+FII0303    A      0011 135  3        Code List Responsible Agency
+FII0304    A      0011 138 17        Institution Branch Number
+FII0305    A      0011 155  3        Code List Qualifier
+FII0306    A      0011 158  3        Code List Responsible Agency
+FII0307    A      0011 161 70        Institution Name
+FII0308    A      0011 231 70        Institution Branch Place
+FII04      A      0011 301  3        Country Coded
+
+----- RFF  Seg # 0012  Level 2 --------------------------------------------
+----- Reference -----------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0012   4  6        RFF Seq#
+RFF0101    A      0012  10  3        Reference Qualifier
+RFF0102    A      0012  13 35        Reference Number
+RFF0103    A      0012  48  6        Line Number
+RFF0104    A      0012  54 35        Reference Version Number
+
+----- DTM  Seg # 0013  Level 3 --------------------------------------------
+----- Date/Time/Period ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0013   4  6        DTM Seq#
+DTM0101    A      0013  10  3        Date/Time/Period Qualifier
+DTM0102    A      0013  13 35        Date/Time/Period
+DTM0103    A      0013  48  3        Date/Time/Period Format Qual
+
+----- DOC  Seg # 0014  Level 2 --------------------------------------------
+----- Document/Message Details --------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0014   4  6        DOC Seq#
+DOC0101    A      0014  10  3        Document/Message Name Coded
+DOC0102    A      0014  13  3        Code List Qualifier
+DOC0103    A      0014  16  3        Code List Responsible Agency
+DOC0104    A      0014  19 35        Document/Message Name
+DOC0201    A      0014  54 35        Document/Message Number
+DOC0202    A      0014  89  3        Document/Message Status Code
+DOC0203    A      0014  92 35        Document/Message Source
+DOC0204    A      0014 127  3        Language Coded
+DOC03      A      0014 130  3        Communication Channel Identi
+DOC04      N      0014 133  2        Number Of Copies Of Document
+DOC05      N      0014 135  2        Number Of Originals Of Docum
+
+----- DTM  Seg # 0015  Level 3 --------------------------------------------
+----- Date/Time/Period ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0015   4  6        DTM Seq#
+DTM0101    A      0015  10  3        Date/Time/Period Qualifier
+DTM0102    A      0015  13 35        Date/Time/Period
+DTM0103    A      0015  48  3        Date/Time/Period Format Qual
+
+----- CTA  Seg # 0016  Level 2 --------------------------------------------
+----- Contact Information -------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0016   4  6        CTA Seq#
+CTA01      A      0016  10  3        Contact Function Coded
+CTA0201    A      0016  13 17        Department Or Employee Ident
+CTA0202    A      0016  30 35        Department Or Employee
+
+----- COM  Seg # 0017  Level 3 --------------------------------------------
+----- Communication Contact -----------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0017   4  6        COM Seq#
+COM0101    A      0017  10 100        Communication Number
+COM0102    A      0017 110  3        Communication Channel Qualif
+
+----- TAX  Seg # 0018  Level 1 --------------------------------------------
+----- Duty/Tax/Fee Details ------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0018   4  6        TAX Seq#
+TAX01      A      0018  10  3        Duty/Tax/Fee Function Qualif
+TAX0201    A      0018  13  3        Duty/Tax/Fee Type Coded
+TAX0202    A      0018  16  3        Code List Qualifier
+TAX0203    A      0018  19  3        Code List Responsible Agency
+TAX0204    A      0018  22 35        Duty/Tax/Fee Type
+TAX0301    A      0018  57  6        Duty/Tax/Fee Account Identif
+TAX0302    A      0018  63  3        Code List Qualifier
+TAX0303    A      0018  66  3        Code List Responsible Agency
+TAX04      A      0018  69 15        Duty/Tax/Fee Assessment Basi
+TAX0501    A      0018  84  7        Duty/Tax/Fee Rate Identifica
+TAX0502    A      0018  91  3        Code List Qualifier
+TAX0503    A      0018  94  3        Code List Responsible Agency
+TAX0504    A      0018  97 17        Duty/Tax/Fee Rate
+TAX0505    A      0018 114 12        Duty/Tax/Fee Rate Basis Iden
+TAX0506    A      0018 126  3        Code List Qualifier
+TAX0507    A      0018 129  3        Code List Responsible Agency
+TAX06      A      0018 132  3        Duty/Tax/Fee Category Coded
+TAX07      A      0018 135 20        Party Tax Identification Num
+
+----- MOA  Seg # 0019  Level 2 --------------------------------------------
+----- Monetary Amount -----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0019   4  6        MOA Seq#
+MOA0101    A      0019  10  3        Monetary Amount Type Qualifi
+MOA0102    N      0019  13 18        Monetary Amount
+MOA0103    A      0019  31  3        Currency Coded
+MOA0104    A      0019  34  3        Currency Qualifier
+MOA0105    A      0019  37  3        Status Coded
+
+----- LOC  Seg # 0020  Level 2 --------------------------------------------
+----- Place/Location Identificatio ----------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0020   4  6        LOC Seq#
+LOC01      A      0020  10  3        Place/Location Qualifier
+LOC0201    A      0020  13 25        Place/Location Identificatio
+LOC0202    A      0020  38  3        Code List Qualifier
+LOC0203    A      0020  41  3        Code List Responsible Agency
+LOC0204    A      0020  44 70        Place/Location
+LOC0301    A      0020 114 25        Related Place/Location One I
+LOC0302    A      0020 139  3        Code List Qualifier
+LOC0303    A      0020 142  3        Code List Responsible Agency
+LOC0304    A      0020 145 70        Related Place/Location One
+LOC0401    A      0020 215 25        Related Place/Location Two I
+LOC0402    A      0020 240  3        Code List Qualifier
+LOC0403    A      0020 243  3        Code List Responsible Agency
+LOC0404    A      0020 246 70        Related Place/Location Two
+LOC05      A      0020 316  3        Relation Coded
+
+----- CUX  Seg # 0021  Level 1 --------------------------------------------
+----- Currencies ----------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0021   4  6        CUX Seq#
+CUX0101    A      0021  10  3        Currency Details Qualifier
+CUX0102    A      0021  13  3        Currency Coded
+CUX0103    A      0021  16  3        Currency Qualifier
+CUX0104    N      0021  19  4        Currency Rate Base
+CUX0201    A      0021  23  3        Currency Details Qualifier
+CUX0202    A      0021  26  3        Currency Coded
+CUX0203    A      0021  29  3        Currency Qualifier
+CUX0204    N      0021  32  4        Currency Rate Base
+CUX03      N      0021  36 12        Rate Of Exchange
+CUX04      A      0021  48  3        Currency Market Exchange Cod
+
+----- DTM  Seg # 0022  Level 2 --------------------------------------------
+----- Date/Time/Period ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0022   4  6        DTM Seq#
+DTM0101    A      0022  10  3        Date/Time/Period Qualifier
+DTM0102    A      0022  13 35        Date/Time/Period
+DTM0103    A      0022  48  3        Date/Time/Period Format Qual
+
+----- PAT  Seg # 0023  Level 1 --------------------------------------------
+----- Payment Terms Basis -------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0023   4  6        PAT Seq#
+PAT01      A      0023  10  3        Payment Terms Type Qualifier
+PAT0201    A      0023  13 17        Terms Of Payment Identificat
+PAT0202    A      0023  30  3        Code List Qualifier
+PAT0203    A      0023  33  3        Code List Responsible Agency
+PAT0204    A      0023  36 35        Terms Of Payment
+PAT0205    A      0023  71 35        Terms Of Payment
+PAT0301    A      0023 106  3        Payment Time Reference Coded
+PAT0302    A      0023 109  3        Time Relation Coded
+PAT0303    A      0023 112  3        Type Of Period Coded
+PAT0304    N      0023 115  3        Number Of Periods
+
+----- DTM  Seg # 0024  Level 2 --------------------------------------------
+----- Date/Time/Period ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0024   4  6        DTM Seq#
+DTM0101    A      0024  10  3        Date/Time/Period Qualifier
+DTM0102    A      0024  13 35        Date/Time/Period
+DTM0103    A      0024  48  3        Date/Time/Period Format Qual
+
+----- PCD  Seg # 0025  Level 2 --------------------------------------------
+----- Percentage Details --------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0025   4  6        PCD Seq#
+PCD0101    A      0025  10  3        Percentage Qualifier
+PCD0102    N      0025  13 10        Percentage
+PCD0103    A      0025  23  3        Percentage Basis Coded
+PCD0104    A      0025  26  3        Code List Qualifier
+PCD0105    A      0025  29  3        Code List Responsible Agency
+
+----- MOA  Seg # 0026  Level 2 --------------------------------------------
+----- Monetary Amount -----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0026   4  6        MOA Seq#
+MOA0101    A      0026  10  3        Monetary Amount Type Qualifi
+MOA0102    N      0026  13 18        Monetary Amount
+MOA0103    A      0026  31  3        Currency Coded
+MOA0104    A      0026  34  3        Currency Qualifier
+MOA0105    A      0026  37  3        Status Coded
+
+----- PAI  Seg # 0027  Level 2 --------------------------------------------
+----- Payment Instructions ------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0027   4  6        PAI Seq#
+PAI0101    A      0027  10  3        Payment Conditions Coded
+PAI0102    A      0027  13  3        Payment Guarantee Coded
+PAI0103    A      0027  16  3        Payment Means Coded
+PAI0104    A      0027  19  3        Code List Qualifier
+PAI0105    A      0027  22  3        Code List Responsible Agency
+PAI0106    A      0027  25  3        Payment Channel Coded
+
+----- FII  Seg # 0028  Level 2 --------------------------------------------
+----- Financial Institution Inform ----------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0028   4  6        FII Seq#
+FII01      A      0028  10  3        Party Qualifier
+FII0201    A      0028  13 35        Account Holder Number
+FII0202    A      0028  48 35        Account Holder Name
+FII0203    A      0028  83 35        Account Holder Name
+FII0204    A      0028 118  3        Currency Coded
+FII0301    A      0028 121 11        Institution Name Identificat
+FII0302    A      0028 132  3        Code List Qualifier
+FII0303    A      0028 135  3        Code List Responsible Agency
+FII0304    A      0028 138 17        Institution Branch Number
+FII0305    A      0028 155  3        Code List Qualifier
+FII0306    A      0028 158  3        Code List Responsible Agency
+FII0307    A      0028 161 70        Institution Name
+FII0308    A      0028 231 70        Institution Branch Place
+FII04      A      0028 301  3        Country Coded
+
+----- TDT  Seg # 0029  Level 1 --------------------------------------------
+----- Details Of Transport ------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0029   4  6        TDT Seq#
+TDT01      A      0029  10  3        Transport Stage Qualifier
+TDT02      A      0029  13 17        Conveyance Reference Number
+TDT0301    A      0029  30  3        Mode Of Transport Coded
+TDT0302    A      0029  33 17        Mode Of Transport
+TDT0401    A      0029  50  8        Type Of Means Of Transport I
+TDT0402    A      0029  58 17        Type Of Means Of Transport
+TDT0501    A      0029  75 17        Carrier Identification
+TDT0502    A      0029  92  3        Code List Qualifier
+TDT0503    A      0029  95  3        Code List Responsible Agency
+TDT0504    A      0029  98 35        Carrier Name
+TDT06      A      0029 133  3        Transit Direction Coded
+TDT0701    A      0029 136  3        Excess Transportation Reason
+TDT0702    A      0029 139  3        Excess Transportation Respon
+TDT0703    A      0029 142 17        Customer Authorization Numbe
+TDT0801    A      0029 159  9        Id. Of Means Of Transport Id
+TDT0802    A      0029 168  3        Code List Qualifier
+TDT0803    A      0029 171  3        Code List Responsible Agency
+TDT0804    A      0029 174 35        Id. Of The Means Of Transpor
+TDT0805    A      0029 209  3        Nationality Of Means Of Tran
+TDT09      A      0029 212  3        Transport Ownership Coded
+
+----- LOC  Seg # 0030  Level 2 --------------------------------------------
+----- Place/Location Identificatio ----------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0030   4  6        LOC Seq#
+LOC01      A      0030  10  3        Place/Location Qualifier
+LOC0201    A      0030  13 25        Place/Location Identificatio
+LOC0202    A      0030  38  3        Code List Qualifier
+LOC0203    A      0030  41  3        Code List Responsible Agency
+LOC0204    A      0030  44 70        Place/Location
+LOC0301    A      0030 114 25        Related Place/Location One I
+LOC0302    A      0030 139  3        Code List Qualifier
+LOC0303    A      0030 142  3        Code List Responsible Agency
+LOC0304    A      0030 145 70        Related Place/Location One
+LOC0401    A      0030 215 25        Related Place/Location Two I
+LOC0402    A      0030 240  3        Code List Qualifier
+LOC0403    A      0030 243  3        Code List Responsible Agency
+LOC0404    A      0030 246 70        Related Place/Location Two
+LOC05      A      0030 316  3        Relation Coded
+
+----- DTM  Seg # 0031  Level 3 --------------------------------------------
+----- Date/Time/Period ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0031   4  6        DTM Seq#
+DTM0101    A      0031  10  3        Date/Time/Period Qualifier
+DTM0102    A      0031  13 35        Date/Time/Period
+DTM0103    A      0031  48  3        Date/Time/Period Format Qual
+
+----- RFF  Seg # 0032  Level 2 --------------------------------------------
+----- Reference -----------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0032   4  6        RFF Seq#
+RFF0101    A      0032  10  3        Reference Qualifier
+RFF0102    A      0032  13 35        Reference Number
+RFF0103    A      0032  48  6        Line Number
+RFF0104    A      0032  54 35        Reference Version Number
+
+----- DTM  Seg # 0033  Level 3 --------------------------------------------
+----- Date/Time/Period ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0033   4  6        DTM Seq#
+DTM0101    A      0033  10  3        Date/Time/Period Qualifier
+DTM0102    A      0033  13 35        Date/Time/Period
+DTM0103    A      0033  48  3        Date/Time/Period Format Qual
+
+----- TOD  Seg # 0034  Level 1 --------------------------------------------
+----- Terms Of Delivery Or Transpo ----------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0034   4  6        TOD Seq#
+TOD01      A      0034  10  3        Terms Of Delivery Or Transpo
+TOD02      A      0034  13  3        Transport Charges Method Of
+TOD0301    A      0034  16  3        Terms Of Delivery Or Transpo
+TOD0302    A      0034  19  3        Code List Qualifier
+TOD0303    A      0034  22  3        Code List Responsible Agency
+TOD0304    A      0034  25 70        Terms Of Delivery Or Transpo
+TOD0305    A      0034  95 70        Terms Of Delivery Or Transpo
+
+----- LOC  Seg # 0035  Level 2 --------------------------------------------
+----- Place/Location Identificatio ----------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0035   4  6        LOC Seq#
+LOC01      A      0035  10  3        Place/Location Qualifier
+LOC0201    A      0035  13 25        Place/Location Identificatio
+LOC0202    A      0035  38  3        Code List Qualifier
+LOC0203    A      0035  41  3        Code List Responsible Agency
+LOC0204    A      0035  44 70        Place/Location
+LOC0301    A      0035 114 25        Related Place/Location One I
+LOC0302    A      0035 139  3        Code List Qualifier
+LOC0303    A      0035 142  3        Code List Responsible Agency
+LOC0304    A      0035 145 70        Related Place/Location One
+LOC0401    A      0035 215 25        Related Place/Location Two I
+LOC0402    A      0035 240  3        Code List Qualifier
+LOC0403    A      0035 243  3        Code List Responsible Agency
+LOC0404    A      0035 246 70        Related Place/Location Two
+LOC05      A      0035 316  3        Relation Coded
+
+----- PAC  Seg # 0036  Level 1 --------------------------------------------
+----- Package -------------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0036   4  6        PAC Seq#
+PAC01      N      0036  10  8        Number Of Packages
+PAC0201    A      0036  18  3        Packaging Level Coded
+PAC0202    A      0036  21  3        Packaging Related Informatio
+PAC0203    A      0036  24  3        Packaging Terms And Conditio
+PAC0301    A      0036  27 17        Type Of Packages Identificat
+PAC0302    A      0036  44  3        Code List Qualifier
+PAC0303    A      0036  47  3        Code List Responsible Agency
+PAC0304    A      0036  50 35        Type Of Packages
+PAC0401    A      0036  85  3        Item Description Type Coded
+PAC0402    A      0036  88 35        Type Of Packages
+PAC0403    A      0036 123  3        Item Number Type Coded
+PAC0404    A      0036 126 35        Type Of Packages
+PAC0405    A      0036 161  3        Item Number Type Coded
+PAC0501    A      0036 164  3        Returnable Package Freight P
+PAC0502    A      0036 167  4        Syntax Identifier
+PAC0503    A      0036 171  3        Returnable Package Load Cont
+
+----- MEA  Seg # 0037  Level 2 --------------------------------------------
+----- Measurements --------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0037   4  6        MEA Seq#
+MEA01      A      0037  10  3        Measurement Application Qual
+MEA0201    A      0037  13  3        Measurement Dimension Coded
+MEA0202    A      0037  16  3        Measurement Significance Cod
+MEA0203    A      0037  19  3        Measurement Attribute Coded
+MEA0204    A      0037  22 70        Measurement Attribute
+MEA0301    A      0037  92  3        Measure Unit Qualifier
+MEA0302    N      0037  95 18        Measurement Value
+MEA0303    N      0037 113 18        Range Minimum
+MEA0304    N      0037 131 18        Range Maximum
+MEA0305    N      0037 149  2        Significant Digits
+MEA04      A      0037 151  3        Surface/Layer Indicator Code
+
+----- PCI  Seg # 0038  Level 2 --------------------------------------------
+----- Package Identification ----------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0038   4  6        PCI Seq#
+PCI01      A      0038  10  3        Marking Instructions Coded
+PCI0201    A      0038  13 35        Shipping Marks
+PCI0202    A      0038  48 35        Shipping Marks
+PCI0203    A      0038  83 35        Shipping Marks
+PCI0204    A      0038 118 35        Shipping Marks
+PCI0205    A      0038 153 35        Shipping Marks
+PCI0206    A      0038 188 35        Shipping Marks
+PCI0207    A      0038 223 35        Shipping Marks
+PCI0208    A      0038 258 35        Shipping Marks
+PCI0209    A      0038 293 35        Shipping Marks
+PCI0210    A      0038 328 35        Shipping Marks
+PCI03      A      0038 363  3        Container/Package Status Cod
+PCI0401    A      0038 366  3        Type Of Marking Coded
+PCI0402    A      0038 369  3        Code List Qualifier
+PCI0403    A      0038 372  3        Code List Responsible Agency
+
+----- RFF  Seg # 0039  Level 3 --------------------------------------------
+----- Reference -----------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0039   4  6        RFF Seq#
+RFF0101    A      0039  10  3        Reference Qualifier
+RFF0102    A      0039  13 35        Reference Number
+RFF0103    A      0039  48  6        Line Number
+RFF0104    A      0039  54 35        Reference Version Number
+
+----- DTM  Seg # 0040  Level 3 --------------------------------------------
+----- Date/Time/Period ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0040   4  6        DTM Seq#
+DTM0101    A      0040  10  3        Date/Time/Period Qualifier
+DTM0102    A      0040  13 35        Date/Time/Period
+DTM0103    A      0040  48  3        Date/Time/Period Format Qual
+
+----- GIN  Seg # 0041  Level 3 --------------------------------------------
+----- Goods Identity Number -----------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0041   4  6        GIN Seq#
+GIN01      A      0041  10  3        Identity Number Qualifier
+GIN0201    A      0041  13 35        Identity Number
+GIN0202    A      0041  48 35        Identity Number
+GIN0301    A      0041  83 35        Identity Number
+GIN0302    A      0041 118 35        Identity Number
+GIN0401    A      0041 153 35        Identity Number
+GIN0402    A      0041 188 35        Identity Number
+GIN0501    A      0041 223 35        Identity Number
+GIN0502    A      0041 258 35        Identity Number
+GIN0601    A      0041 293 35        Identity Number
+GIN0602    A      0041 328 35        Identity Number
+
+----- ALC  Seg # 0042  Level 1 --------------------------------------------
+----- Allowance Or Charge -------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0042   4  6        ALC Seq#
+ALC01      A      0042  10  3        Allowance Or Charge Qualifie
+ALC0201    A      0042  13 35        Allowance Or Charge Number
+ALC0202    A      0042  48  3        Charge/Allowance Description
+ALC03      A      0042  51  3        Settlement Coded
+ALC04      A      0042  54  3        Calculation Sequence Indicat
+ALC0501    A      0042  57  3        Special Services Coded
+ALC0502    A      0042  60  3        Code List Qualifier
+ALC0503    A      0042  63  3        Code List Responsible Agency
+ALC0504    A      0042  66 35        Special Service
+ALC0505    A      0042 101 35        Special Service
+
+----- ALI  Seg # 0043  Level 2 --------------------------------------------
+----- Additional Information ----------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0043   4  6        ALI Seq#
+ALI01      A      0043  10  3        Country Of Origin Coded
+ALI02      A      0043  13  3        Type Of Duty Regime Coded
+ALI03      A      0043  16  3        Special Conditions Coded
+ALI04      A      0043  19  3        Special Conditions Coded
+ALI05      A      0043  22  3        Special Conditions Coded
+ALI06      A      0043  25  3        Special Conditions Coded
+ALI07      A      0043  28  3        Special Conditions Coded
+
+----- RFF  Seg # 0044  Level 2 --------------------------------------------
+----- Reference -----------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0044   4  6        RFF Seq#
+RFF0101    A      0044  10  3        Reference Qualifier
+RFF0102    A      0044  13 35        Reference Number
+RFF0103    A      0044  48  6        Line Number
+RFF0104    A      0044  54 35        Reference Version Number
+
+----- DTM  Seg # 0045  Level 3 --------------------------------------------
+----- Date/Time/Period ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0045   4  6        DTM Seq#
+DTM0101    A      0045  10  3        Date/Time/Period Qualifier
+DTM0102    A      0045  13 35        Date/Time/Period
+DTM0103    A      0045  48  3        Date/Time/Period Format Qual
+
+----- QTY  Seg # 0046  Level 2 --------------------------------------------
+----- Quantity ------------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0046   4  6        QTY Seq#
+QTY0101    A      0046  10  3        Quantity Qualifier
+QTY0102    N      0046  13 15        Quantity
+QTY0103    A      0046  28  3        Measure Unit Qualifier
+
+----- RNG  Seg # 0047  Level 3 --------------------------------------------
+----- Range Details -------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0047   4  6        RNG Seq#
+RNG01      A      0047  10  3        Range Type Qualifier
+RNG0201    A      0047  13  3        Measure Unit Qualifier
+RNG0202    N      0047  16 18        Range Minimum
+RNG0203    N      0047  34 18        Range Maximum
+
+----- PCD  Seg # 0048  Level 2 --------------------------------------------
+----- Percentage Details --------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0048   4  6        PCD Seq#
+PCD0101    A      0048  10  3        Percentage Qualifier
+PCD0102    N      0048  13 10        Percentage
+PCD0103    A      0048  23  3        Percentage Basis Coded
+PCD0104    A      0048  26  3        Code List Qualifier
+PCD0105    A      0048  29  3        Code List Responsible Agency
+
+----- RNG  Seg # 0049  Level 3 --------------------------------------------
+----- Range Details -------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0049   4  6        RNG Seq#
+RNG01      A      0049  10  3        Range Type Qualifier
+RNG0201    A      0049  13  3        Measure Unit Qualifier
+RNG0202    N      0049  16 18        Range Minimum
+RNG0203    N      0049  34 18        Range Maximum
+
+----- MOA  Seg # 0050  Level 2 --------------------------------------------
+----- Monetary Amount -----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0050   4  6        MOA Seq#
+MOA0101    A      0050  10  3        Monetary Amount Type Qualifi
+MOA0102    N      0050  13 18        Monetary Amount
+MOA0103    A      0050  31  3        Currency Coded
+MOA0104    A      0050  34  3        Currency Qualifier
+MOA0105    A      0050  37  3        Status Coded
+
+----- RNG  Seg # 0051  Level 3 --------------------------------------------
+----- Range Details -------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0051   4  6        RNG Seq#
+RNG01      A      0051  10  3        Range Type Qualifier
+RNG0201    A      0051  13  3        Measure Unit Qualifier
+RNG0202    N      0051  16 18        Range Minimum
+RNG0203    N      0051  34 18        Range Maximum
+
+----- RTE  Seg # 0052  Level 2 --------------------------------------------
+----- Rate Details --------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0052   4  6        RTE Seq#
+RTE0101    A      0052  10  3        Rate Type Qualifier
+RTE0102    N      0052  13 15        Rate Per Unit
+RTE0103    N      0052  28  9        Unit Price Basis
+RTE0104    A      0052  37  3        Measure Unit Qualifier
+
+----- RNG  Seg # 0053  Level 3 --------------------------------------------
+----- Range Details -------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0053   4  6        RNG Seq#
+RNG01      A      0053  10  3        Range Type Qualifier
+RNG0201    A      0053  13  3        Measure Unit Qualifier
+RNG0202    N      0053  16 18        Range Minimum
+RNG0203    N      0053  34 18        Range Maximum
+
+----- TAX  Seg # 0054  Level 2 --------------------------------------------
+----- Duty/Tax/Fee Details ------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0054   4  6        TAX Seq#
+TAX01      A      0054  10  3        Duty/Tax/Fee Function Qualif
+TAX0201    A      0054  13  3        Duty/Tax/Fee Type Coded
+TAX0202    A      0054  16  3        Code List Qualifier
+TAX0203    A      0054  19  3        Code List Responsible Agency
+TAX0204    A      0054  22 35        Duty/Tax/Fee Type
+TAX0301    A      0054  57  6        Duty/Tax/Fee Account Identif
+TAX0302    A      0054  63  3        Code List Qualifier
+TAX0303    A      0054  66  3        Code List Responsible Agency
+TAX04      A      0054  69 15        Duty/Tax/Fee Assessment Basi
+TAX0501    A      0054  84  7        Duty/Tax/Fee Rate Identifica
+TAX0502    A      0054  91  3        Code List Qualifier
+TAX0503    A      0054  94  3        Code List Responsible Agency
+TAX0504    A      0054  97 17        Duty/Tax/Fee Rate
+TAX0505    A      0054 114 12        Duty/Tax/Fee Rate Basis Iden
+TAX0506    A      0054 126  3        Code List Qualifier
+TAX0507    A      0054 129  3        Code List Responsible Agency
+TAX06      A      0054 132  3        Duty/Tax/Fee Category Coded
+TAX07      A      0054 135 20        Party Tax Identification Num
+
+----- MOA  Seg # 0055  Level 3 --------------------------------------------
+----- Monetary Amount -----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0055   4  6        MOA Seq#
+MOA0101    A      0055  10  3        Monetary Amount Type Qualifi
+MOA0102    N      0055  13 18        Monetary Amount
+MOA0103    A      0055  31  3        Currency Coded
+MOA0104    A      0055  34  3        Currency Qualifier
+MOA0105    A      0055  37  3        Status Coded
+
+----- RCS  Seg # 0056  Level 1 --------------------------------------------
+----- Requirements And Conditions -----------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0056   4  6        RCS Seq#
+RCS01      A      0056  10  3        Sector/Subject Identificatio
+RCS0201    A      0056  13 17        Requirement/Condition Identi
+RCS0202    A      0056  30  3        Code List Qualifier
+RCS0203    A      0056  33  3        Code List Responsible Agency
+RCS0204    A      0056  36 35        Requirement Or Condition
+RCS03      A      0056  71  3        Action Request/Notification
+
+----- RFF  Seg # 0057  Level 2 --------------------------------------------
+----- Reference -----------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0057   4  6        RFF Seq#
+RFF0101    A      0057  10  3        Reference Qualifier
+RFF0102    A      0057  13 35        Reference Number
+RFF0103    A      0057  48  6        Line Number
+RFF0104    A      0057  54 35        Reference Version Number
+
+----- DTM  Seg # 0058  Level 2 --------------------------------------------
+----- Date/Time/Period ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0058   4  6        DTM Seq#
+DTM0101    A      0058  10  3        Date/Time/Period Qualifier
+DTM0102    A      0058  13 35        Date/Time/Period
+DTM0103    A      0058  48  3        Date/Time/Period Format Qual
+
+----- FTX  Seg # 0059  Level 2 --------------------------------------------
+----- Free Text -----------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0059   4  6        FTX Seq#
+FTX01      A      0059  10  3        Text Subject Qualifier
+FTX02      A      0059  13  3        Text Function Coded
+FTX0301    A      0059  16  3        Free Text Coded
+FTX0302    A      0059  19  3        Code List Qualifier
+FTX0303    A      0059  22  3        Code List Responsible Agency
+FTX0401    A      0059  25 70        Free Text
+FTX0402    A      0059  95 70        Free Text
+FTX0403    A      0059 165 70        Free Text
+FTX0404    A      0059 235 70        Free Text
+FTX0405    A      0059 305 70        Free Text
+FTX05      A      0059 375  3        Language Coded
+
+----- AJT  Seg # 0060  Level 1 --------------------------------------------
+----- Adjustment Details --------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0060   4  6        AJT Seq#
+AJT01      A      0060  10  3        Adjustment Reason Coded
+AJT02      N      0060  13  6        Line Item Number
+
+----- FTX  Seg # 0061  Level 2 --------------------------------------------
+----- Free Text -----------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0061   4  6        FTX Seq#
+FTX01      A      0061  10  3        Text Subject Qualifier
+FTX02      A      0061  13  3        Text Function Coded
+FTX0301    A      0061  16  3        Free Text Coded
+FTX0302    A      0061  19  3        Code List Qualifier
+FTX0303    A      0061  22  3        Code List Responsible Agency
+FTX0401    A      0061  25 70        Free Text
+FTX0402    A      0061  95 70        Free Text
+FTX0403    A      0061 165 70        Free Text
+FTX0404    A      0061 235 70        Free Text
+FTX0405    A      0061 305 70        Free Text
+FTX05      A      0061 375  3        Language Coded
+
+----- INP  Seg # 0062  Level 1 --------------------------------------------
+----- Parties To Instruction ----------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0062   4  6        INP Seq#
+INP0101    A      0062  10 17        Party Enacting Instruction I
+INP0102    A      0062  27 17        Recipient Of The Instruction
+INP0201    A      0062  44  3        Instruction Qualifier
+INP0202    A      0062  47  3        Instruction Coded
+INP0203    A      0062  50  3        Code List Qualifier
+INP0204    A      0062  53  3        Code List Responsible Agency
+INP0205    A      0062  56 35        Instruction
+INP0301    A      0062  91  3        Status Coded
+INP0302    A      0062  94 35        Party Name
+INP04      A      0062 129  3        Action Request/Notification
+
+----- FTX  Seg # 0063  Level 2 --------------------------------------------
+----- Free Text -----------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0063   4  6        FTX Seq#
+FTX01      A      0063  10  3        Text Subject Qualifier
+FTX02      A      0063  13  3        Text Function Coded
+FTX0301    A      0063  16  3        Free Text Coded
+FTX0302    A      0063  19  3        Code List Qualifier
+FTX0303    A      0063  22  3        Code List Responsible Agency
+FTX0401    A      0063  25 70        Free Text
+FTX0402    A      0063  95 70        Free Text
+FTX0403    A      0063 165 70        Free Text
+FTX0404    A      0063 235 70        Free Text
+FTX0405    A      0063 305 70        Free Text
+FTX05      A      0063 375  3        Language Coded
+
+----- LIN  Seg # 0064  Level 1 --------------------------------------------
+----- Line Item -----------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0064   4  6        LIN Seq#
+LIN01      N      0064  10  6        Line Item Number
+LIN02      A      0064  16  3        Action Request/Notification
+LIN0301    A      0064  19 35        Item Number
+LIN0302    A      0064  54  3        Item Number Type Coded
+LIN0303    A      0064  57  3        Code List Qualifier
+LIN0304    A      0064  60  3        Code List Responsible Agency
+LIN0401    A      0064  63  3        Sub-Line Indicator Coded
+LIN0402    N      0064  66  6        Line Item Number
+LIN05      N      0064  72  2        Configuration Level
+LIN06      A      0064  74  3        Configuration Coded
+
+----- PIA  Seg # 0065  Level 2 --------------------------------------------
+----- Additional Product Id -----------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0065   4  6        PIA Seq#
+PIA01      A      0065  10  3        Product Id. Function Qualifi
+PIA0201    A      0065  13 35        Item Number
+PIA0202    A      0065  48  3        Item Number Type Coded
+PIA0203    A      0065  51  3        Code List Qualifier
+PIA0204    A      0065  54  3        Code List Responsible Agency
+PIA0301    A      0065  57 35        Item Number
+PIA0302    A      0065  92  3        Item Number Type Coded
+PIA0303    A      0065  95  3        Code List Qualifier
+PIA0304    A      0065  98  3        Code List Responsible Agency
+PIA0401    A      0065 101 35        Item Number
+PIA0402    A      0065 136  3        Item Number Type Coded
+PIA0403    A      0065 139  3        Code List Qualifier
+PIA0404    A      0065 142  3        Code List Responsible Agency
+PIA0501    A      0065 145 35        Item Number
+PIA0502    A      0065 180  3        Item Number Type Coded
+PIA0503    A      0065 183  3        Code List Qualifier
+PIA0504    A      0065 186  3        Code List Responsible Agency
+PIA0601    A      0065 189 35        Item Number
+PIA0602    A      0065 224  3        Item Number Type Coded
+PIA0603    A      0065 227  3        Code List Qualifier
+PIA0604    A      0065 230  3        Code List Responsible Agency
+
+----- IMD  Seg # 0066  Level 2 --------------------------------------------
+----- Item Description ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0066   4  6        IMD Seq#
+IMD01      A      0066  10  3        Item Description Type Coded
+IMD02      A      0066  13  3        Item Characteristic Coded
+IMD0301    A      0066  16 17        Item Description Identificat
+IMD0302    A      0066  33  3        Code List Qualifier
+IMD0303    A      0066  36  3        Code List Responsible Agency
+IMD0304    A      0066  39 35        Item Description
+IMD0305    A      0066  74 35        Item Description
+IMD0306    A      0066 109  3        Language Coded
+IMD04      A      0066 112  3        Surface/Layer Indicator Code
+
+----- MEA  Seg # 0067  Level 2 --------------------------------------------
+----- Measurements --------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0067   4  6        MEA Seq#
+MEA01      A      0067  10  3        Measurement Application Qual
+MEA0201    A      0067  13  3        Measurement Dimension Coded
+MEA0202    A      0067  16  3        Measurement Significance Cod
+MEA0203    A      0067  19  3        Measurement Attribute Coded
+MEA0204    A      0067  22 70        Measurement Attribute
+MEA0301    A      0067  92  3        Measure Unit Qualifier
+MEA0302    N      0067  95 18        Measurement Value
+MEA0303    N      0067 113 18        Range Minimum
+MEA0304    N      0067 131 18        Range Maximum
+MEA0305    N      0067 149  2        Significant Digits
+MEA04      A      0067 151  3        Surface/Layer Indicator Code
+
+----- QTY  Seg # 0068  Level 2 --------------------------------------------
+----- Quantity ------------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0068   4  6        QTY Seq#
+QTY0101    A      0068  10  3        Quantity Qualifier
+QTY0102    N      0068  13 15        Quantity
+QTY0103    A      0068  28  3        Measure Unit Qualifier
+
+----- PCD  Seg # 0069  Level 2 --------------------------------------------
+----- Percentage Details --------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0069   4  6        PCD Seq#
+PCD0101    A      0069  10  3        Percentage Qualifier
+PCD0102    N      0069  13 10        Percentage
+PCD0103    A      0069  23  3        Percentage Basis Coded
+PCD0104    A      0069  26  3        Code List Qualifier
+PCD0105    A      0069  29  3        Code List Responsible Agency
+
+----- ALI  Seg # 0070  Level 2 --------------------------------------------
+----- Additional Information ----------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0070   4  6        ALI Seq#
+ALI01      A      0070  10  3        Country Of Origin Coded
+ALI02      A      0070  13  3        Type Of Duty Regime Coded
+ALI03      A      0070  16  3        Special Conditions Coded
+ALI04      A      0070  19  3        Special Conditions Coded
+ALI05      A      0070  22  3        Special Conditions Coded
+ALI06      A      0070  25  3        Special Conditions Coded
+ALI07      A      0070  28  3        Special Conditions Coded
+
+----- DTM  Seg # 0071  Level 2 --------------------------------------------
+----- Date/Time/Period ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0071   4  6        DTM Seq#
+DTM0101    A      0071  10  3        Date/Time/Period Qualifier
+DTM0102    A      0071  13 35        Date/Time/Period
+DTM0103    A      0071  48  3        Date/Time/Period Format Qual
+
+----- GIN  Seg # 0072  Level 2 --------------------------------------------
+----- Goods Identity Number -----------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0072   4  6        GIN Seq#
+GIN01      A      0072  10  3        Identity Number Qualifier
+GIN0201    A      0072  13 35        Identity Number
+GIN0202    A      0072  48 35        Identity Number
+GIN0301    A      0072  83 35        Identity Number
+GIN0302    A      0072 118 35        Identity Number
+GIN0401    A      0072 153 35        Identity Number
+GIN0402    A      0072 188 35        Identity Number
+GIN0501    A      0072 223 35        Identity Number
+GIN0502    A      0072 258 35        Identity Number
+GIN0601    A      0072 293 35        Identity Number
+GIN0602    A      0072 328 35        Identity Number
+
+----- GIR  Seg # 0073  Level 2 --------------------------------------------
+----- Related Identification Numbe ----------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0073   4  6        GIR Seq#
+GIR01      A      0073  10  3        Set Identification Qualifier
+GIR0201    A      0073  13 35        Identity Number
+GIR0202    A      0073  48  3        Identity Number Qualifier
+GIR0203    A      0073  51  3        Status Coded
+GIR0301    A      0073  54 35        Identity Number
+GIR0302    A      0073  89  3        Identity Number Qualifier
+GIR0303    A      0073  92  3        Status Coded
+GIR0401    A      0073  95 35        Identity Number
+GIR0402    A      0073 130  3        Identity Number Qualifier
+GIR0403    A      0073 133  3        Status Coded
+GIR0501    A      0073 136 35        Identity Number
+GIR0502    A      0073 171  3        Identity Number Qualifier
+GIR0503    A      0073 174  3        Status Coded
+GIR0601    A      0073 177 35        Identity Number
+GIR0602    A      0073 212  3        Identity Number Qualifier
+GIR0603    A      0073 215  3        Status Coded
+
+----- QVR  Seg # 0074  Level 2 --------------------------------------------
+----- Quantity Variances --------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0074   4  6        QVR Seq#
+QVR0101    N      0074  10 15        Quantity Difference
+QVR0102    A      0074  25  3        Quantity Qualifier
+QVR02      A      0074  28  3        Discrepancy Coded
+QVR0301    A      0074  31  3        Change Reason Coded
+QVR0302    A      0074  34  3        Code List Qualifier
+QVR0303    A      0074  37  3        Code List Responsible Agency
+QVR0304    A      0074  40 35        Change Reason
+
+----- EQD  Seg # 0075  Level 2 --------------------------------------------
+----- Equipment Details ---------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0075   4  6        EQD Seq#
+EQD01      A      0075  10  3        Equipment Qualifier
+EQD0201    A      0075  13 17        Equipment Identification Num
+EQD0202    A      0075  30  3        Code List Qualifier
+EQD0203    A      0075  33  3        Code List Responsible Agency
+EQD0204    A      0075  36  3        Country Coded
+EQD0301    A      0075  39 10        Equipment Size And Type Iden
+EQD0302    A      0075  49  3        Code List Qualifier
+EQD0303    A      0075  52  3        Code List Responsible Agency
+EQD0304    A      0075  55 35        Equipment Size And Type
+EQD04      A      0075  90  3        Equipment Supplier Coded
+EQD05      A      0075  93  3        Equipment Status Coded
+EQD06      A      0075  96  3        Full/Empty Indicator Coded
+
+----- FTX  Seg # 0076  Level 2 --------------------------------------------
+----- Free Text -----------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0076   4  6        FTX Seq#
+FTX01      A      0076  10  3        Text Subject Qualifier
+FTX02      A      0076  13  3        Text Function Coded
+FTX0301    A      0076  16  3        Free Text Coded
+FTX0302    A      0076  19  3        Code List Qualifier
+FTX0303    A      0076  22  3        Code List Responsible Agency
+FTX0401    A      0076  25 70        Free Text
+FTX0402    A      0076  95 70        Free Text
+FTX0403    A      0076 165 70        Free Text
+FTX0404    A      0076 235 70        Free Text
+FTX0405    A      0076 305 70        Free Text
+FTX05      A      0076 375  3        Language Coded
+
+----- MOA  Seg # 0077  Level 2 --------------------------------------------
+----- Monetary Amount -----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0077   4  6        MOA Seq#
+MOA0101    A      0077  10  3        Monetary Amount Type Qualifi
+MOA0102    N      0077  13 18        Monetary Amount
+MOA0103    A      0077  31  3        Currency Coded
+MOA0104    A      0077  34  3        Currency Qualifier
+MOA0105    A      0077  37  3        Status Coded
+
+----- CUX  Seg # 0078  Level 3 --------------------------------------------
+----- Currencies ----------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0078   4  6        CUX Seq#
+CUX0101    A      0078  10  3        Currency Details Qualifier
+CUX0102    A      0078  13  3        Currency Coded
+CUX0103    A      0078  16  3        Currency Qualifier
+CUX0104    N      0078  19  4        Currency Rate Base
+CUX0201    A      0078  23  3        Currency Details Qualifier
+CUX0202    A      0078  26  3        Currency Coded
+CUX0203    A      0078  29  3        Currency Qualifier
+CUX0204    N      0078  32  4        Currency Rate Base
+CUX03      N      0078  36 12        Rate Of Exchange
+CUX04      A      0078  48  3        Currency Market Exchange Cod
+
+----- PAT  Seg # 0079  Level 2 --------------------------------------------
+----- Payment Terms Basis -------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0079   4  6        PAT Seq#
+PAT01      A      0079  10  3        Payment Terms Type Qualifier
+PAT0201    A      0079  13 17        Terms Of Payment Identificat
+PAT0202    A      0079  30  3        Code List Qualifier
+PAT0203    A      0079  33  3        Code List Responsible Agency
+PAT0204    A      0079  36 35        Terms Of Payment
+PAT0205    A      0079  71 35        Terms Of Payment
+PAT0301    A      0079 106  3        Payment Time Reference Coded
+PAT0302    A      0079 109  3        Time Relation Coded
+PAT0303    A      0079 112  3        Type Of Period Coded
+PAT0304    N      0079 115  3        Number Of Periods
+
+----- DTM  Seg # 0080  Level 3 --------------------------------------------
+----- Date/Time/Period ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0080   4  6        DTM Seq#
+DTM0101    A      0080  10  3        Date/Time/Period Qualifier
+DTM0102    A      0080  13 35        Date/Time/Period
+DTM0103    A      0080  48  3        Date/Time/Period Format Qual
+
+----- PCD  Seg # 0081  Level 3 --------------------------------------------
+----- Percentage Details --------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0081   4  6        PCD Seq#
+PCD0101    A      0081  10  3        Percentage Qualifier
+PCD0102    N      0081  13 10        Percentage
+PCD0103    A      0081  23  3        Percentage Basis Coded
+PCD0104    A      0081  26  3        Code List Qualifier
+PCD0105    A      0081  29  3        Code List Responsible Agency
+
+----- MOA  Seg # 0082  Level 3 --------------------------------------------
+----- Monetary Amount -----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0082   4  6        MOA Seq#
+MOA0101    A      0082  10  3        Monetary Amount Type Qualifi
+MOA0102    N      0082  13 18        Monetary Amount
+MOA0103    A      0082  31  3        Currency Coded
+MOA0104    A      0082  34  3        Currency Qualifier
+MOA0105    A      0082  37  3        Status Coded
+
+----- PRI  Seg # 0083  Level 2 --------------------------------------------
+----- Price Details -------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0083   4  6        PRI Seq#
+PRI0101    A      0083  10  3        Price Qualifier
+PRI0102    N      0083  13 15        Price
+PRI0103    A      0083  28  3        Price Type Coded
+PRI0104    A      0083  31  3        Price Type Qualifier
+PRI0105    N      0083  34  9        Unit Price Basis
+PRI0106    A      0083  43  3        Measure Unit Qualifier
+PRI02      A      0083  46  3        Sub-Line Price Change Coded
+
+----- APR  Seg # 0084  Level 3 --------------------------------------------
+----- Additional Price Information ----------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0084   4  6        APR Seq#
+APR01      A      0084  10  3        Class Of Trade Coded
+APR0201    N      0084  13 12        Price Multiplier
+APR0202    A      0084  25  3        Price Multiplier Qualifier
+APR0301    A      0084  28  3        Change Reason Coded
+APR0302    A      0084  31  3        Code List Qualifier
+APR0303    A      0084  34  3        Code List Responsible Agency
+APR0304    A      0084  37 35        Change Reason
+
+----- RNG  Seg # 0085  Level 3 --------------------------------------------
+----- Range Details -------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0085   4  6        RNG Seq#
+RNG01      A      0085  10  3        Range Type Qualifier
+RNG0201    A      0085  13  3        Measure Unit Qualifier
+RNG0202    N      0085  16 18        Range Minimum
+RNG0203    N      0085  34 18        Range Maximum
+
+----- DTM  Seg # 0086  Level 3 --------------------------------------------
+----- Date/Time/Period ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0086   4  6        DTM Seq#
+DTM0101    A      0086  10  3        Date/Time/Period Qualifier
+DTM0102    A      0086  13 35        Date/Time/Period
+DTM0103    A      0086  48  3        Date/Time/Period Format Qual
+
+----- RFF  Seg # 0087  Level 2 --------------------------------------------
+----- Reference -----------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0087   4  6        RFF Seq#
+RFF0101    A      0087  10  3        Reference Qualifier
+RFF0102    A      0087  13 35        Reference Number
+RFF0103    A      0087  48  6        Line Number
+RFF0104    A      0087  54 35        Reference Version Number
+
+----- DTM  Seg # 0088  Level 3 --------------------------------------------
+----- Date/Time/Period ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0088   4  6        DTM Seq#
+DTM0101    A      0088  10  3        Date/Time/Period Qualifier
+DTM0102    A      0088  13 35        Date/Time/Period
+DTM0103    A      0088  48  3        Date/Time/Period Format Qual
+
+----- PAC  Seg # 0089  Level 2 --------------------------------------------
+----- Package -------------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0089   4  6        PAC Seq#
+PAC01      N      0089  10  8        Number Of Packages
+PAC0201    A      0089  18  3        Packaging Level Coded
+PAC0202    A      0089  21  3        Packaging Related Informatio
+PAC0203    A      0089  24  3        Packaging Terms And Conditio
+PAC0301    A      0089  27 17        Type Of Packages Identificat
+PAC0302    A      0089  44  3        Code List Qualifier
+PAC0303    A      0089  47  3        Code List Responsible Agency
+PAC0304    A      0089  50 35        Type Of Packages
+PAC0401    A      0089  85  3        Item Description Type Coded
+PAC0402    A      0089  88 35        Type Of Packages
+PAC0403    A      0089 123  3        Item Number Type Coded
+PAC0404    A      0089 126 35        Type Of Packages
+PAC0405    A      0089 161  3        Item Number Type Coded
+PAC0501    A      0089 164  3        Returnable Package Freight P
+PAC0502    A      0089 167  4        Syntax Identifier
+PAC0503    A      0089 171  3        Returnable Package Load Cont
+
+----- MEA  Seg # 0090  Level 3 --------------------------------------------
+----- Measurements --------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0090   4  6        MEA Seq#
+MEA01      A      0090  10  3        Measurement Application Qual
+MEA0201    A      0090  13  3        Measurement Dimension Coded
+MEA0202    A      0090  16  3        Measurement Significance Cod
+MEA0203    A      0090  19  3        Measurement Attribute Coded
+MEA0204    A      0090  22 70        Measurement Attribute
+MEA0301    A      0090  92  3        Measure Unit Qualifier
+MEA0302    N      0090  95 18        Measurement Value
+MEA0303    N      0090 113 18        Range Minimum
+MEA0304    N      0090 131 18        Range Maximum
+MEA0305    N      0090 149  2        Significant Digits
+MEA04      A      0090 151  3        Surface/Layer Indicator Code
+
+----- PCI  Seg # 0091  Level 3 --------------------------------------------
+----- Package Identification ----------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0091   4  6        PCI Seq#
+PCI01      A      0091  10  3        Marking Instructions Coded
+PCI0201    A      0091  13 35        Shipping Marks
+PCI0202    A      0091  48 35        Shipping Marks
+PCI0203    A      0091  83 35        Shipping Marks
+PCI0204    A      0091 118 35        Shipping Marks
+PCI0205    A      0091 153 35        Shipping Marks
+PCI0206    A      0091 188 35        Shipping Marks
+PCI0207    A      0091 223 35        Shipping Marks
+PCI0208    A      0091 258 35        Shipping Marks
+PCI0209    A      0091 293 35        Shipping Marks
+PCI0210    A      0091 328 35        Shipping Marks
+PCI03      A      0091 363  3        Container/Package Status Cod
+PCI0401    A      0091 366  3        Type Of Marking Coded
+PCI0402    A      0091 369  3        Code List Qualifier
+PCI0403    A      0091 372  3        Code List Responsible Agency
+
+----- RFF  Seg # 0092  Level 4 --------------------------------------------
+----- Reference -----------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0092   4  6        RFF Seq#
+RFF0101    A      0092  10  3        Reference Qualifier
+RFF0102    A      0092  13 35        Reference Number
+RFF0103    A      0092  48  6        Line Number
+RFF0104    A      0092  54 35        Reference Version Number
+
+----- DTM  Seg # 0093  Level 4 --------------------------------------------
+----- Date/Time/Period ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0093   4  6        DTM Seq#
+DTM0101    A      0093  10  3        Date/Time/Period Qualifier
+DTM0102    A      0093  13 35        Date/Time/Period
+DTM0103    A      0093  48  3        Date/Time/Period Format Qual
+
+----- GIN  Seg # 0094  Level 4 --------------------------------------------
+----- Goods Identity Number -----------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0094   4  6        GIN Seq#
+GIN01      A      0094  10  3        Identity Number Qualifier
+GIN0201    A      0094  13 35        Identity Number
+GIN0202    A      0094  48 35        Identity Number
+GIN0301    A      0094  83 35        Identity Number
+GIN0302    A      0094 118 35        Identity Number
+GIN0401    A      0094 153 35        Identity Number
+GIN0402    A      0094 188 35        Identity Number
+GIN0501    A      0094 223 35        Identity Number
+GIN0502    A      0094 258 35        Identity Number
+GIN0601    A      0094 293 35        Identity Number
+GIN0602    A      0094 328 35        Identity Number
+
+----- LOC  Seg # 0095  Level 2 --------------------------------------------
+----- Place/Location Identificatio ----------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0095   4  6        LOC Seq#
+LOC01      A      0095  10  3        Place/Location Qualifier
+LOC0201    A      0095  13 25        Place/Location Identificatio
+LOC0202    A      0095  38  3        Code List Qualifier
+LOC0203    A      0095  41  3        Code List Responsible Agency
+LOC0204    A      0095  44 70        Place/Location
+LOC0301    A      0095 114 25        Related Place/Location One I
+LOC0302    A      0095 139  3        Code List Qualifier
+LOC0303    A      0095 142  3        Code List Responsible Agency
+LOC0304    A      0095 145 70        Related Place/Location One
+LOC0401    A      0095 215 25        Related Place/Location Two I
+LOC0402    A      0095 240  3        Code List Qualifier
+LOC0403    A      0095 243  3        Code List Responsible Agency
+LOC0404    A      0095 246 70        Related Place/Location Two
+LOC05      A      0095 316  3        Relation Coded
+
+----- QTY  Seg # 0096  Level 3 --------------------------------------------
+----- Quantity ------------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0096   4  6        QTY Seq#
+QTY0101    A      0096  10  3        Quantity Qualifier
+QTY0102    N      0096  13 15        Quantity
+QTY0103    A      0096  28  3        Measure Unit Qualifier
+
+----- DTM  Seg # 0097  Level 3 --------------------------------------------
+----- Date/Time/Period ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0097   4  6        DTM Seq#
+DTM0101    A      0097  10  3        Date/Time/Period Qualifier
+DTM0102    A      0097  13 35        Date/Time/Period
+DTM0103    A      0097  48  3        Date/Time/Period Format Qual
+
+----- TAX  Seg # 0098  Level 2 --------------------------------------------
+----- Duty/Tax/Fee Details ------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0098   4  6        TAX Seq#
+TAX01      A      0098  10  3        Duty/Tax/Fee Function Qualif
+TAX0201    A      0098  13  3        Duty/Tax/Fee Type Coded
+TAX0202    A      0098  16  3        Code List Qualifier
+TAX0203    A      0098  19  3        Code List Responsible Agency
+TAX0204    A      0098  22 35        Duty/Tax/Fee Type
+TAX0301    A      0098  57  6        Duty/Tax/Fee Account Identif
+TAX0302    A      0098  63  3        Code List Qualifier
+TAX0303    A      0098  66  3        Code List Responsible Agency
+TAX04      A      0098  69 15        Duty/Tax/Fee Assessment Basi
+TAX0501    A      0098  84  7        Duty/Tax/Fee Rate Identifica
+TAX0502    A      0098  91  3        Code List Qualifier
+TAX0503    A      0098  94  3        Code List Responsible Agency
+TAX0504    A      0098  97 17        Duty/Tax/Fee Rate
+TAX0505    A      0098 114 12        Duty/Tax/Fee Rate Basis Iden
+TAX0506    A      0098 126  3        Code List Qualifier
+TAX0507    A      0098 129  3        Code List Responsible Agency
+TAX06      A      0098 132  3        Duty/Tax/Fee Category Coded
+TAX07      A      0098 135 20        Party Tax Identification Num
+
+----- MOA  Seg # 0099  Level 3 --------------------------------------------
+----- Monetary Amount -----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0099   4  6        MOA Seq#
+MOA0101    A      0099  10  3        Monetary Amount Type Qualifi
+MOA0102    N      0099  13 18        Monetary Amount
+MOA0103    A      0099  31  3        Currency Coded
+MOA0104    A      0099  34  3        Currency Qualifier
+MOA0105    A      0099  37  3        Status Coded
+
+----- LOC  Seg # 0100  Level 3 --------------------------------------------
+----- Place/Location Identificatio ----------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0100   4  6        LOC Seq#
+LOC01      A      0100  10  3        Place/Location Qualifier
+LOC0201    A      0100  13 25        Place/Location Identificatio
+LOC0202    A      0100  38  3        Code List Qualifier
+LOC0203    A      0100  41  3        Code List Responsible Agency
+LOC0204    A      0100  44 70        Place/Location
+LOC0301    A      0100 114 25        Related Place/Location One I
+LOC0302    A      0100 139  3        Code List Qualifier
+LOC0303    A      0100 142  3        Code List Responsible Agency
+LOC0304    A      0100 145 70        Related Place/Location One
+LOC0401    A      0100 215 25        Related Place/Location Two I
+LOC0402    A      0100 240  3        Code List Qualifier
+LOC0403    A      0100 243  3        Code List Responsible Agency
+LOC0404    A      0100 246 70        Related Place/Location Two
+LOC05      A      0100 316  3        Relation Coded
+
+----- NAD  Seg # 0101  Level 2 --------------------------------------------
+----- Name And Address ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0101   4  6        NAD Seq#
+NAD01      A      0101  10  3        Party Qualifier
+NAD0201    A      0101  13 35        Party Id. Identification
+NAD0202    A      0101  48  3        Code List Qualifier
+NAD0203    A      0101  51  3        Code List Responsible Agency
+NAD0301    A      0101  54 35        Name And Address Line
+NAD0302    A      0101  89 35        Name And Address Line
+NAD0303    A      0101 124 35        Name And Address Line
+NAD0304    A      0101 159 35        Name And Address Line
+NAD0305    A      0101 194 35        Name And Address Line
+NAD0401    A      0101 229 35        Party Name
+NAD0402    A      0101 264 35        Party Name
+NAD0403    A      0101 299 35        Party Name
+NAD0404    A      0101 334 35        Party Name
+NAD0405    A      0101 369 35        Party Name
+NAD0406    A      0101 404  3        Party Name Format Coded
+NAD0501    A      0101 407 35        Street And Number/P.O. Box
+NAD0502    A      0101 442 35        Street And Number/P.O. Box
+NAD0503    A      0101 477 35        Street And Number/P.O. Box
+NAD0504    A      0101 512 35        Street And Number/P.O. Box
+NAD06      A      0101 547 35        City Name
+NAD07      A      0101 582  9        Country Sub-Entity Identific
+NAD08      A      0101 591  9        Postcode Identification
+NAD09      A      0101 600  3        Country Coded
+
+----- LOC  Seg # 0102  Level 3 --------------------------------------------
+----- Place/Location Identificatio ----------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0102   4  6        LOC Seq#
+LOC01      A      0102  10  3        Place/Location Qualifier
+LOC0201    A      0102  13 25        Place/Location Identificatio
+LOC0202    A      0102  38  3        Code List Qualifier
+LOC0203    A      0102  41  3        Code List Responsible Agency
+LOC0204    A      0102  44 70        Place/Location
+LOC0301    A      0102 114 25        Related Place/Location One I
+LOC0302    A      0102 139  3        Code List Qualifier
+LOC0303    A      0102 142  3        Code List Responsible Agency
+LOC0304    A      0102 145 70        Related Place/Location One
+LOC0401    A      0102 215 25        Related Place/Location Two I
+LOC0402    A      0102 240  3        Code List Qualifier
+LOC0403    A      0102 243  3        Code List Responsible Agency
+LOC0404    A      0102 246 70        Related Place/Location Two
+LOC05      A      0102 316  3        Relation Coded
+
+----- RFF  Seg # 0103  Level 3 --------------------------------------------
+----- Reference -----------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0103   4  6        RFF Seq#
+RFF0101    A      0103  10  3        Reference Qualifier
+RFF0102    A      0103  13 35        Reference Number
+RFF0103    A      0103  48  6        Line Number
+RFF0104    A      0103  54 35        Reference Version Number
+
+----- DTM  Seg # 0104  Level 4 --------------------------------------------
+----- Date/Time/Period ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0104   4  6        DTM Seq#
+DTM0101    A      0104  10  3        Date/Time/Period Qualifier
+DTM0102    A      0104  13 35        Date/Time/Period
+DTM0103    A      0104  48  3        Date/Time/Period Format Qual
+
+----- DOC  Seg # 0105  Level 3 --------------------------------------------
+----- Document/Message Details --------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0105   4  6        DOC Seq#
+DOC0101    A      0105  10  3        Document/Message Name Coded
+DOC0102    A      0105  13  3        Code List Qualifier
+DOC0103    A      0105  16  3        Code List Responsible Agency
+DOC0104    A      0105  19 35        Document/Message Name
+DOC0201    A      0105  54 35        Document/Message Number
+DOC0202    A      0105  89  3        Document/Message Status Code
+DOC0203    A      0105  92 35        Document/Message Source
+DOC0204    A      0105 127  3        Language Coded
+DOC03      A      0105 130  3        Communication Channel Identi
+DOC04      N      0105 133  2        Number Of Copies Of Document
+DOC05      N      0105 135  2        Number Of Originals Of Docum
+
+----- DTM  Seg # 0106  Level 4 --------------------------------------------
+----- Date/Time/Period ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0106   4  6        DTM Seq#
+DTM0101    A      0106  10  3        Date/Time/Period Qualifier
+DTM0102    A      0106  13 35        Date/Time/Period
+DTM0103    A      0106  48  3        Date/Time/Period Format Qual
+
+----- CTA  Seg # 0107  Level 3 --------------------------------------------
+----- Contact Information -------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0107   4  6        CTA Seq#
+CTA01      A      0107  10  3        Contact Function Coded
+CTA0201    A      0107  13 17        Department Or Employee Ident
+CTA0202    A      0107  30 35        Department Or Employee
+
+----- COM  Seg # 0108  Level 4 --------------------------------------------
+----- Communication Contact -----------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0108   4  6        COM Seq#
+COM0101    A      0108  10 100        Communication Number
+COM0102    A      0108 110  3        Communication Channel Qualif
+
+----- ALC  Seg # 0109  Level 2 --------------------------------------------
+----- Allowance Or Charge -------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0109   4  6        ALC Seq#
+ALC01      A      0109  10  3        Allowance Or Charge Qualifie
+ALC0201    A      0109  13 35        Allowance Or Charge Number
+ALC0202    A      0109  48  3        Charge/Allowance Description
+ALC03      A      0109  51  3        Settlement Coded
+ALC04      A      0109  54  3        Calculation Sequence Indicat
+ALC0501    A      0109  57  3        Special Services Coded
+ALC0502    A      0109  60  3        Code List Qualifier
+ALC0503    A      0109  63  3        Code List Responsible Agency
+ALC0504    A      0109  66 35        Special Service
+ALC0505    A      0109 101 35        Special Service
+
+----- ALI  Seg # 0110  Level 3 --------------------------------------------
+----- Additional Information ----------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0110   4  6        ALI Seq#
+ALI01      A      0110  10  3        Country Of Origin Coded
+ALI02      A      0110  13  3        Type Of Duty Regime Coded
+ALI03      A      0110  16  3        Special Conditions Coded
+ALI04      A      0110  19  3        Special Conditions Coded
+ALI05      A      0110  22  3        Special Conditions Coded
+ALI06      A      0110  25  3        Special Conditions Coded
+ALI07      A      0110  28  3        Special Conditions Coded
+
+----- DTM  Seg # 0111  Level 3 --------------------------------------------
+----- Date/Time/Period ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0111   4  6        DTM Seq#
+DTM0101    A      0111  10  3        Date/Time/Period Qualifier
+DTM0102    A      0111  13 35        Date/Time/Period
+DTM0103    A      0111  48  3        Date/Time/Period Format Qual
+
+----- QTY  Seg # 0112  Level 3 --------------------------------------------
+----- Quantity ------------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0112   4  6        QTY Seq#
+QTY0101    A      0112  10  3        Quantity Qualifier
+QTY0102    N      0112  13 15        Quantity
+QTY0103    A      0112  28  3        Measure Unit Qualifier
+
+----- RNG  Seg # 0113  Level 4 --------------------------------------------
+----- Range Details -------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0113   4  6        RNG Seq#
+RNG01      A      0113  10  3        Range Type Qualifier
+RNG0201    A      0113  13  3        Measure Unit Qualifier
+RNG0202    N      0113  16 18        Range Minimum
+RNG0203    N      0113  34 18        Range Maximum
+
+----- PCD  Seg # 0114  Level 3 --------------------------------------------
+----- Percentage Details --------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0114   4  6        PCD Seq#
+PCD0101    A      0114  10  3        Percentage Qualifier
+PCD0102    N      0114  13 10        Percentage
+PCD0103    A      0114  23  3        Percentage Basis Coded
+PCD0104    A      0114  26  3        Code List Qualifier
+PCD0105    A      0114  29  3        Code List Responsible Agency
+
+----- RNG  Seg # 0115  Level 4 --------------------------------------------
+----- Range Details -------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0115   4  6        RNG Seq#
+RNG01      A      0115  10  3        Range Type Qualifier
+RNG0201    A      0115  13  3        Measure Unit Qualifier
+RNG0202    N      0115  16 18        Range Minimum
+RNG0203    N      0115  34 18        Range Maximum
+
+----- MOA  Seg # 0116  Level 3 --------------------------------------------
+----- Monetary Amount -----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0116   4  6        MOA Seq#
+MOA0101    A      0116  10  3        Monetary Amount Type Qualifi
+MOA0102    N      0116  13 18        Monetary Amount
+MOA0103    A      0116  31  3        Currency Coded
+MOA0104    A      0116  34  3        Currency Qualifier
+MOA0105    A      0116  37  3        Status Coded
+
+----- RNG  Seg # 0117  Level 4 --------------------------------------------
+----- Range Details -------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0117   4  6        RNG Seq#
+RNG01      A      0117  10  3        Range Type Qualifier
+RNG0201    A      0117  13  3        Measure Unit Qualifier
+RNG0202    N      0117  16 18        Range Minimum
+RNG0203    N      0117  34 18        Range Maximum
+
+----- RTE  Seg # 0118  Level 3 --------------------------------------------
+----- Rate Details --------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0118   4  6        RTE Seq#
+RTE0101    A      0118  10  3        Rate Type Qualifier
+RTE0102    N      0118  13 15        Rate Per Unit
+RTE0103    N      0118  28  9        Unit Price Basis
+RTE0104    A      0118  37  3        Measure Unit Qualifier
+
+----- RNG  Seg # 0119  Level 4 --------------------------------------------
+----- Range Details -------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0119   4  6        RNG Seq#
+RNG01      A      0119  10  3        Range Type Qualifier
+RNG0201    A      0119  13  3        Measure Unit Qualifier
+RNG0202    N      0119  16 18        Range Minimum
+RNG0203    N      0119  34 18        Range Maximum
+
+----- TAX  Seg # 0120  Level 3 --------------------------------------------
+----- Duty/Tax/Fee Details ------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0120   4  6        TAX Seq#
+TAX01      A      0120  10  3        Duty/Tax/Fee Function Qualif
+TAX0201    A      0120  13  3        Duty/Tax/Fee Type Coded
+TAX0202    A      0120  16  3        Code List Qualifier
+TAX0203    A      0120  19  3        Code List Responsible Agency
+TAX0204    A      0120  22 35        Duty/Tax/Fee Type
+TAX0301    A      0120  57  6        Duty/Tax/Fee Account Identif
+TAX0302    A      0120  63  3        Code List Qualifier
+TAX0303    A      0120  66  3        Code List Responsible Agency
+TAX04      A      0120  69 15        Duty/Tax/Fee Assessment Basi
+TAX0501    A      0120  84  7        Duty/Tax/Fee Rate Identifica
+TAX0502    A      0120  91  3        Code List Qualifier
+TAX0503    A      0120  94  3        Code List Responsible Agency
+TAX0504    A      0120  97 17        Duty/Tax/Fee Rate
+TAX0505    A      0120 114 12        Duty/Tax/Fee Rate Basis Iden
+TAX0506    A      0120 126  3        Code List Qualifier
+TAX0507    A      0120 129  3        Code List Responsible Agency
+TAX06      A      0120 132  3        Duty/Tax/Fee Category Coded
+TAX07      A      0120 135 20        Party Tax Identification Num
+
+----- MOA  Seg # 0121  Level 4 --------------------------------------------
+----- Monetary Amount -----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0121   4  6        MOA Seq#
+MOA0101    A      0121  10  3        Monetary Amount Type Qualifi
+MOA0102    N      0121  13 18        Monetary Amount
+MOA0103    A      0121  31  3        Currency Coded
+MOA0104    A      0121  34  3        Currency Qualifier
+MOA0105    A      0121  37  3        Status Coded
+
+----- TDT  Seg # 0122  Level 2 --------------------------------------------
+----- Details Of Transport ------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0122   4  6        TDT Seq#
+TDT01      A      0122  10  3        Transport Stage Qualifier
+TDT02      A      0122  13 17        Conveyance Reference Number
+TDT0301    A      0122  30  3        Mode Of Transport Coded
+TDT0302    A      0122  33 17        Mode Of Transport
+TDT0401    A      0122  50  8        Type Of Means Of Transport I
+TDT0402    A      0122  58 17        Type Of Means Of Transport
+TDT0501    A      0122  75 17        Carrier Identification
+TDT0502    A      0122  92  3        Code List Qualifier
+TDT0503    A      0122  95  3        Code List Responsible Agency
+TDT0504    A      0122  98 35        Carrier Name
+TDT06      A      0122 133  3        Transit Direction Coded
+TDT0701    A      0122 136  3        Excess Transportation Reason
+TDT0702    A      0122 139  3        Excess Transportation Respon
+TDT0703    A      0122 142 17        Customer Authorization Numbe
+TDT0801    A      0122 159  9        Id. Of Means Of Transport Id
+TDT0802    A      0122 168  3        Code List Qualifier
+TDT0803    A      0122 171  3        Code List Responsible Agency
+TDT0804    A      0122 174 35        Id. Of The Means Of Transpor
+TDT0805    A      0122 209  3        Nationality Of Means Of Tran
+TDT09      A      0122 212  3        Transport Ownership Coded
+
+----- LOC  Seg # 0123  Level 3 --------------------------------------------
+----- Place/Location Identificatio ----------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0123   4  6        LOC Seq#
+LOC01      A      0123  10  3        Place/Location Qualifier
+LOC0201    A      0123  13 25        Place/Location Identificatio
+LOC0202    A      0123  38  3        Code List Qualifier
+LOC0203    A      0123  41  3        Code List Responsible Agency
+LOC0204    A      0123  44 70        Place/Location
+LOC0301    A      0123 114 25        Related Place/Location One I
+LOC0302    A      0123 139  3        Code List Qualifier
+LOC0303    A      0123 142  3        Code List Responsible Agency
+LOC0304    A      0123 145 70        Related Place/Location One
+LOC0401    A      0123 215 25        Related Place/Location Two I
+LOC0402    A      0123 240  3        Code List Qualifier
+LOC0403    A      0123 243  3        Code List Responsible Agency
+LOC0404    A      0123 246 70        Related Place/Location Two
+LOC05      A      0123 316  3        Relation Coded
+
+----- DTM  Seg # 0124  Level 4 --------------------------------------------
+----- Date/Time/Period ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0124   4  6        DTM Seq#
+DTM0101    A      0124  10  3        Date/Time/Period Qualifier
+DTM0102    A      0124  13 35        Date/Time/Period
+DTM0103    A      0124  48  3        Date/Time/Period Format Qual
+
+----- TOD  Seg # 0125  Level 2 --------------------------------------------
+----- Terms Of Delivery Or Transpo ----------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0125   4  6        TOD Seq#
+TOD01      A      0125  10  3        Terms Of Delivery Or Transpo
+TOD02      A      0125  13  3        Transport Charges Method Of
+TOD0301    A      0125  16  3        Terms Of Delivery Or Transpo
+TOD0302    A      0125  19  3        Code List Qualifier
+TOD0303    A      0125  22  3        Code List Responsible Agency
+TOD0304    A      0125  25 70        Terms Of Delivery Or Transpo
+TOD0305    A      0125  95 70        Terms Of Delivery Or Transpo
+
+----- LOC  Seg # 0126  Level 3 --------------------------------------------
+----- Place/Location Identificatio ----------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0126   4  6        LOC Seq#
+LOC01      A      0126  10  3        Place/Location Qualifier
+LOC0201    A      0126  13 25        Place/Location Identificatio
+LOC0202    A      0126  38  3        Code List Qualifier
+LOC0203    A      0126  41  3        Code List Responsible Agency
+LOC0204    A      0126  44 70        Place/Location
+LOC0301    A      0126 114 25        Related Place/Location One I
+LOC0302    A      0126 139  3        Code List Qualifier
+LOC0303    A      0126 142  3        Code List Responsible Agency
+LOC0304    A      0126 145 70        Related Place/Location One
+LOC0401    A      0126 215 25        Related Place/Location Two I
+LOC0402    A      0126 240  3        Code List Qualifier
+LOC0403    A      0126 243  3        Code List Responsible Agency
+LOC0404    A      0126 246 70        Related Place/Location Two
+LOC05      A      0126 316  3        Relation Coded
+
+----- RCS  Seg # 0127  Level 2 --------------------------------------------
+----- Requirements And Conditions -----------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0127   4  6        RCS Seq#
+RCS01      A      0127  10  3        Sector/Subject Identificatio
+RCS0201    A      0127  13 17        Requirement/Condition Identi
+RCS0202    A      0127  30  3        Code List Qualifier
+RCS0203    A      0127  33  3        Code List Responsible Agency
+RCS0204    A      0127  36 35        Requirement Or Condition
+RCS03      A      0127  71  3        Action Request/Notification
+
+----- RFF  Seg # 0128  Level 3 --------------------------------------------
+----- Reference -----------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0128   4  6        RFF Seq#
+RFF0101    A      0128  10  3        Reference Qualifier
+RFF0102    A      0128  13 35        Reference Number
+RFF0103    A      0128  48  6        Line Number
+RFF0104    A      0128  54 35        Reference Version Number
+
+----- DTM  Seg # 0129  Level 3 --------------------------------------------
+----- Date/Time/Period ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0129   4  6        DTM Seq#
+DTM0101    A      0129  10  3        Date/Time/Period Qualifier
+DTM0102    A      0129  13 35        Date/Time/Period
+DTM0103    A      0129  48  3        Date/Time/Period Format Qual
+
+----- FTX  Seg # 0130  Level 3 --------------------------------------------
+----- Free Text -----------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0130   4  6        FTX Seq#
+FTX01      A      0130  10  3        Text Subject Qualifier
+FTX02      A      0130  13  3        Text Function Coded
+FTX0301    A      0130  16  3        Free Text Coded
+FTX0302    A      0130  19  3        Code List Qualifier
+FTX0303    A      0130  22  3        Code List Responsible Agency
+FTX0401    A      0130  25 70        Free Text
+FTX0402    A      0130  95 70        Free Text
+FTX0403    A      0130 165 70        Free Text
+FTX0404    A      0130 235 70        Free Text
+FTX0405    A      0130 305 70        Free Text
+FTX05      A      0130 375  3        Language Coded
+
+----- UNS  Seg # 0131  Level 1 --------------------------------------------
+----- Section Control -----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0131   4  6        UNS Seq#
+UNS01      A      0131  10  1        Section Identifier
+
+----- CNT  Seg # 0132  Level 1 --------------------------------------------
+----- Control Total -------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0132   4  6        CNT Seq#
+CNT0101    A      0132  10  3        Control Qualifier
+CNT0102    N      0132  13 18        Control Value
+CNT0103    A      0132  31  3        Measure Unit Qualifier
+
+----- MOA  Seg # 0133  Level 1 --------------------------------------------
+----- Monetary Amount -----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0133   4  6        MOA Seq#
+MOA0101    A      0133  10  3        Monetary Amount Type Qualifi
+MOA0102    N      0133  13 18        Monetary Amount
+MOA0103    A      0133  31  3        Currency Coded
+MOA0104    A      0133  34  3        Currency Qualifier
+MOA0105    A      0133  37  3        Status Coded
+
+----- RFF  Seg # 0134  Level 2 --------------------------------------------
+----- Reference -----------------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0134   4  6        RFF Seq#
+RFF0101    A      0134  10  3        Reference Qualifier
+RFF0102    A      0134  13 35        Reference Number
+RFF0103    A      0134  48  6        Line Number
+RFF0104    A      0134  54 35        Reference Version Number
+
+----- DTM  Seg # 0135  Level 3 --------------------------------------------
+----- Date/Time/Period ----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0135   4  6        DTM Seq#
+DTM0101    A      0135  10  3        Date/Time/Period Qualifier
+DTM0102    A      0135  13 35        Date/Time/Period
+DTM0103    A      0135  48  3        Date/Time/Period Format Qual
+
+----- TAX  Seg # 0136  Level 1 --------------------------------------------
+----- Duty/Tax/Fee Details ------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0136   4  6        TAX Seq#
+TAX01      A      0136  10  3        Duty/Tax/Fee Function Qualif
+TAX0201    A      0136  13  3        Duty/Tax/Fee Type Coded
+TAX0202    A      0136  16  3        Code List Qualifier
+TAX0203    A      0136  19  3        Code List Responsible Agency
+TAX0204    A      0136  22 35        Duty/Tax/Fee Type
+TAX0301    A      0136  57  6        Duty/Tax/Fee Account Identif
+TAX0302    A      0136  63  3        Code List Qualifier
+TAX0303    A      0136  66  3        Code List Responsible Agency
+TAX04      A      0136  69 15        Duty/Tax/Fee Assessment Basi
+TAX0501    A      0136  84  7        Duty/Tax/Fee Rate Identifica
+TAX0502    A      0136  91  3        Code List Qualifier
+TAX0503    A      0136  94  3        Code List Responsible Agency
+TAX0504    A      0136  97 17        Duty/Tax/Fee Rate
+TAX0505    A      0136 114 12        Duty/Tax/Fee Rate Basis Iden
+TAX0506    A      0136 126  3        Code List Qualifier
+TAX0507    A      0136 129  3        Code List Responsible Agency
+TAX06      A      0136 132  3        Duty/Tax/Fee Category Coded
+TAX07      A      0136 135 20        Party Tax Identification Num
+
+----- MOA  Seg # 0137  Level 2 --------------------------------------------
+----- Monetary Amount -----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0137   4  6        MOA Seq#
+MOA0101    A      0137  10  3        Monetary Amount Type Qualifi
+MOA0102    N      0137  13 18        Monetary Amount
+MOA0103    A      0137  31  3        Currency Coded
+MOA0104    A      0137  34  3        Currency Qualifier
+MOA0105    A      0137  37  3        Status Coded
+
+----- ALC  Seg # 0138  Level 1 --------------------------------------------
+----- Allowance Or Charge -------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0138   4  6        ALC Seq#
+ALC01      A      0138  10  3        Allowance Or Charge Qualifie
+ALC0201    A      0138  13 35        Allowance Or Charge Number
+ALC0202    A      0138  48  3        Charge/Allowance Description
+ALC03      A      0138  51  3        Settlement Coded
+ALC04      A      0138  54  3        Calculation Sequence Indicat
+ALC0501    A      0138  57  3        Special Services Coded
+ALC0502    A      0138  60  3        Code List Qualifier
+ALC0503    A      0138  63  3        Code List Responsible Agency
+ALC0504    A      0138  66 35        Special Service
+ALC0505    A      0138 101 35        Special Service
+
+----- ALI  Seg # 0139  Level 2 --------------------------------------------
+----- Additional Information ----------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0139   4  6        ALI Seq#
+ALI01      A      0139  10  3        Country Of Origin Coded
+ALI02      A      0139  13  3        Type Of Duty Regime Coded
+ALI03      A      0139  16  3        Special Conditions Coded
+ALI04      A      0139  19  3        Special Conditions Coded
+ALI05      A      0139  22  3        Special Conditions Coded
+ALI06      A      0139  25  3        Special Conditions Coded
+ALI07      A      0139  28  3        Special Conditions Coded
+
+----- MOA  Seg # 0140  Level 2 --------------------------------------------
+----- Monetary Amount -----------------------------------------------------
+
+ Name     Type    Seg  Off Len       Description
+ ====     ====    ===  === ===       ===========
+SEQ        S      0140   4  6        MOA Seq#
+MOA0101    A      0140  10  3        Monetary Amount Type Qualifi
+MOA0102    N      0140  13 18        Monetary Amount
+MOA0103    A      0140  31  3        Currency Coded
+MOA0104    A      0140  34  3        Currency Qualifier
+MOA0105    A      0140  37  3        Status Coded

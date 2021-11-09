@@ -1,0 +1,30 @@
+NULL,Processing
+INFO,856_EASTWOOD4030_STSE_MAX_1,MultipleSTSE reporting is not supported on theINVOIC. Please remove additional segments. Critical Error:INVOIC includes an additionalSTSE at line {0},Only segment and no element: STSE
+INFO,856_EASTWOOD4030_HLS_REQUIRED,Mandatory HLS segment is missing from the submitted file.HLSis required on all810.|MandatoryHLS segment is missing.,Only segment and no element: HLS
+INFO,856_EASTWOOD4030_HLO_REQUIRED,Mandatory HLO segment is missing from the submitted file.HLOis required on all810.|MandatoryHLO segment is missing.,Only segment and no element: HLO
+INFO,856_EASTWOOD4030_HLP_REQUIRED,Mandatory HLP segment is missing from the submitted file.HLPis required on all810.|MandatoryHLP segment is missing.,Only segment and no element: HLP
+INFO,856_EASTWOOD4030_HLI_REQUIRED,Mandatory HLI segment is missing from the submitted file.HLIis required on all810.|MandatoryHLI segment is missing.,Only segment and no element: HLI
+ERROR,856_EASTWOOD4030_ISA01_EQUAL_00,Error line {0}: ISA01 at ISA position 01 must be 00|Element ISA01 is invalid at line {0}.,Unknown element is O/M
+ERROR,856_EASTWOOD4030_ISA02_EQUAL_SPACE10,Error line {0}: ISA02 at ISA position 02 must be SPACE10|Element ISA02 is invalid at line {0}.,Unknown element is O/M
+ERROR,856_EASTWOOD4030_ISA03_EQUAL_00,Error line {0}: ISA03 at ISA position 03 must be 00|Element ISA03 is invalid at line {0}.,Unknown element is O/M
+ERROR,856_EASTWOOD4030_ISA04_EQUAL_SPACE10,Error line {0}: ISA04 at ISA position 04 must be SPACE10|Element ISA04 is invalid at line {0}.,Unknown element is O/M
+INFO,856_EASTWOOD4030_ISA05_LEN_15,Error line {0}: Data found at ISA05 at ISA position 05 does not meet the Min/Max requirement of 15/15.ISA05 must be 15 characters.|Min/Max Error: The length of ISA05 is invalid at line {0}.,Min = Max:15
+INFO,856_EASTWOOD4030_ISA06_LEN_15,Error line {0}: Data found at ISA06 at ISA position 06 does not meet the Min/Max requirement of 15/15.ISA06 must be 15 characters.|Min/Max Error: The length of ISA06 is invalid at line {0}.,Min = Max:15
+INFO,856_EASTWOOD4030_ISA07_LEN_2,Error line {0}: Data found at ISA07 at ISA position 07 does not meet the Min/Max requirement of 2/2.ISA07 must be 2 characters.|Min/Max Error: The length of ISA07 is invalid at line {0}.,Min = Max:2
+INFO,856_EASTWOOD4030_ISA08_LEN_15,Error line {0}: Data found at ISA08 at ISA position 08 does not meet the Min/Max requirement of 15/15.ISA08 must be 15 characters.|Min/Max Error: The length of ISA08 is invalid at line {0}.,Min = Max:15
+INFO,856_EASTWOOD4030_ISA09_LEN_6,Error line {0}: Data found at ISA09 at ISA position 09 does not meet the Min/Max requirement of 6/6.ISA09 must be 6 characters.|Min/Max Error: The length of ISA09 is invalid at line {0}.,Min = Max:6
+INFO,856_EASTWOOD4030_ISA10_LEN_4,Error line {0}: Data found at ISA10 at ISA position 10 does not meet the Min/Max requirement of 4/4.ISA10 must be 4 characters.|Min/Max Error: The length of ISA10 is invalid at line {0}.,Min = Max:4
+INFO,856_EASTWOOD4030_ISA11_LEN_1,Error line {0}: Data found at ISA11 at ISA position 11 does not meet the Min/Max requirement of 1/1.ISA11 must be 1 characters.|Min/Max Error: The length of ISA11 is invalid at line {0}.,Min = Max:1
+ERROR,856_EASTWOOD4030_ISA12_EQUAL_00403,Error line {0}: ISA12 at ISA position 12 must be 00403|Element ISA12 is invalid at line {0}.,Unknown element is O/M
+INFO,856_EASTWOOD4030_ISA13_LEN_9,Error line {0}: Data found at ISA13 at ISA position 13 does not meet the Min/Max requirement of 9/9.ISA13 must be 9 characters.|Min/Max Error: The length of ISA13 is invalid at line {0}.,Min = Max:9
+INFO,856_EASTWOOD4030_ISA14_LEN_1,Error line {0}: Data found at ISA14 at ISA position 14 does not meet the Min/Max requirement of 1/1.ISA14 must be 1 characters.|Min/Max Error: The length of ISA14 is invalid at line {0}.,Min = Max:1
+INFO,856_EASTWOOD4030_ISA15_LEN_1,Error line {0}: Data found at ISA15 at ISA position 15 does not meet the Min/Max requirement of 1/1.ISA15 must be 1 characters.|Min/Max Error: The length of ISA15 is invalid at line {0}.,Min = Max:1
+INFO,856_EASTWOOD4030_ISA16_LEN_1,Error line {0}: Data found at ISA16 at ISA position 16 does not meet the Min/Max requirement of 1/1.ISA16 must be 1 characters.|Min/Max Error: The length of ISA16 is invalid at line {0}.,Min = Max:1
+ERROR,856_EASTWOOD4030_GS01_EQUAL_PR,Error line {0}: GS01 at GS position 01 must be PR|Element GS01 is invalid at line {0}.,Unknown element is O/M
+ERROR,856_EASTWOOD4030_GS02_LEN_2_15,Error line {0}: Data found at GS02 at GS position 02 does not meet the Min/Max requirement of 2/15.GS02 must be 2 to 15 characters.|Min/Max Error: The length of GS02 is invalid at line {0}.,Unknown element is O/M
+ERROR,856_EASTWOOD4030_GS03_LEN_2_15,Error line {0}: Data found at GS03 at GS position 03 does not meet the Min/Max requirement of 2/15.GS03 must be 2 to 15 characters.|Min/Max Error: The length of GS03 is invalid at line {0}.,Unknown element is O/M
+INFO,856_EASTWOOD4030_GS04_LEN_8,Error line {0}: Data found at GS04 at GS position 04 does not meet the Min/Max requirement of 8/8.GS04 must be 8 characters.|Min/Max Error: The length of GS04 is invalid at line {0}.,Min = Max:8
+ERROR,856_EASTWOOD4030_GS05_LEN_4_8,Error line {0}: Data found at GS05 at GS position 05 does not meet the Min/Max requirement of 4/8.GS05 must be 4 to 8 characters.|Min/Max Error: The length of GS05 is invalid at line {0}.,Unknown element is O/M
+ERROR,856_EASTWOOD4030_GS06_LEN_1_9,Error line {0}: Data found at GS06 at GS position 06 does not meet the Min/Max requirement of 1/9.GS06 must be 1 to 9 characters.|Min/Max Error: The length of GS06 is invalid at line {0}.,Unknown element is O/M
+ERROR,856_EASTWOOD4030_GS07_EQUAL_X,Error line {0}: GS07 at GS position 07 must be X|Element GS07 is invalid at line {0}.,Unknown element is O/M
+ERROR,856_EASTWOOD4030_GS08_EQUAL_004030,Error line {0}: GS08 at GS position 08 must be 004030|Element GS08 is invalid at line {0}.,Unknown element is O/M

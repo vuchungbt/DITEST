@@ -1,0 +1,50 @@
+<xmap>
+<doc type="ffsrc" name="XRFMap">
+<message></message>
+<exd>../jobs/DITEST/exd_XRFExc.xml#XRFExc</exd>
+<Category>FF</Category>
+<RightTrim>true</RightTrim>
+<SkipUnknownIdentifier>True</SkipUnknownIdentifier><recordend>NEWLINE</recordend>
+<offsetbegin>0</offsetbegin>
+<node type="record" name="Line" level="1">
+<node type="field" order="1" name="Ignore">
+<offset>0</offset>
+<length>5</length>
+<functions FunctionCount="7">
+<function type="Trim" />
+<function type="Setvariable" name="vIgnore"/>
+<function type="Operatevariable" name="vCount" value="+1" datatype="Integer"/>
+<function type="If" lvalue="@vCount" rvalue="1" operator="="/>
+<function type="Newrow" exd="XRFExc" table="Exc"/>
+<function type="Setvalue" exd="XRFExc" table="Exc" field="Segment" value="[SEG]"/>
+<function type="EndIf" />
+</functions>
+</node>
+<node type="field" order="2" name="Segment">
+<offset>0</offset>
+<length>9</length>
+<functions FunctionCount="2">
+<function type="Trim" />
+<function type="Setvariable" name="vSeg"/>
+</functions>
+</node>
+<node type="field" order="3" name="Description">
+<offset>37</offset>
+<length>100</length>
+<functions FunctionCount="11">
+<function type="If" lvalue="@vSeg" rvalue="" operator="!="/>
+<function type="AndIf" lvalue="@vIgnore" rvalue="-----" operator="!="/>
+<function type="AndIf" lvalue="@vIgnore" rvalue="----" operator="!="/>
+<function type="AndIf" lvalue="@vIgnore" rvalue="Name" operator="!="/>
+<function type="AndIf" lvalue="@vIgnore" rvalue="====" operator="!="/>
+<function type="AndIf" lvalue="@vIgnore" rvalue="=====" operator="!="/>
+<function type="AndIf" lvalue="@vIgnore" rvalue="SEQ" operator="!="/>
+<function type="Newrow" exd="XRFExc" table="Exc"/>
+<function type="Setvalue" exd="XRFExc" table="Exc" field="Segment" value="@vSeg"/>
+<function type="Setvalue" exd="XRFExc" table="Exc" field="Descripton"/>
+<function type="EndIf" />
+</functions>
+</node>
+</node>
+</doc>
+</xmap>

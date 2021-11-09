@@ -1,0 +1,28 @@
+<xmap>
+<doc type="job" name="DITEST">
+<node type="task" name="XRF">
+<component>COLLECTSRCFILES.dll</component>
+<metainfo>../jobs/DITEST/map_1_CollectSourceFiles_XRF.xml#XRF</metainfo>
+</node>
+<node type="task" name="XRFMap">
+<component>FFSRC.dll</component>
+<metainfo>../jobs/DITEST/map_2_FlatFileSource_XRFMap.xml#XRFMap</metainfo>
+</node>
+<node type="task" name="XRFtoLookup">
+<component>FFTRG.dll</component>
+<metainfo>../jobs/DITEST/map_3_FlatFileTarget_XRFtoLookup.xml#XRFtoLookup</metainfo>
+</node>
+<node type="task" name="Files">
+<component>COLLECTSRCFILES.dll</component>
+<metainfo>../jobs/DITEST/map_4_CollectSourceFiles_Files.xml#Files</metainfo>
+</node>
+<node type="task" name="Src">
+<component>XMLSRC.dll</component>
+<metainfo>../jobs/DITEST/map_5_XMLSource_Src.xml#Src</metainfo>
+</node>
+<node type="task" name="Tgt">
+<component>FFTRG.dll</component>
+<metainfo>../jobs/DITEST/map_6_FlatFileTarget_Tgt.xml#Tgt</metainfo>
+</node>
+</doc>
+</xmap>

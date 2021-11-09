@@ -1,0 +1,862 @@
+<xmap>
+<doc type="xmlsrc" name="Src">
+<message></message>
+<exd>../jobs/DITEST/exd_Ex.xml#Ex</exd>
+<FileCategory>XML</FileCategory><node type="element" name="xmap" level="1">
+<description>xmap-</description>
+<node type="value" name="ElementValue" level="1">
+<nodeid>1</nodeid>
+<status></status>
+</node>
+<node type="element" name="doc" level="2">
+<description>doc-</description>
+<node type="value" name="ElementValue" level="1">
+<nodeid>1</nodeid>
+<status></status>
+<functions FunctionCount="22">
+<function type="Setvariable" name="vLookupPath" value="@Address_Input" datatype="Text"/>
+<function type="Setvariable" name="vLookupXrf" value="@Address_Input" datatype="Text"/>
+<function type="Operatevariable" name="vLookupXrf" value="+\XRFNodeElement.txt"/>
+<function type="Operatevariable" name="vLookupPath" value="+\XRefCode.txt"/>
+<function type="Lookup" filename="@vLookupPath" section="OPTION" casesensitive="False" load="False" key="Strandard"/>
+<function type="Setvariable" name="Strandard"/>
+<function type="Lookup" filename="@vLookupPath" section="OPTION" casesensitive="False" load="False" key="Transaction"/>
+<function type="Setvariable" name="Transaction"/>
+<function type="Lookup" filename="@vLookupPath" section="OPTION" casesensitive="False" load="False" key="Version"/>
+<function type="Setvariable" name="Version"/>
+<function type="Lookup" filename="@vLookupPath" section="OPTION" casesensitive="False" load="False" key="ProjectName"/>
+<function type="Setvariable" name="ProjectName"/>
+<function type="Lookup" filename="@vLookupPath" section="OPTION" casesensitive="False" load="False" key="TransactionName"/>
+<function type="Setvariable" name="TransactionName"/>
+<function type="Lookup" filename="@vLookupPath" section="OPTION" casesensitive="False" load="False" key="PartnerTransactionName"/>
+<function type="Setvariable" name="PartnerTransactionName"/>
+<function type="If" lvalue="@TransactionName" rvalue="" operator="="/>
+<function type="Setvariable" name="TransactionName" value="--[TransactionName]--"/>
+<function type="EndIf" />
+<function type="If" lvalue="@PartnerTransactionName" rvalue="" operator="="/>
+<function type="Setvariable" name="PartnerTransactionName" value="--[PartnerTransactionName]--"/>
+<function type="EndIf" />
+</functions>
+</node>
+<node type="attribute" name="type" level="1">
+<nodeid>2</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="name" level="1">
+<nodeid>3</nodeid>
+<status></status>
+</node>
+<node type="element" name="message" level="3">
+<description>message-</description>
+<node type="value" name="ElementValue" level="1">
+<nodeid>1</nodeid>
+<status></status>
+</node>
+</node>
+<node type="element" name="exd" level="3">
+<description>exd-</description>
+<node type="value" name="ElementValue" level="1">
+<nodeid>1</nodeid>
+<status></status>
+</node>
+</node>
+<node type="element" name="category" level="3">
+<description>category-</description>
+<node type="value" name="ElementValue" level="1">
+<nodeid>1</nodeid>
+<status></status>
+</node>
+</node>
+<node type="element" name="RightTrim" level="3">
+<description>RightTrim-</description>
+<node type="value" name="ElementValue" level="1">
+<nodeid>1</nodeid>
+<status></status>
+</node>
+</node>
+<node type="element" name="ValidationFilter" level="3">
+<description>ValidationFilter-</description>
+<node type="value" name="ElementValue" level="1">
+<nodeid>1</nodeid>
+<status></status>
+</node>
+</node>
+<node type="element" name="node" level="3">
+<description>node-</description>
+<node type="value" name="ElementValue" level="1">
+<nodeid>1</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="type" level="1">
+<nodeid>2</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="name" level="1">
+<nodeid>3</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="level" level="1">
+<nodeid>4</nodeid>
+<status></status>
+</node>
+<node type="element" name="description" level="4">
+<description>description-</description>
+<minoccurs>0</minoccurs>
+<node type="value" name="ElementValue" level="1">
+<nodeid>1</nodeid>
+<status></status>
+</node>
+</node>
+<node type="element" name="node" level="4">
+<description>node-</description>
+<minoccurs>0</minoccurs>
+<node type="value" name="ElementValue" level="1">
+<nodeid>1</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="type" level="1">
+<nodeid>2</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="name" level="1">
+<nodeid>3</nodeid>
+<status></status>
+</node>
+<node type="element" name="description" level="5">
+<description>description-</description>
+<minoccurs>0</minoccurs>
+<node type="value" name="ElementValue" level="1">
+<nodeid>1</nodeid>
+<status></status>
+</node>
+</node>
+<node type="element" name="nodeid" level="5">
+<description>nodeid-</description>
+<minoccurs>0</minoccurs>
+<node type="value" name="ElementValue" level="1">
+<nodeid>1</nodeid>
+<status></status>
+</node>
+</node>
+<node type="element" name="offset" level="5">
+<description>offset-</description>
+<minoccurs>0</minoccurs>
+<node type="value" name="ElementValue" level="1">
+<nodeid>1</nodeid>
+<status></status>
+</node>
+</node>
+<node type="element" name="length" level="5">
+<description>length-</description>
+<minoccurs>0</minoccurs>
+<node type="value" name="ElementValue" level="1">
+<nodeid>1</nodeid>
+<status></status>
+</node>
+</node>
+<node type="element" name="segqual" level="5">
+<description>segqual-</description>
+<minoccurs>0</minoccurs>
+<node type="value" name="ElementValue" level="1">
+<nodeid>1</nodeid>
+<status></status>
+</node>
+</node>
+<node type="element" name="functions" level="5">
+<description>functions-</description>
+<minoccurs>0</minoccurs>
+<node type="value" name="ElementValue" level="1">
+<nodeid>1</nodeid>
+<status></status>
+<functions FunctionCount="16">
+<function type="Setvariable" name="Mandatory" value="@NULL"/>
+<function type="Setvariable" name="Optional" value="@NULL"/>
+<function type="Setvariable" name="CrossrefDB" value="@NULL"/>
+<function type="Setvariable" name="CrossrefDB_Blank" value="@NULL"/>
+<function type="Setvariable" name="LenStart" value="0" datatype="Integer"/>
+<function type="Setvariable" name="LenEnd" value="0" datatype="Integer"/>
+<function type="Setvariable" name="Equal" value="@NULL"/>
+<function type="Setvariable" name="Requiered" value="@NULL"/>
+<function type="Setvariable" name="NotEqual" value="@NULL"/>
+<function type="Setvariable" name="Max" value="0" datatype="Integer"/>
+<function type="Setvariable" name="Min" value="0" datatype="Integer"/>
+<function type="Setvariable" name="NameOfElement" value="[----NameOfElement----]"/>
+<function type="Setvariable" name="ElementName" value="[----ElementName----]"/>
+<function type="Setvariable" name="SegmentName" value="[----SegmentName----]"/>
+<function type="Setvariable" name="Qualifier" value="[----Qualifier----]"/>
+<function type="Setvariable" name="LineNumber" value="0" datatype="Integer"/>
+</functions>
+</node>
+<node type="attribute" name="FunctionCount" level="1">
+<nodeid>2</nodeid>
+<status></status>
+</node>
+<node type="element" name="function" level="6">
+<description>function-</description>
+<node type="value" name="ElementValue" level="1">
+<nodeid>1</nodeid>
+<status></status>
+<functions FunctionCount="1">
+<function type="Setvariable" name="vMessage"/>
+</functions>
+</node>
+<node type="attribute" name="type" level="1">
+<nodeid>2</nodeid>
+<status></status>
+<functions FunctionCount="11">
+<function type="Setvariable" name="vValue" value="@NULL"/>
+<function type="Setvariable" name="vField" value="@NULL"/>
+<function type="Setvariable" name="vQualfAdd" value="@NULL"/>
+<function type="Setvariable" name="vPositionSubElement" value="@NULL"/>
+<function type="Setvariable" name="vPositionElementAndSub" value="@NULL"/>
+<function type="Setvariable" name="vSegmentElement" value="@NULL"/>
+<function type="Setvariable" name="vMorO" value="@NULL"/>
+<function type="Setvariable" name="Element" value="@NULL"/>
+<function type="Setvariable" name="vSet3" value="@NULL"/>
+<function type="Setvariable" name="vSet4" value="@NULL"/>
+<function type="Setvariable" name="vResult" value="@NULL"/>
+</functions>
+</node>
+<node type="attribute" name="name" level="1">
+<nodeid>3</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="value" level="1">
+<nodeid>4</nodeid>
+<status></status>
+<functions FunctionCount="395">
+<function type="Setvariable" name="vValue"/>
+<function type="Setvariable" name="vStatus" value="@NULL"/>
+<function type="Setvariable" name="vNote" value="@NULL"/>
+<function type="If" lvalue="@vField" rvalue="Detail" operator="="/>
+<function type="If" lvalue="@vValue" rvalue="" operator="!="/>
+<function type="DelimitedMid" value="@vValue" fieldseparator="_" fieldno="2"/>
+<function type="Setvariable" name="vProjectName"/>
+<function type="If" lvalue="@vProjectName" rvalue="" operator="="/>
+<function type="Operatevariable" name="vStatus" value="NULL"/>
+<function type="EndIf" />
+<function type="DelimitedMid" value="@vValue" fieldseparator="_" fieldno="3"/>
+<function type="Setvariable" name="Element"/>
+<function type="DelimitedMid" value="@Element" fieldseparator="-" fieldno="1"/>
+<function type="Setvariable" name="vQualifier"/>
+<function type="Lookup" filename="@vLookupXrf" section="SEG" casesensitive="False" load="False" key="@vQualifier"/>
+<function type="Setvariable" name="vSegName"/>
+<function type="If" lvalue="@vSegName" rvalue="" operator="="/>
+<function type="Operatevariable" name="vSegName" value="[----Name----]"/>
+<function type="If" lvalue="@vProjectName" rvalue="" operator="!="/>
+<function type="Operatevariable" name="vStatus" value="ERROR"/>
+<function type="Operatevariable" name="vNote" value="Not found description:"/>
+<function type="Operatevariable" name="vNote" value="+@vQualifier"/>
+<function type="EndIf" />
+<function type="EndIf" />
+<function type="Right" length="4" value="@vQualifier"/>
+<function type="Setvariable" name="vPositionElementAndSub"/>
+<function type="IsNumeric" value="@vPositionElementAndSub" datatype="integer" outputvariable="HasSub" severity="" message=""/>
+<function type="If" lvalue="@HasSub" rvalue="1" operator="="/>
+<function type="Right" length="2" value="@vPositionElementAndSub"/>
+<function type="Setvariable" name="vPositionSubElement"/>
+<function type="Left" length="2" value="@vPositionElementAndSub"/>
+<function type="Setvariable" name="vPositionElement"/>
+<function type="DelimitedMid" value="@vQualifier" fieldseparator="@vPositionElementAndSub" fieldno="1"/>
+<function type="Setvariable" name="vSegmentElement"/>
+<function type="Else" />
+<function type="Right" length="2" value="@vQualifier"/>
+<function type="Setvariable" name="vPositionElement"/>
+<function type="IsNumeric" value="@vPositionElement" datatype="integer" outputvariable="HasElm" severity="" message=""/>
+<function type="If" lvalue="@HasElm" rvalue="1" operator="="/>
+<function type="DelimitedMid" value="@vQualifier" fieldseparator="@vPositionElement" fieldno="1"/>
+<function type="Setvariable" name="vSegmentElement"/>
+<function type="Else" />
+<function type="Setvariable" name="vSegmentElement" value="@vQualifier"/>
+<function type="If" lvalue="@vProjectName" rvalue="" operator="!="/>
+<function type="Operatevariable" name="vStatus" value="INFO"/>
+<function type="Operatevariable" name="vNote" value="Only segment and no element: "/>
+<function type="Operatevariable" name="vNote" value="+@vQualifier"/>
+<function type="EndIf" />
+<function type="EndIf" />
+<function type="EndIf" />
+<function type="DelimitedMid" value="@Element" fieldseparator="-" fieldno="2"/>
+<function type="Setvariable" name="vMorO"/>
+<function type="Setvariable" name="vQualfAddTemp"/>
+<function type="If" lvalue="@vMorO" rvalue="" operator="="/>
+<function type="Operatevariable" name="vMorO" value="O"/>
+<function type="If" lvalue="@vStatus" rvalue="" operator="="/>
+<function type="Operatevariable" name="vStatus" value="ERROR"/>
+<function type="Operatevariable" name="vNote" value="Unknown element is O/M"/>
+<function type="EndIf" />
+<function type="Elseif" lvalue="@vMorO" rvalue="O" operator="!="/>
+<function type="AndIf" lvalue="@vMorO" rvalue="M" operator="!="/>
+<function type="Operatevariable" name="vMorO" value="O"/>
+<function type="If" lvalue="@vStatus" rvalue="" operator="="/>
+<function type="Operatevariable" name="vStatus" value="ERROR"/>
+<function type="Operatevariable" name="vNote" value="Unknown element is O/M"/>
+<function type="EndIf" />
+<function type="EndIf" />
+<function type="DelimitedMid" value="@Element" fieldseparator="-" fieldno="3"/>
+<function type="Setvariable" name="vQualfAdd"/>
+<function type="If" lvalue="@vQualfAdd" rvalue="" operator="="/>
+<function type="If" lvalue="@vQualfAddTemp" rvalue="O" operator="!="/>
+<function type="AndIf" lvalue="@vQualfAddTemp" rvalue="M" operator="!="/>
+<function type="Operatevariable" name="vQualfAdd" value="@vQualfAddTemp"/>
+<function type="EndIf" />
+<function type="EndIf" />
+<function type="DelimitedMid" value="@vValue" fieldseparator="_" fieldno="4"/>
+<function type="Setvariable" name="vSet3"/>
+<function type="If" lvalue="@vQualfAdd" rvalue="" operator="!="/>
+<function type="Operatevariable" name="vStatus" value="WARNING"/>
+<function type="Operatevariable" name="vNote" value="Found Qualifier segment in message:"/>
+<function type="Operatevariable" name="vNote" value="+@vSegmentElement"/>
+<function type="Operatevariable" name="vNote" value="+01"/>
+<function type="EndIf" />
+<function type="If" lvalue="@vSet3" rvalue="DBCHECK" operator="="/>
+<function type="DelimitedMid" value="@vValue" fieldseparator="_" fieldno="5"/>
+<function type="Setvariable" name="vSet4"/>
+<function type="If" lvalue="@vSet4" rvalue="BLANK" operator=""/>
+<function type="Operatevariable" name="vSet3" value="DBCHECK_BLANK"/>
+<function type="EndIf" />
+<function type="EndIf" />
+<function type="If" lvalue="@vSet3" rvalue="LEN" operator="="/>
+<function type="DelimitedMid" value="@vValue" fieldseparator="_" fieldno="5"/>
+<function type="Setvariable" name="vMin"/>
+<function type="DelimitedMid" value="@vValue" fieldseparator="_" fieldno="6"/>
+<function type="Setvariable" name="vMax"/>
+<function type="If" lvalue="@vMax" rvalue="" operator="="/>
+<function type="Operatevariable" name="vMax" value="@vMin"/>
+<function type="If" lvalue="@vQualfAdd" rvalue="" operator="="/>
+<function type="Operatevariable" name="vStatus" value="INFO"/>
+<function type="Operatevariable" name="vNote" value="Min = Max:"/>
+<function type="Operatevariable" name="vNote" value="+@vMax"/>
+<function type="EndIf" />
+<function type="EndIf" />
+<function type="Setvariable" name="vResult" value="Error line {0}: Data found at " datatype="Text"/>
+<function type="Operatevariable" name="vResult" value="+@vSegName"/>
+<function type="Operatevariable" name="vResult" value="+ at "/>
+<function type="Operatevariable" name="vResult" value="+@vSegmentElement"/>
+<function type="Operatevariable" name="vResult" value="+ position "/>
+<function type="Operatevariable" name="vResult" value="+@vPositionElement"/>
+<function type="If" lvalue="@vPositionSubElement" rvalue="" operator="!="/>
+<function type="Operatevariable" name="vResult" value="+ and sub-position "/>
+<function type="Operatevariable" name="vResult" value="+@vPositionSubElement"/>
+<function type="EndIf" />
+<function type="If" lvalue="@vQualfAdd" rvalue="" operator="!="/>
+<function type="Operatevariable" name="vResult" value="+ ("/>
+<function type="Operatevariable" name="vResult" value="+@vSegmentElement"/>
+<function type="Operatevariable" name="vResult" value="+01"/>
+<function type="Operatevariable" name="vResult" value="+ qualifier "/>
+<function type="Operatevariable" name="vResult" value="+@vQualfAdd"/>
+<function type="Operatevariable" name="vResult" value="+)"/>
+<function type="EndIf" />
+<function type="If" lvalue="@Standard" rvalue="EDIFACT" operator="="/>
+<function type="Operatevariable" name="vResult" value="+ in segment group [--GR number--] "/>
+<function type="Operatevariable" name="vStatus" value="ERROR"/>
+<function type="Operatevariable" name="vNote" value="Not found Group Number of Segment"/>
+<function type="EndIf" />
+<function type="Operatevariable" name="vResult" value="+ does not meet the Min/Max requirement of "/>
+<function type="Operatevariable" name="vResult" value="+@vMin"/>
+<function type="Operatevariable" name="vResult" value="+/"/>
+<function type="Operatevariable" name="vResult" value="+@vMax"/>
+<function type="Operatevariable" name="vResult" value="+. "/>
+<function type="Operatevariable" name="vResult" value="+@vSegName"/>
+<function type="Operatevariable" name="vResult" value="+ must be "/>
+<function type="Operatevariable" name="vResult" value="+@vMin"/>
+<function type="If" lvalue="@vMin" rvalue="@vMax" operator="!="/>
+<function type="Operatevariable" name="vResult" value="+ to "/>
+<function type="Operatevariable" name="vResult" value="+@vMax"/>
+<function type="EndIf" />
+<function type="Operatevariable" name="vResult" value="+ characters.|Min/Max Error: The length of "/>
+<function type="Operatevariable" name="vResult" value="+@vSegmentElement"/>
+<function type="Operatevariable" name="vResult" value="+@vPositionElement"/>
+<function type="Operatevariable" name="vResult" value="+@vPositionSubElement"/>
+<function type="Operatevariable" name="vResult" value="+ is invalid at line {0}."/>
+<function type="Setvariable" name="vMessage" value="@vResult"/>
+<function type="Elseif" lvalue="@vSet3" rvalue="EQUAL" operator="="/>
+<function type="DelimitedMid" value="@vValue" fieldseparator="_" fieldno="5"/>
+<function type="Setvariable" name="vEqual1"/>
+<function type="DelimitedMid" value="@vValue" fieldseparator="_" fieldno="6"/>
+<function type="Setvariable" name="vEqual2"/>
+<function type="If" lvalue="@vEqual1" rvalue="LIST" operator="="/>
+<function type="Lookup" filename="@vLookupPath" section="LISTCODE" casesensitive="False" load="False" key="@vEqual2" default="@vEqual2"/>
+<function type="If" lvalue="@vEqual2" rvalue="" operator="="/>
+<function type="Operatevariable" name="vStatus" value="ERROR"/>
+<function type="Operatevariable" name="vNote" value="Not found LIST in XRefCode table"/>
+<function type="EndIf" />
+<function type="Find" String=", " StartPosition="1" Replace="All" ReplaceString=" or "/>
+<function type="Find" String="," StartPosition="1" Replace="All" ReplaceString=" or "/>
+<function type="Setvariable" name="vEqual2"/>
+<function type="Operatevariable" name="vEqual1" value="@NULL"/>
+<function type="EndIf" />
+<function type="Setvariable" name="vResult" value="Error line {0}: " datatype="Text"/>
+<function type="Operatevariable" name="vResult" value="+@vSegName"/>
+<function type="Operatevariable" name="vResult" value="+ at "/>
+<function type="Operatevariable" name="vResult" value="+@vSegmentElement"/>
+<function type="Operatevariable" name="vResult" value="+ position "/>
+<function type="Operatevariable" name="vResult" value="+@vPositionElement"/>
+<function type="If" lvalue="@vPositionSubElement" rvalue="" operator="!="/>
+<function type="Operatevariable" name="vResult" value="+ and sub-position "/>
+<function type="Operatevariable" name="vResult" value="+@vPositionSubElement"/>
+<function type="EndIf" />
+<function type="If" lvalue="@vQualfAdd" rvalue="" operator="!="/>
+<function type="Operatevariable" name="vResult" value="+ ("/>
+<function type="Operatevariable" name="vResult" value="+@vSegmentElement"/>
+<function type="Operatevariable" name="vResult" value="+01"/>
+<function type="Operatevariable" name="vResult" value="+ qualifier "/>
+<function type="Operatevariable" name="vResult" value="+@vQualfAdd"/>
+<function type="Operatevariable" name="vResult" value="+)"/>
+<function type="EndIf" />
+<function type="If" lvalue="@Standard" rvalue="EDIFACT" operator="="/>
+<function type="Operatevariable" name="vResult" value="+ in segment group [--GR number--] "/>
+<function type="Operatevariable" name="vStatus" value="ERROR"/>
+<function type="Operatevariable" name="vNote" value="Not found Group Number of Segment"/>
+<function type="EndIf" />
+<function type="Operatevariable" name="vResult" value="+ must be "/>
+<function type="Operatevariable" name="vResult" value="+@vEqual1"/>
+<function type="If" lvalue="@vEqual2" rvalue="" operator="!="/>
+<function type="AndIf" lvalue="@vEqual1" rvalue="" operator="!="/>
+<function type="Operatevariable" name="vResult" value="+ or "/>
+<function type="EndIf" />
+<function type="Operatevariable" name="vResult" value="+@vEqual2"/>
+<function type="If" lvalue="@vMorO" rvalue="M" operator="="/>
+<function type="Operatevariable" name="vResult" value="+|Mandatory element "/>
+<function type="Elseif" lvalue="@vMorO" rvalue="O" operator="="/>
+<function type="Operatevariable" name="vResult" value="+|Element "/>
+<function type="Else" />
+<function type="Operatevariable" name="vResult" value="+|"/>
+<function type="Operatevariable" name="vResult" value="+@vMorO"/>
+<function type="Operatevariable" name="vResult" value="+ "/>
+<function type="EndIf" />
+<function type="Operatevariable" name="vResult" value="+@vSegmentElement"/>
+<function type="Operatevariable" name="vResult" value="+@vPositionElement"/>
+<function type="Operatevariable" name="vResult" value="+@vPositionSubElement"/>
+<function type="Operatevariable" name="vResult" value="+ is invalid at line {0}."/>
+<function type="Setvariable" name="vMessage" value="@vResult"/>
+<function type="Elseif" lvalue="@vSet3" rvalue="REQUIRED" operator="="/>
+<function type="Setvariable" name="Required" value="True"/>
+<function type="Setvariable" name="vResult" value="Mandatory " datatype="Text"/>
+<function type="Operatevariable" name="vResult" value="+@vSegmentElement"/>
+<function type="Operatevariable" name="vResult" value="+ segment is missing from the submitted file."/>
+<function type="Operatevariable" name="vResult" value="+@vSegName"/>
+<function type="Operatevariable" name="vResult" value="+ is required on all "/>
+<function type="Operatevariable" name="vResult" value="+@Transaction"/>
+<function type="Operatevariable" name="vResult" value="+.|Mandatory "/>
+<function type="Operatevariable" name="vResult" value="+@vSegmentElement"/>
+<function type="Operatevariable" name="vResult" value="+ segment is missing."/>
+<function type="Setvariable" name="vMessage" value="@vResult"/>
+<function type="Elseif" lvalue="@vSet3" rvalue="DBCHECK" operator="="/>
+<function type="Setvariable" name="DBCheck" value="True"/>
+<function type="Setvariable" name="vResult" value="Error line {1}: " datatype="Text"/>
+<function type="If" lvalue="@vMorO" rvalue="M" operator="="/>
+<function type="Operatevariable" name="vResult" value="+Mandatory element "/>
+<function type="Elseif" lvalue="@vMorO" rvalue="O" operator="="/>
+<function type="Operatevariable" name="vResult" value="+Element "/>
+<function type="Else" />
+<function type="Operatevariable" name="vResult" value="+@MorO"/>
+<function type="EndIf" />
+<function type="Operatevariable" name="vResult" value="+@vSegmentElement"/>
+<function type="Operatevariable" name="vResult" value="+ position "/>
+<function type="Operatevariable" name="vResult" value="+@vPositionElement"/>
+<function type="If" lvalue="@vPositionSubElement" rvalue="" operator="!="/>
+<function type="Operatevariable" name="vResult" value="+ and sub-position "/>
+<function type="Operatevariable" name="vResult" value="+@vPositionSubElement"/>
+<function type="EndIf" />
+<function type="If" lvalue="@vQualfAdd" rvalue="" operator="!="/>
+<function type="Operatevariable" name="vResult" value="+ ("/>
+<function type="Operatevariable" name="vResult" value="+@vSegmentElement"/>
+<function type="Operatevariable" name="vResult" value="+01"/>
+<function type="Operatevariable" name="vResult" value="+ qualifier "/>
+<function type="Operatevariable" name="vResult" value="+@vQualfAdd"/>
+<function type="Operatevariable" name="vResult" value="+)"/>
+<function type="EndIf" />
+<function type="If" lvalue="@Standard" rvalue="EDIFACT" operator="="/>
+<function type="Operatevariable" name="vResult" value="+ in segment group [--GR number--] "/>
+<function type="EndIf" />
+<function type="Operatevariable" name="vResult" value="+ must match the data found in "/>
+<function type="Operatevariable" name="vResult" value="+@vSegmentElement"/>
+<function type="Operatevariable" name="vResult" value="+@vPositionElement"/>
+<function type="Operatevariable" name="vResult" value="+@vPositionSubElement"/>
+<function type="If" lvalue="@vQualfAdd" rvalue="" operator="!="/>
+<function type="Operatevariable" name="vResult" value="+ ("/>
+<function type="Operatevariable" name="vResult" value="+@vSegmentElement"/>
+<function type="Operatevariable" name="vResult" value="+01"/>
+<function type="Operatevariable" name="vResult" value="+ qualifier "/>
+<function type="Operatevariable" name="vResult" value="+@vQualfAdd"/>
+<function type="Operatevariable" name="vResult" value="+)"/>
+<function type="EndIf" />
+<function type="Operatevariable" name="vResult" value="+ on the "/>
+<function type="Operatevariable" name="vResult" value="+@PartnerTransactionName"/>
+<function type="Operatevariable" name="vResult" value="+. Expected Value: {0}."/>
+<function type="If" lvalue="@vMorO" rvalue="M" operator="="/>
+<function type="Operatevariable" name="vResult" value="+|Mandatory element "/>
+<function type="Elseif" lvalue="@vMorO" rvalue="O" operator="="/>
+<function type="Operatevariable" name="vResult" value="+|Element "/>
+<function type="Else" />
+<function type="Operatevariable" name="vResult" value="+|"/>
+<function type="Operatevariable" name="vResult" value="+@vMorO"/>
+<function type="Operatevariable" name="vResult" value="+ "/>
+<function type="EndIf" />
+<function type="Operatevariable" name="vResult" value="+@vSegmentElement"/>
+<function type="Operatevariable" name="vResult" value="+@vPositionElement"/>
+<function type="Operatevariable" name="vResult" value="+@vPositionSubElement"/>
+<function type="Operatevariable" name="vResult" value="+ is invalid at line {1}."/>
+<function type="Setvariable" name="vMessage" value="@vResult"/>
+<function type="Elseif" lvalue="@vSet3" rvalue="DBCHECK_BLANK" operator="="/>
+<function type="Setvariable" name="DBCheck_Blank" value="True"/>
+<function type="Setvariable" name="vResult" value="Error line {1}: " datatype="Text"/>
+<function type="If" lvalue="@vMorO" rvalue="M" operator="="/>
+<function type="Operatevariable" name="vResult" value="+Mandatory element "/>
+<function type="Elseif" lvalue="@vMorO" rvalue="O" operator="="/>
+<function type="Operatevariable" name="vResult" value="+Element "/>
+<function type="Else" />
+<function type="Operatevariable" name="vResult" value="+@MorO"/>
+<function type="EndIf" />
+<function type="Operatevariable" name="vResult" value="+@vSegmentElement"/>
+<function type="Operatevariable" name="vResult" value="+ position "/>
+<function type="Operatevariable" name="vResult" value="+@vPositionElement"/>
+<function type="If" lvalue="@vPositionSubElement" rvalue="" operator="!="/>
+<function type="Operatevariable" name="vResult" value="+ and sub-position "/>
+<function type="Operatevariable" name="vResult" value="+@vPositionSubElement"/>
+<function type="EndIf" />
+<function type="If" lvalue="@vQualfAdd" rvalue="" operator="!="/>
+<function type="Operatevariable" name="vResult" value="+ (Qualifier "/>
+<function type="Operatevariable" name="vResult" value="+@vQualfAdd"/>
+<function type="Operatevariable" name="vResult" value="+)"/>
+<function type="EndIf" />
+<function type="If" lvalue="@Standard" rvalue="EDIFACT" operator="="/>
+<function type="Operatevariable" name="vResult" value="+ in segment group [--GR number--] "/>
+<function type="EndIf" />
+<function type="Operatevariable" name="vResult" value="+ must match the data found in "/>
+<function type="Operatevariable" name="vResult" value="+@vSegmentElement"/>
+<function type="Operatevariable" name="vResult" value="+@vPositionElement"/>
+<function type="Operatevariable" name="vResult" value="+@vPositionSubElement"/>
+<function type="If" lvalue="@vQualfAdd" rvalue="" operator="!="/>
+<function type="Operatevariable" name="vResult" value="+ (Qualifier "/>
+<function type="Operatevariable" name="vResult" value="+@vQualfAdd"/>
+<function type="Operatevariable" name="vResult" value="+)"/>
+<function type="EndIf" />
+<function type="Operatevariable" name="vResult" value="+ on the "/>
+<function type="Operatevariable" name="vResult" value="+@PartnerTransactionName"/>
+<function type="Operatevariable" name="vResult" value="+. Please reference to the Sample "/>
+<function type="Operatevariable" name="vResult" value="+@TransactionName"/>
+<function type="Operatevariable" name="vResult" value="+ and resubmit "/>
+<function type="Operatevariable" name="vResult" value="+@PartnerTransactionName"/>
+<function type="Operatevariable" name="vResult" value="+."/>
+<function type="If" lvalue="@vMorO" rvalue="M" operator="="/>
+<function type="Operatevariable" name="vResult" value="+|Mandatory element "/>
+<function type="Elseif" lvalue="@vMorO" rvalue="O" operator="="/>
+<function type="Operatevariable" name="vResult" value="+|Element "/>
+<function type="Else" />
+<function type="Operatevariable" name="vResult" value="+|"/>
+<function type="Operatevariable" name="vResult" value="+@vMorO"/>
+<function type="Operatevariable" name="vResult" value="+ "/>
+<function type="EndIf" />
+<function type="Operatevariable" name="vResult" value="+@vSegmentElement"/>
+<function type="Operatevariable" name="vResult" value="+@vPositionElement"/>
+<function type="Operatevariable" name="vResult" value="+@vPositionSubElement"/>
+<function type="Operatevariable" name="vResult" value="+ is invalid at line {1}."/>
+<function type="Setvariable" name="vMessage" value="@vResult"/>
+<function type="Elseif" lvalue="@vSet3" rvalue="MAX" operator="="/>
+<function type="Setvariable" name="Max" value="True"/>
+<function type="Setvariable" name="vResult" value="Multiple " datatype="Text"/>
+<function type="Operatevariable" name="vResult" value="+@vSegName"/>
+<function type="Operatevariable" name="vResult" value="+ reporting is not supported on the"/>
+<function type="Operatevariable" name="vResult" value="+@TransactionName"/>
+<function type="Operatevariable" name="vResult" value="+. Please remove additional segments. Critical Error:"/>
+<function type="Operatevariable" name="vResult" value="+@TransactionName"/>
+<function type="Operatevariable" name="vResult" value="+ includes an additional "/>
+<function type="Operatevariable" name="vResult" value="+@vSegName"/>
+<function type="Operatevariable" name="vResult" value="+ at line {0}"/>
+<function type="Setvariable" name="vMessage" value="@vResult"/>
+<function type="Elseif" lvalue="@vSet3" rvalue="NOT" operator="="/>
+<function type="Setvariable" name="Not" value="True"/>
+<function type="Setvariable" name="vResult" value="Error line {0}: " datatype="Text"/>
+<function type="Operatevariable" name="vResult" value="+@vSegName"/>
+<function type="Operatevariable" name="vResult" value="+ at "/>
+<function type="Operatevariable" name="vResult" value="+@vSegmentElement"/>
+<function type="Operatevariable" name="vResult" value="+ position "/>
+<function type="Operatevariable" name="vResult" value="+@vPositionElement"/>
+<function type="Operatevariable" name="vResult" value="+ does not match one of the expected values list in the mapping specs. Expected Value:"/>
+<function type="DelimitedMid" value="@vValue" fieldseparator="_" fieldno="5"/>
+<function type="Setvariable" name="vEqual1"/>
+<function type="DelimitedMid" value="@vValue" fieldseparator="_" fieldno="6"/>
+<function type="Setvariable" name="vEqual2"/>
+<function type="If" lvalue="@vEqual1" rvalue="LIST" operator="="/>
+<function type="Lookup" filename="@vLookupPath" section="LISTCODE" casesensitive="False" load="False" key="@vEqual2" default="@vEqual2"/>
+<function type="If" lvalue="@vEqual2" rvalue="" operator="="/>
+<function type="Operatevariable" name="vStatus" value="ERROR"/>
+<function type="Operatevariable" name="vNote" value="Not found LIST in XRefCode table"/>
+<function type="EndIf" />
+<function type="Find" String=", " StartPosition="1" Replace="All" ReplaceString=" or "/>
+<function type="Find" String="," StartPosition="1" Replace="All" ReplaceString=" or "/>
+<function type="Setvariable" name="vEqual2"/>
+<function type="Operatevariable" name="vEqual1" value="@NULL"/>
+<function type="EndIf" />
+<function type="If" lvalue="@vEqual2" rvalue="" operator="!="/>
+<function type="AndIf" lvalue="@vEqual1" rvalue="" operator="!="/>
+<function type="Operatevariable" name="vResult" value="+ or "/>
+<function type="EndIf" />
+<function type="Operatevariable" name="vResult" value="+@vEqual2"/>
+<function type="Operatevariable" name="vResult" value="+."/>
+<function type="If" lvalue="@vMorO" rvalue="M" operator="="/>
+<function type="Operatevariable" name="vResult" value="+|Mandatory element "/>
+<function type="Elseif" lvalue="@vMorO" rvalue="O" operator="="/>
+<function type="Operatevariable" name="vResult" value="+|Element "/>
+<function type="Else" />
+<function type="Operatevariable" name="vResult" value="+|"/>
+<function type="Operatevariable" name="vResult" value="+@vMorO"/>
+<function type="Operatevariable" name="vResult" value="+ "/>
+<function type="EndIf" />
+<function type="Operatevariable" name="vResult" value="+@vSegmentElement"/>
+<function type="Operatevariable" name="vResult" value="+@vPositionElement"/>
+<function type="Operatevariable" name="vResult" value="+@vPositionSubElement"/>
+<function type="Operatevariable" name="vResult" value="+ is invalid at line {0}."/>
+<function type="Setvariable" name="vMessage" value="@vResult"/>
+<function type="EndIf" />
+<function type="EndIf" />
+<function type="If" lvalue="@vField" rvalue="Detail" operator="="/>
+<function type="AndIf" lvalue="@vValue" rvalue="" operator="!="/>
+<function type="Newrow" exd="Ex" table="Ex"/>
+<function type="Setvalue" exd="Ex" table="Ex" field="Message" value="@vValue"/>
+<function type="Setvalue" exd="Ex" table="Ex" field="Description" value="@vMessage"/>
+<function type="Setvalue" exd="Ex" table="Ex" field="Status" value="@vStatus"/>
+<function type="Setvalue" exd="Ex" table="Ex" field="Note" value="@vNote"/>
+<function type="EndIf" />
+<function type="EndIf" />
+</functions>
+</node>
+<node type="attribute" name="datatype" level="1">
+<nodeid>5</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="lvalue" level="1">
+<nodeid>6</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="rvalue" level="1">
+<nodeid>7</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="operator" level="1">
+<nodeid>8</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="exd" level="1">
+<nodeid>9</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="table" level="1">
+<nodeid>10</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="format" level="1">
+<nodeid>11</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="field" level="1">
+<nodeid>12</nodeid>
+<status></status>
+<functions FunctionCount="1">
+<function type="Setvariable" name="vField"/>
+</functions>
+</node>
+<node type="attribute" name="position" level="1">
+<nodeid>13</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="length" level="1">
+<nodeid>14</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="fieldseparator" level="1">
+<nodeid>15</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="fieldno" level="1">
+<nodeid>16</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="min" level="1">
+<nodeid>17</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="max" level="1">
+<nodeid>18</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="ValueType" level="1">
+<nodeid>19</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="checktype" level="1">
+<nodeid>20</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="side" level="1">
+<nodeid>21</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="String" level="1">
+<nodeid>22</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="Position" level="1">
+<nodeid>23</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="StartPosition" level="1">
+<nodeid>24</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="Replace" level="1">
+<nodeid>25</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="ReplaceString" level="1">
+<nodeid>26</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="connectionname" level="1">
+<nodeid>27</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="sql" level="1">
+<nodeid>28</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="command" level="1">
+<nodeid>29</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="recordseparator" level="1">
+<nodeid>30</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="field1" level="1">
+<nodeid>31</nodeid>
+<status></status>
+</node>
+</node>
+</node>
+</node>
+<node type="element" name="functions" level="4">
+<description>functions-</description>
+<minoccurs>0</minoccurs>
+<node type="value" name="ElementValue" level="1">
+<nodeid>1</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="FunctionCount" level="1">
+<nodeid>2</nodeid>
+<status></status>
+</node>
+<node type="element" name="function" level="5">
+<description>function-</description>
+<node type="value" name="ElementValue" level="1">
+<nodeid>1</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="type" level="1">
+<nodeid>2</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="name" level="1">
+<nodeid>3</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="value" level="1">
+<nodeid>4</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="datatype" level="1">
+<nodeid>5</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="filename" level="1">
+<nodeid>6</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="section" level="1">
+<nodeid>7</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="casesensitive" level="1">
+<nodeid>8</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="load" level="1">
+<nodeid>9</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="key" level="1">
+<nodeid>10</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="connectionname" level="1">
+<nodeid>11</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="connectionstring" level="1">
+<nodeid>12</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="userid" level="1">
+<nodeid>13</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="password" level="1">
+<nodeid>14</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="autocommit" level="1">
+<nodeid>15</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="exd" level="1">
+<nodeid>16</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="table" level="1">
+<nodeid>17</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="field" level="1">
+<nodeid>18</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="comparetype" level="1">
+<nodeid>19</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="lvalue" level="1">
+<nodeid>20</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="rvalue" level="1">
+<nodeid>21</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="operator" level="1">
+<nodeid>22</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="variable" level="1">
+<nodeid>23</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="tracefile" level="1">
+<nodeid>24</nodeid>
+<status></status>
+</node>
+<node type="attribute" name="traceall" level="1">
+<nodeid>25</nodeid>
+<status></status>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node type="function" name="PostProcessing">
+<functions FunctionCount="1">
+<function type="Debug" variable="@currentvalue" tracefile="C:\DiCentral\DiUnite\jobs\DITEST\debug.html" traceall="Y" />
+</functions>
+</node></doc>
+</xmap>

@@ -1,0 +1,9 @@
+<xmap>
+<doc type="exd" name="Ex">
+<node type="table" name="Ex">
+<node type="field" name="Status"/>
+<node type="field" name="Message"/>
+<node type="field" name="Description"/>
+<node type="field" name="Note"/>
+</doc>
+</xmap>

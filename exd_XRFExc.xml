@@ -1,0 +1,9 @@
+<xmap>
+<doc type="exd" name="XRFExc">
+<node type="table" name="Exc">
+<node type="field" name="Segment"/>
+<node type="field" name="Descripton"/>
+<node type="field" name="Temp1"/>
+<node type="field" name="Temp2"/>
+</doc>
+</xmap>

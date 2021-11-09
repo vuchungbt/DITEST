@@ -1,0 +1,49 @@
+<xmap>
+<doc type="fftrg" name="Tgt">
+<message></message>
+<exd>../jobs/DITEST/exd_Ex.xml#Ex</exd>
+<Directory>@targetfolder</Directory>
+<FileName>@output</FileName>
+<ExdDataDependency>True</ExdDataDependency>
+<writeidentifiers>Yes</writeidentifiers>
+<TruncateTrailDelimiters>Yes</TruncateTrailDelimiters>
+<fileopenmode>w</fileopenmode>
+<AppendOutputListFile>False</AppendOutputListFile>
+<CloseFileBeforePostProcessing>False</CloseFileBeforePostProcessing>
+<node type="function" name="PreProcessing">
+<functions FunctionCount="3">
+<function type="Operatevariable" name="output" value="@Filename" datatype="Text" />
+<function type="SetDynamicName" variable="temp" format="_[C].csv" />
+<function type="Operatevariable" name="output" value="+@temp" datatype="Text" />
+</functions>
+</node><recordend>NEWLINE</recordend>
+<offsetbegin>0</offsetbegin>
+<node type="record" name="Tgt" level="1">
+<node type="field" order="1" name="Status">
+<separator>,</separator>
+<functions FunctionCount="2">
+<function type="Nextrow" exd="Ex" table="Ex"/>
+<function type="Getvalue" exd="Ex" table="Ex" field="Status"/>
+</functions>
+</node>
+<node type="field" order="2" name="Message">
+<separator>,</separator>
+<functions FunctionCount="1">
+<function type="Getvalue" exd="Ex" table="Ex" field="Message"/>
+</functions>
+</node>
+<node type="field" order="3" name="Description">
+<separator>,</separator>
+<functions FunctionCount="1">
+<function type="Getvalue" exd="Ex" table="Ex" field="Description"/>
+</functions>
+</node>
+<node type="field" order="4" name="Note">
+<separator>,</separator>
+<functions FunctionCount="1">
+<function type="Getvalue" exd="Ex" table="Ex" field="Note"/>
+</functions>
+</node>
+</node>
+</doc>
+</xmap>
