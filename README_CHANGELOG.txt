@@ -3,6 +3,9 @@ input is Jobname [OPTION] in XrefCode
 input include xrf file to get Description Segment and Element
 input include XrefCode.txt file to get Option for Message
 ==============================================
+if Input is EDIFACT standard, sourceMap Input must have variable (Setvariable/Operatevariable) name: vGroupNumber and value: [GRNumber] 
+name="vGroupNumber" value="25"
+==============================================
 1.Structured:
 [Trans]_[Name][Ver]_[Seg][Elm(2)][Sub-Elm(2)]-[O/M]-[Qual]_[Option]_[Val1]_[Val2]
 ----------------------------------------------
