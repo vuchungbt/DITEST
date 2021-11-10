@@ -3,7 +3,7 @@
 - ProfileGroup: DITEST
 - Profile: DITEST
 ************************************************************************* 
-- Project: 
+- Project: DITEST
 - Version: 
 - Description: 
 - Specification: 
