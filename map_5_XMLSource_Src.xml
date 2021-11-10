@@ -18,8 +18,8 @@
 <function type="Setvariable" name="vLookupXrf" value="@Address_Input" datatype="Text"/>
 <function type="Operatevariable" name="vLookupXrf" value="+\XRFNodeElement.txt"/>
 <function type="Operatevariable" name="vLookupPath" value="+\XRefCode.txt"/>
-<function type="Lookup" filename="@vLookupPath" section="OPTION" casesensitive="False" load="False" key="Strandard"/>
-<function type="Setvariable" name="Strandard"/>
+<function type="Lookup" filename="@vLookupPath" section="OPTION" casesensitive="False" load="False" key="Standard"/>
+<function type="Setvariable" name="Standard"/>
 <function type="Lookup" filename="@vLookupPath" section="OPTION" casesensitive="False" load="False" key="Transaction"/>
 <function type="Setvariable" name="Transaction"/>
 <function type="Lookup" filename="@vLookupPath" section="OPTION" casesensitive="False" load="False" key="Version"/>
@@ -224,7 +224,7 @@
 <node type="attribute" name="value" level="1">
 <nodeid>4</nodeid>
 <status></status>
-<functions FunctionCount="395">
+<functions FunctionCount="401">
 <function type="Setvariable" name="vValue"/>
 <function type="Setvariable" name="vStatus" value="@NULL"/>
 <function type="Setvariable" name="vNote" value="@NULL"/>
@@ -516,7 +516,10 @@
 <function type="Operatevariable" name="vResult" value="+@vPositionSubElement"/>
 <function type="EndIf" />
 <function type="If" lvalue="@vQualfAdd" rvalue="" operator="!="/>
-<function type="Operatevariable" name="vResult" value="+ (Qualifier "/>
+<function type="Operatevariable" name="vResult" value="+ ("/>
+<function type="Operatevariable" name="vResult" value="+@vSegmentElement"/>
+<function type="Operatevariable" name="vResult" value="+01"/>
+<function type="Operatevariable" name="vResult" value="+ qualifier "/>
 <function type="Operatevariable" name="vResult" value="+@vQualfAdd"/>
 <function type="Operatevariable" name="vResult" value="+)"/>
 <function type="EndIf" />
@@ -528,7 +531,10 @@
 <function type="Operatevariable" name="vResult" value="+@vPositionElement"/>
 <function type="Operatevariable" name="vResult" value="+@vPositionSubElement"/>
 <function type="If" lvalue="@vQualfAdd" rvalue="" operator="!="/>
-<function type="Operatevariable" name="vResult" value="+ (Qualifier "/>
+<function type="Operatevariable" name="vResult" value="+ ("/>
+<function type="Operatevariable" name="vResult" value="+@vSegmentElement"/>
+<function type="Operatevariable" name="vResult" value="+01"/>
+<function type="Operatevariable" name="vResult" value="+ qualifier "/>
 <function type="Operatevariable" name="vResult" value="+@vQualfAdd"/>
 <function type="Operatevariable" name="vResult" value="+)"/>
 <function type="EndIf" />
@@ -589,11 +595,11 @@
 <function type="Setvariable" name="vEqual2"/>
 <function type="Operatevariable" name="vEqual1" value="@NULL"/>
 <function type="EndIf" />
-<function type="If" lvalue="@vEqual2" rvalue="" operator="!="/>
-<function type="AndIf" lvalue="@vEqual1" rvalue="" operator="!="/>
+<function type="Operatevariable" name="vResult" value="+@vEqual1"/>
+<function type="If" lvalue="@vEqual1" rvalue="" operator="!="/>
 <function type="Operatevariable" name="vResult" value="+ or "/>
 <function type="EndIf" />
-<function type="Operatevariable" name="vResult" value="+@vEqual2"/>
+<function type="Operatevariable" name="vResult" value="+@Equal2"/>
 <function type="Operatevariable" name="vResult" value="+."/>
 <function type="If" lvalue="@vMorO" rvalue="M" operator="="/>
 <function type="Operatevariable" name="vResult" value="+|Mandatory element "/>

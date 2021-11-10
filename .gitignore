@@ -1,2 +1,8 @@
+#ignore debug
 *.html
+
+#ignore output
 *.csv
+
+#ignore backup
+*.bk
