@@ -1,0 +1,15 @@
+<xmap>
+<doc type="collectsrcfiles" name="GetMap2">
+<Filepattern>*.xml</Filepattern>
+<SourceDirectory>@Address_Source</SourceDirectory>
+<WorkingDirectory>@Address_Source</WorkingDirectory>
+<TargetDirectory>@Address_Source</TargetDirectory>
+<FileBatch>999</FileBatch>
+<Category>GetMap2</Category>
+<FileNotFoundBehavior>INFO</FileNotFoundBehavior>
+<node type="function" name="PreProcessing">
+<functions FunctionCount="1">
+<function type="Setvariable" name="vRun" value="START" />
+</functions>
+</node></doc>
+</xmap>

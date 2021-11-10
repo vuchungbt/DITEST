@@ -4,19 +4,26 @@
 <exd>../jobs/DITEST/exd_XRFExc.xml#XRFExc</exd>
 <Category>FF</Category>
 <RightTrim>true</RightTrim>
-<SkipUnknownIdentifier>True</SkipUnknownIdentifier><recordend>NEWLINE</recordend>
+<SkipUnknownIdentifier>True</SkipUnknownIdentifier>
+<recordend>NEWLINE</recordend>
 <offsetbegin>0</offsetbegin>
 <node type="record" name="Line" level="1">
 <node type="field" order="1" name="Ignore">
 <offset>0</offset>
 <length>5</length>
-<functions FunctionCount="7">
+<functions FunctionCount="13">
 <function type="Trim" />
 <function type="Setvariable" name="vIgnore"/>
 <function type="Operatevariable" name="vCount" value="+1" datatype="Integer"/>
 <function type="If" lvalue="@vCount" rvalue="1" operator="="/>
 <function type="Newrow" exd="XRFExc" table="Exc"/>
 <function type="Setvalue" exd="XRFExc" table="Exc" field="Segment" value="[SEG]"/>
+<function type="Setvariable" name="vLookupPathSrc" value="@Address_Input" datatype="Text"/>
+<function type="Operatevariable" name="vLookupPathSrc" value="+\XRefCode.txt"/>
+<function type="Lookup" filename="@vLookupPathSrc" section="OPTION" casesensitive="False" load="False" key="Jobname"/>
+<function type="Setvariable" name="Jobname"/>
+<function type="Setvariable" name="Address_Source" value="C:\DiCentral\DiUnite\jobs\"/>
+<function type="Operatevariable" name="Address_Source" value="+@Jobname"/>
 <function type="EndIf" />
 </functions>
 </node>

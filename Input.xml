@@ -2669,9 +2669,9 @@
 <function type="CheckMinMax" value="@currentvalue" min="1" max="35" ValueType="Length" checktype="[,]"/>
 <function type="If" lvalue="@currentvalue" rvalue="0" operator="=" datatype="integer"/>
 <function type="Newrow" exd="Exchange2" table="Details"/>
-<function type="Setvalue" exd="Exchange2" table="Details" field="Detail" value="INVOIC_FLACONID07A_NAD0501-M-UC_LEN_1_35"/>
+<function type="Setvalue" exd="Exchange2" table="Details" field="Detail" value="INVOIC_FLACONID07A_NAD0501-M-IV_LEN_1_35"/>
 <function type="Setvalue" exd="Exchange2" table="Details" field="Status" value="2"/>
-<function type="Setvalue" exd="Exchange2" table="Details" field="GetLine" value="@vGetLineNoNADUC"/>
+<function type="Setvalue" exd="Exchange2" table="Details" field="GetLine" value="@vGetLineNoNADIV"/>
 <function type="EndIf" />
 <function type="EndIf" />
 </functions>
@@ -6193,9 +6193,10 @@
 <nodeid>11</nodeid>
 <offset>115</offset>
 <length>3</length>
-<functions FunctionCount="10">
+<functions FunctionCount="11">
 <function type="If" lvalue="@vUNHUNT" rvalue="2" operator="&lt;" datatype="integer"/>
 <function type="AndIf" lvalue="@currentvalue" rvalue="" operator="!="/>
+<function type="AndIf" lvalue="1" rvalue="0" operator="="/>
 <function type="IsNumeric" value="@currentvalue" outputvariable="" severity="" message=""/>
 <function type="If" lvalue="@currentvalue" rvalue="0" operator="="/>
 <function type="Newrow" exd="Exchange2" table="Details"/>
@@ -6311,9 +6312,10 @@
 <nodeid>3</nodeid>
 <offset>13</offset>
 <length>10</length>
-<functions FunctionCount="10">
+<functions FunctionCount="11">
 <function type="If" lvalue="@vUNHUNT" rvalue="2" operator="&lt;" datatype="integer"/>
 <function type="AndIf" lvalue="@currentvalue" rvalue="" operator="!="/>
+<function type="AndIf" lvalue="1" rvalue="0" operator="="/>
 <function type="IsNumeric" value="@currentvalue" outputvariable="" severity="" message=""/>
 <function type="If" lvalue="@currentvalue" rvalue="0" operator="="/>
 <function type="Newrow" exd="Exchange2" table="Details"/>
@@ -8509,11 +8511,12 @@
 <nodeid>1</nodeid>
 <offset>4</offset>
 <length>6</length>
-<functions FunctionCount="7">
+<functions FunctionCount="8">
 <function type="If" lvalue="@vUNHUNT" rvalue="2" operator="&lt;" datatype="integer"/>
 <function type="GetLineNumber" />
 <function type="Setvariable" name="vGetLineNoLIN"/>
 <function type="Operatevariable" name="vGetLineNoLIN" value="+@vGetlinenumber" datatype="Integer"/>
+<function type="Operatevariable" name="vGroupNumber" value="25"/>
 <function type="EndIf" />
 <function type="Setvariable" name="ItemError" value="1" datatype="Integer"/>
 <function type="Setvariable" name="ItemCheck" value="0" datatype="Integer"/>
@@ -8524,7 +8527,7 @@
 <nodeid>2</nodeid>
 <offset>10</offset>
 <length>6</length>
-<functions FunctionCount="73">
+<functions FunctionCount="74">
 <function type="Find" String="&apos;" Replace="All" ReplaceString="&apos;&apos;"/>
 <function type="Setvariable" name="LIN01"/>
 <function type="Setvariable" name="TaRefID"/>
@@ -8533,6 +8536,7 @@
 <function type="AndIf" lvalue="@LIN01" rvalue="" operator="!="/>
 <function type="IsNumeric" value="@LIN01" outputvariable="" severity="" message=""/>
 <function type="If" lvalue="@currentvalue" rvalue="0" operator="="/>
+<function type="AndIf" lvalue="1" rvalue="0" operator="="/>
 <function type="Newrow" exd="Exchange2" table="Details"/>
 <function type="Setvalue" exd="Exchange2" table="Details" field="Detail" value="INVOIC_FLACONID07A_LIN01_ISNUMBER"/>
 <function type="Setvalue" exd="Exchange2" table="Details" field="Status" value="2"/>
@@ -8540,7 +8544,7 @@
 <function type="EndIf" />
 <function type="EndIf" />
 <function type="If" lvalue="@vUNHUNT" rvalue="2" operator="&lt;" datatype="integer"/>
-<function type="AndIf" lvalue="NULL" rvalue="" operator="!="/>
+<function type="AndIf" lvalue="NULL" rvalue="" operator="="/>
 <function type="If" lvalue="@vCustomerid" rvalue="" operator="!="/>
 <function type="Operatevariable" name="vCrossRefSQL" value="@vCrossRefSQLtmp"/>
 <function type="Operatevariable" name="vCrossRefSQL" value="+ and ta_ref_id=&apos;54&apos;"/>
@@ -8714,11 +8718,12 @@
 <nodeid>1</nodeid>
 <offset>4</offset>
 <length>6</length>
-<functions FunctionCount="5">
+<functions FunctionCount="6">
 <function type="If" lvalue="@vUNHUNT" rvalue="2" operator="&lt;" datatype="integer"/>
 <function type="GetLineNumber" />
 <function type="Setvariable" name="vGetLineNoPIA"/>
 <function type="Operatevariable" name="vGetLineNoPIA" value="+@vGetlinenumber" datatype="Integer"/>
+<function type="Operatevariable" name="vGroupNumber" value="25"/>
 <function type="EndIf" />
 </functions>
 </node>
@@ -9027,11 +9032,12 @@
 <nodeid>1</nodeid>
 <offset>4</offset>
 <length>6</length>
-<functions FunctionCount="5">
+<functions FunctionCount="6">
 <function type="If" lvalue="@vUNHUNT" rvalue="2" operator="&lt;" datatype="integer"/>
 <function type="GetLineNumber" />
 <function type="Setvariable" name="vGetLineNoIMD"/>
 <function type="Operatevariable" name="vGetLineNoIMD" value="+@vGetlinenumber" datatype="Integer"/>
+<function type="Operatevariable" name="vGroupNumber" value="25"/>
 <function type="EndIf" />
 </functions>
 </node>
@@ -12563,7 +12569,7 @@
 <function type="AndIf" lvalue="@currentvalue" rvalue="25" operator="!="/>
 <function type="AndIf" lvalue="@currentvalue" rvalue="131" operator="!="/>
 <function type="Newrow" exd="Exchange2" table="Details"/>
-<function type="Setvalue" exd="Exchange2" table="Details" field="Detail" value="INVOIC_FLACONID07A_PCD0101-M_EQUAL_LIST_MOA0101"/>
+<function type="Setvalue" exd="Exchange2" table="Details" field="Detail" value="INVOIC_FLACONID07A_MOA0101-M_EQUAL_LIST_MOA0101"/>
 <function type="Setvalue" exd="Exchange2" table="Details" field="Status" value="2"/>
 <function type="Setvalue" exd="Exchange2" table="Details" field="GetLine" value="@vGetLineNoALCMOA"/>
 <function type="EndIf" />

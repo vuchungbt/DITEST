@@ -12,17 +12,25 @@
 <component>FFTRG.dll</component>
 <metainfo>../jobs/DITEST/map_3_FlatFileTarget_XRFtoLookup.xml#XRFtoLookup</metainfo>
 </node>
+<node type="task" name="GetMap2">
+<component>COLLECTSRCFILES.dll</component>
+<metainfo>../jobs/DITEST/map_4_CollectSourceFiles_GetMap2.xml#GetMap2</metainfo>
+</node>
+<node type="task" name="GetMap2">
+<component>FFSRC.dll</component>
+<metainfo>../jobs/DITEST/map_5_FlatFileSource_GetMap2.xml#GetMap2</metainfo>
+</node>
 <node type="task" name="Files">
 <component>COLLECTSRCFILES.dll</component>
-<metainfo>../jobs/DITEST/map_4_CollectSourceFiles_Files.xml#Files</metainfo>
+<metainfo>../jobs/DITEST/map_6_CollectSourceFiles_Files.xml#Files</metainfo>
 </node>
 <node type="task" name="Src">
 <component>XMLSRC.dll</component>
-<metainfo>../jobs/DITEST/map_5_XMLSource_Src.xml#Src</metainfo>
+<metainfo>../jobs/DITEST/map_7_XMLSource_Src.xml#Src</metainfo>
 </node>
 <node type="task" name="Tgt">
 <component>FFTRG.dll</component>
-<metainfo>../jobs/DITEST/map_6_FlatFileTarget_Tgt.xml#Tgt</metainfo>
+<metainfo>../jobs/DITEST/map_8_FlatFileTarget_Tgt.xml#Tgt</metainfo>
 </node>
 </doc>
 </xmap>

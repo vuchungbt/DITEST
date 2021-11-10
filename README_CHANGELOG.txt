@@ -1,5 +1,5 @@
 Use to get and write Message field to CSV file
-input is Map_2 in Unite jobs DITEST
+input is Jobname [OPTION] in XrefCode
 input include xrf file to get Description Segment and Element
 input include XrefCode.txt file to get Option for Message
 ==============================================

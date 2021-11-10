@@ -6,3 +6,5 @@
 
 #ignore backup
 *.bk
+#ignore Input
+Input.xml

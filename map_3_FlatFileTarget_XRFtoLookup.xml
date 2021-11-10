@@ -9,7 +9,8 @@
 <TruncateTrailDelimiters>Yes</TruncateTrailDelimiters>
 <fileopenmode>w</fileopenmode>
 <AppendOutputListFile>False</AppendOutputListFile>
-<CloseFileBeforePostProcessing>False</CloseFileBeforePostProcessing><recordend>NEWLINE</recordend>
+<CloseFileBeforePostProcessing>False</CloseFileBeforePostProcessing>
+<recordend>NEWLINE</recordend>
 <offsetbegin>0</offsetbegin>
 <node type="record" name="Line" level="1">
 <node type="field" order="1" name="Segment">

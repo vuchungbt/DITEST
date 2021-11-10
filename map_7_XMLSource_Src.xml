@@ -2,7 +2,8 @@
 <doc type="xmlsrc" name="Src">
 <message></message>
 <exd>../jobs/DITEST/exd_Ex.xml#Ex</exd>
-<FileCategory>XML</FileCategory><node type="element" name="xmap" level="1">
+<FileCategory>XML</FileCategory>
+<node type="element" name="xmap" level="1">
 <description>xmap-</description>
 <node type="value" name="ElementValue" level="1">
 <nodeid>1</nodeid>
@@ -86,6 +87,9 @@
 <node type="value" name="ElementValue" level="1">
 <nodeid>1</nodeid>
 <status></status>
+<functions FunctionCount="1">
+<function type="Setvariable" name="GroupNumber" value="NONE"/>
+</functions>
 </node>
 <node type="attribute" name="type" level="1">
 <nodeid>2</nodeid>
@@ -203,7 +207,8 @@
 <node type="attribute" name="type" level="1">
 <nodeid>2</nodeid>
 <status></status>
-<functions FunctionCount="11">
+<functions FunctionCount="12">
+<function type="Setvariable" name="vType"/>
 <function type="Setvariable" name="vValue" value="@NULL"/>
 <function type="Setvariable" name="vField" value="@NULL"/>
 <function type="Setvariable" name="vQualfAdd" value="@NULL"/>
@@ -220,14 +225,26 @@
 <node type="attribute" name="name" level="1">
 <nodeid>3</nodeid>
 <status></status>
+<functions FunctionCount="1">
+<function type="Setvariable" name="vName"/>
+</functions>
 </node>
 <node type="attribute" name="value" level="1">
 <nodeid>4</nodeid>
 <status></status>
-<functions FunctionCount="401">
+<functions FunctionCount="418">
 <function type="Setvariable" name="vValue"/>
 <function type="Setvariable" name="vStatus" value="@NULL"/>
 <function type="Setvariable" name="vNote" value="@NULL"/>
+<function type="If" lvalue="@Standard" rvalue="EDIFACT" operator="="/>
+<function type="If" lvalue="@vType" rvalue="Operatevariable" operator="="/>
+<function type="OrIf" lvalue="@vType" rvalue="Setvariable" operator="="/>
+<function type="If" lvalue="@vName" rvalue="vGroupNumber" operator="="/>
+<function type="AndIf" lvalue="@vValue" rvalue="" operator="!="/>
+<function type="Setvariable" name="GroupNumber" value="@vValue"/>
+<function type="EndIf" />
+<function type="EndIf" />
+<function type="EndIf" />
 <function type="If" lvalue="@vField" rvalue="Detail" operator="="/>
 <function type="If" lvalue="@vValue" rvalue="" operator="!="/>
 <function type="DelimitedMid" value="@vValue" fieldseparator="_" fieldno="2"/>
@@ -347,7 +364,9 @@
 <function type="Operatevariable" name="vResult" value="+)"/>
 <function type="EndIf" />
 <function type="If" lvalue="@Standard" rvalue="EDIFACT" operator="="/>
-<function type="Operatevariable" name="vResult" value="+ in segment group [--GR number--] "/>
+<function type="AndIf" lvalue="@GroupNumber" rvalue="NONE" operator="!="/>
+<function type="Operatevariable" name="vResult" value="+ in segment group "/>
+<function type="Operatevariable" name="vResult" value="+@GroupNumber"/>
 <function type="Operatevariable" name="vStatus" value="ERROR"/>
 <function type="Operatevariable" name="vNote" value="Not found Group Number of Segment"/>
 <function type="EndIf" />
@@ -404,7 +423,9 @@
 <function type="Operatevariable" name="vResult" value="+)"/>
 <function type="EndIf" />
 <function type="If" lvalue="@Standard" rvalue="EDIFACT" operator="="/>
-<function type="Operatevariable" name="vResult" value="+ in segment group [--GR number--] "/>
+<function type="AndIf" lvalue="@GroupNumber" rvalue="NONE" operator="!="/>
+<function type="Operatevariable" name="vResult" value="+ in segment group "/>
+<function type="Operatevariable" name="vResult" value="+@GroupNumber"/>
 <function type="Operatevariable" name="vStatus" value="ERROR"/>
 <function type="Operatevariable" name="vNote" value="Not found Group Number of Segment"/>
 <function type="EndIf" />
@@ -467,7 +488,9 @@
 <function type="Operatevariable" name="vResult" value="+)"/>
 <function type="EndIf" />
 <function type="If" lvalue="@Standard" rvalue="EDIFACT" operator="="/>
-<function type="Operatevariable" name="vResult" value="+ in segment group [--GR number--] "/>
+<function type="AndIf" lvalue="@GroupNumber" rvalue="NONE" operator="!="/>
+<function type="Operatevariable" name="vResult" value="+ in segment group "/>
+<function type="Operatevariable" name="vResult" value="+@GroupNumber"/>
 <function type="EndIf" />
 <function type="Operatevariable" name="vResult" value="+ must match the data found in "/>
 <function type="Operatevariable" name="vResult" value="+@vSegmentElement"/>
@@ -524,7 +547,9 @@
 <function type="Operatevariable" name="vResult" value="+)"/>
 <function type="EndIf" />
 <function type="If" lvalue="@Standard" rvalue="EDIFACT" operator="="/>
-<function type="Operatevariable" name="vResult" value="+ in segment group [--GR number--] "/>
+<function type="AndIf" lvalue="@GroupNumber" rvalue="NONE" operator="!="/>
+<function type="Operatevariable" name="vResult" value="+ in segment group "/>
+<function type="Operatevariable" name="vResult" value="+@GroupNumber"/>
 <function type="EndIf" />
 <function type="Operatevariable" name="vResult" value="+ must match the data found in "/>
 <function type="Operatevariable" name="vResult" value="+@vSegmentElement"/>
@@ -860,9 +885,5 @@
 </node>
 </node>
 </node>
-<node type="function" name="PostProcessing">
-<functions FunctionCount="1">
-<function type="Debug" variable="@currentvalue" tracefile="C:\DiCentral\DiUnite\jobs\DITEST\debug.html" traceall="Y" />
-</functions>
-</node></doc>
+</doc>
 </xmap>

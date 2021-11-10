@@ -1,64 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DiUniteSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<DiUniteSchema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Components>
     <Project>
       <Name>DITEST</Name>
       <PartnerName />
-      <Content>&lt;Sequence mc:Ignorable="sads sap" sap:VirtualizedContainerService.HintSize="403,718" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces"
- xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
- xmlns:dusv="clr-namespace:DiCentral.Unite.Studio.ViewModel;assembly=DiCentral.Unite.Studio"
- xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
- xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
- xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
- xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
- xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
- xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System"
- xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
-  &lt;sap:WorkflowViewStateService.ViewState&gt;
-    &lt;scg:Dictionary x:TypeArguments="x:String, x:Object"&gt;
-      &lt;x:Boolean x:Key="IsExpanded"&gt;True&lt;/x:Boolean&gt;
-    &lt;/scg:Dictionary&gt;
-  &lt;/sap:WorkflowViewStateService.ViewState&gt;
-  &lt;dusv:CollectSourceFileViewModel ComponentModel="{x:Null}" ActionComponent="New" DisplayName="Collect Source Files" sap:VirtualizedContainerService.HintSize="381,63" ID="4" IsLoadListMap="True" PostProcessing="" PreProcessing="" TaskComponentName="Collect Source Files" TaskName="XRF" TaskNamePre="" TaskNumber="4"&gt;
-    &lt;dusv:CollectSourceFileViewModel.TaskNameList&gt;
-      &lt;sco:ObservableCollection x:TypeArguments="x:String" /&gt;
-    &lt;/dusv:CollectSourceFileViewModel.TaskNameList&gt;
-  &lt;/dusv:CollectSourceFileViewModel&gt;
-  &lt;dusv:FlatFileSourceViewModel ComponentModel="{x:Null}" ActionComponent="New" DisplayName="Flat File Source" sap:VirtualizedContainerService.HintSize="381,67" ID="5" IsLoadListMap="True" PostProcessing="" PreProcessing="" TaskComponentName="Flat File Source" TaskName="XRFMap" TaskNamePre="" TaskNumber="5"&gt;
-    &lt;dusv:FlatFileSourceViewModel.TaskNameList&gt;
-      &lt;x:String&gt;XRFMap&lt;/x:String&gt;
-    &lt;/dusv:FlatFileSourceViewModel.TaskNameList&gt;
-  &lt;/dusv:FlatFileSourceViewModel&gt;
-  &lt;dusv:FlatFileTargetViewModel ComponentModel="{x:Null}" ActionComponent="New" DisplayName="Flat File Target" sap:VirtualizedContainerService.HintSize="381,67" ID="6" IsLoadListMap="True" PostProcessing="" PreProcessing="" TaskComponentName="Flat File Target" TaskName="XRFtoLookup" TaskNamePre="" TaskNumber="6"&gt;
-    &lt;dusv:FlatFileTargetViewModel.TaskNameList&gt;
-      &lt;x:String&gt;Tgt&lt;/x:String&gt;
-      &lt;x:String&gt;XRFtoLookup&lt;/x:String&gt;
-    &lt;/dusv:FlatFileTargetViewModel.TaskNameList&gt;
-  &lt;/dusv:FlatFileTargetViewModel&gt;
-  &lt;dusv:CollectSourceFileViewModel ComponentModel="{x:Null}" ActionComponent="Reload" DisplayName="Collect Source Files" sap:VirtualizedContainerService.HintSize="381,63" ID="1" IsLoadListMap="True" PostProcessing="" PreProcessing="" TaskComponentName="Collect Source Files" TaskName="Files" TaskNamePre="" TaskNumber="1"&gt;
-    &lt;dusv:CollectSourceFileViewModel.TaskNameList&gt;
-      &lt;sco:ObservableCollection x:TypeArguments="x:String" /&gt;
-    &lt;/dusv:CollectSourceFileViewModel.TaskNameList&gt;
-  &lt;/dusv:CollectSourceFileViewModel&gt;
-  &lt;dusv:XMLSourceViewModel ComponentModel="{x:Null}" ActionComponent="Reload" DisplayName="XML Source" sap:VirtualizedContainerService.HintSize="381,67" ID="2" IsLoadListMap="True" PostProcessing="" PreProcessing="" TaskComponentName="XML Source" TaskName="Src" TaskNamePre="" TaskNumber="2"&gt;
-    &lt;dusv:XMLSourceViewModel.TaskNameList&gt;
-      &lt;x:String&gt;Src&lt;/x:String&gt;
-    &lt;/dusv:XMLSourceViewModel.TaskNameList&gt;
-  &lt;/dusv:XMLSourceViewModel&gt;
-  &lt;dusv:FlatFileTargetViewModel ComponentModel="{x:Null}" ActionComponent="Reload" DisplayName="Flat File Target" sap:VirtualizedContainerService.HintSize="381,67" ID="3" IsLoadListMap="True" PostProcessing="" PreProcessing="" TaskComponentName="Flat File Target" TaskName="Tgt" TaskNamePre="" TaskNumber="3"&gt;
-    &lt;dusv:FlatFileTargetViewModel.TaskNameList&gt;
-      &lt;x:String&gt;Tgt&lt;/x:String&gt;
-      &lt;x:String&gt;XRFtoLookup&lt;/x:String&gt;
-    &lt;/dusv:FlatFileTargetViewModel.TaskNameList&gt;
-  &lt;/dusv:FlatFileTargetViewModel&gt;
-&lt;/Sequence&gt;</Content>
+      <Content>&lt;Sequence mc:Ignorable="sap sads" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces" 
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" 
+ xmlns:dusv="clr-namespace:DiCentral.Unite.Studio.ViewModel;assembly=DiCentral.Unite.Studio" 
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+ xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" 
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" 
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" 
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" 
+ xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System" 
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt; 
+ &lt;sap:WorkflowViewStateService.ViewState&gt; 
+ &lt;scg:Dictionary x:TypeArguments="x:String, x:Object"&gt; 
+ &lt;x:Boolean x:Key="IsExpanded"&gt;True&lt;/x:Boolean&gt; 
+ &lt;/scg:Dictionary&gt; 
+ &lt;/sap:WorkflowViewStateService.ViewState&gt; 
+ &lt;dusv:CollectSourceFileViewModel ActionComponent="Reload" ID="4" TaskNumber="1" PreProcessing="" PostProcessing="" TaskName="XRF"&gt; 
+ &lt;dusv:CollectSourceFileViewModel.TaskNameList&gt; 
+ &lt;sco:ObservableCollection x:TypeArguments="x:String"/&gt; 
+ &lt;/dusv:CollectSourceFileViewModel.TaskNameList&gt; 
+ &lt;/dusv:CollectSourceFileViewModel&gt; 
+ &lt;dusv:FlatFileSourceViewModel ActionComponent="Reload" ID="5" TaskNumber="2" PreProcessing="" PostProcessing="" TaskName="XRFMap"&gt; 
+ &lt;dusv:FlatFileSourceViewModel.TaskNameList&gt; 
+ &lt;x:String&gt;XRFMap&lt;/x:String&gt; 
+ &lt;x:String&gt;GetMap2&lt;/x:String&gt; 
+ &lt;/dusv:FlatFileSourceViewModel.TaskNameList&gt; 
+ &lt;/dusv:FlatFileSourceViewModel&gt; 
+ &lt;dusv:FlatFileTargetViewModel ActionComponent="Reload" ID="6" TaskNumber="3" PreProcessing="" PostProcessing="" TaskName="XRFtoLookup"&gt; 
+ &lt;dusv:FlatFileTargetViewModel.TaskNameList&gt; 
+ &lt;x:String&gt;Tgt&lt;/x:String&gt; 
+ &lt;x:String&gt;XRFtoLookup&lt;/x:String&gt; 
+ &lt;/dusv:FlatFileTargetViewModel.TaskNameList&gt; 
+ &lt;/dusv:FlatFileTargetViewModel&gt; 
+ &lt;dusv:CollectSourceFileViewModel ActionComponent="Reload" ID="7" TaskNumber="4" PreProcessing="" PostProcessing="" TaskName="GetMap2"&gt; 
+ &lt;dusv:CollectSourceFileViewModel.TaskNameList&gt; 
+ &lt;sco:ObservableCollection x:TypeArguments="x:String"/&gt; 
+ &lt;/dusv:CollectSourceFileViewModel.TaskNameList&gt; 
+ &lt;/dusv:CollectSourceFileViewModel&gt; 
+ &lt;dusv:FlatFileSourceViewModel ActionComponent="Reload" ID="8" TaskNumber="5" PreProcessing="" PostProcessing="" TaskName="GetMap2"&gt; 
+ &lt;dusv:FlatFileSourceViewModel.TaskNameList&gt; 
+ &lt;x:String&gt;XRFMap&lt;/x:String&gt; 
+ &lt;x:String&gt;GetMap2&lt;/x:String&gt; 
+ &lt;/dusv:FlatFileSourceViewModel.TaskNameList&gt; 
+ &lt;/dusv:FlatFileSourceViewModel&gt; 
+ &lt;dusv:CollectSourceFileViewModel ActionComponent="Reload" ID="1" TaskNumber="6" PreProcessing="" PostProcessing="" TaskName="Files"&gt; 
+ &lt;dusv:CollectSourceFileViewModel.TaskNameList&gt; 
+ &lt;sco:ObservableCollection x:TypeArguments="x:String"/&gt; 
+ &lt;/dusv:CollectSourceFileViewModel.TaskNameList&gt; 
+ &lt;/dusv:CollectSourceFileViewModel&gt; 
+ &lt;dusv:XMLSourceViewModel ActionComponent="Reload" ID="2" TaskNumber="7" PreProcessing="" PostProcessing="" TaskName="Src"&gt; 
+ &lt;dusv:XMLSourceViewModel.TaskNameList&gt; 
+ &lt;x:String&gt;Src&lt;/x:String&gt; 
+ &lt;/dusv:XMLSourceViewModel.TaskNameList&gt; 
+ &lt;/dusv:XMLSourceViewModel&gt; 
+ &lt;dusv:FlatFileTargetViewModel ActionComponent="Reload" ID="3" TaskNumber="8" PreProcessing="" PostProcessing="" TaskName="Tgt"&gt; 
+ &lt;dusv:FlatFileTargetViewModel.TaskNameList&gt; 
+ &lt;x:String&gt;Tgt&lt;/x:String&gt; 
+ &lt;x:String&gt;XRFtoLookup&lt;/x:String&gt; 
+ &lt;/dusv:FlatFileTargetViewModel.TaskNameList&gt; 
+ &lt;/dusv:FlatFileTargetViewModel&gt; 
+ &lt;/Sequence&gt;</Content>
       <Tasks>
         <Task>
           <Name>Files</Name>
           <Id>1</Id>
-          <Number>4</Number>
+          <Number>6</Number>
           <Component>Collect Source Files</Component>
-          <Preprocess>&lt;Filepattern&gt;@Input&lt;/Filepattern&gt;
+          <Preprocess>&lt;Filepattern&gt;@SourceInputMap2&lt;/Filepattern&gt;
 &lt;SourceDirectory&gt;@Address_Input&lt;/SourceDirectory&gt;
 &lt;WorkingDirectory&gt;@Address_Input&lt;/WorkingDirectory&gt;
 &lt;TargetDirectory&gt;@Address_Input&lt;/TargetDirectory&gt;
@@ -71,21 +83,16 @@
         <Task>
           <Name>Src</Name>
           <Id>2</Id>
-          <Number>5</Number>
+          <Number>7</Number>
           <Component>XML Source</Component>
           <Preprocess>&lt;FileCategory&gt;XML&lt;/FileCategory&gt;
 </Preprocess>
-          <Postprocess>&lt;node type="function" name="PostProcessing"&gt;
-&lt;functions FunctionCount="1"&gt;
-&lt;function type="Debug" variable="@currentvalue" tracefile="C:\DiCentral\DiUnite\jobs\DITEST\debug.html" traceall="Y" /&gt;
-&lt;/functions&gt;
-&lt;/node&gt;
-</Postprocess>
+          <Postprocess />
         </Task>
         <Task>
           <Name>Tgt</Name>
           <Id>3</Id>
-          <Number>6</Number>
+          <Number>8</Number>
           <Component>Flat File Target</Component>
           <Preprocess>&lt;Directory&gt;@targetfolder&lt;/Directory&gt;
 &lt;FileName&gt;@output&lt;/FileName&gt;
@@ -144,6 +151,37 @@
 &lt;fileopenmode&gt;w&lt;/fileopenmode&gt;
 &lt;AppendOutputListFile&gt;False&lt;/AppendOutputListFile&gt;
 &lt;CloseFileBeforePostProcessing&gt;False&lt;/CloseFileBeforePostProcessing&gt;
+</Preprocess>
+          <Postprocess />
+        </Task>
+        <Task>
+          <Name>GetMap2</Name>
+          <Id>7</Id>
+          <Number>4</Number>
+          <Component>Collect Source Files</Component>
+          <Preprocess>&lt;Filepattern&gt;*.xml&lt;/Filepattern&gt;
+&lt;SourceDirectory&gt;@Address_Source&lt;/SourceDirectory&gt;
+&lt;WorkingDirectory&gt;@Address_Source&lt;/WorkingDirectory&gt;
+&lt;TargetDirectory&gt;@Address_Source&lt;/TargetDirectory&gt;
+&lt;FileBatch&gt;999&lt;/FileBatch&gt;
+&lt;Category&gt;GetMap2&lt;/Category&gt;
+&lt;FileNotFoundBehavior&gt;INFO&lt;/FileNotFoundBehavior&gt;
+&lt;node type="function" name="PreProcessing"&gt;
+&lt;functions FunctionCount="1"&gt;
+&lt;function type="Setvariable" name="vRun" value="START" /&gt;
+&lt;/functions&gt;
+&lt;/node&gt;
+</Preprocess>
+          <Postprocess />
+        </Task>
+        <Task>
+          <Name>GetMap2</Name>
+          <Id>8</Id>
+          <Number>5</Number>
+          <Component>Flat File Source</Component>
+          <Preprocess>&lt;Category&gt;GetMap2&lt;/Category&gt;
+&lt;RightTrim&gt;true&lt;/RightTrim&gt;
+&lt;SkipUnknownIdentifier&gt;True&lt;/SkipUnknownIdentifier&gt;
 </Preprocess>
           <Postprocess />
         </Task>
@@ -1693,7 +1731,7 @@
           <NodeId>2</NodeId>
           <NodeDetailId>1</NodeDetailId>
           <Order>5</Order>
-          <Parameters>filename="@vLookupPath" section="OPTION" casesensitive="False" load="False" key="Strandard"</Parameters>
+          <Parameters>filename="@vLookupPath" section="OPTION" casesensitive="False" load="False" key="Standard"</Parameters>
         </FunctionNode>
         <FunctionNode>
           <Name>Lookup</Name>
@@ -1765,7 +1803,7 @@
           <NodeId>2</NodeId>
           <NodeDetailId>1</NodeDetailId>
           <Order>6</Order>
-          <Parameters>name="Strandard"</Parameters>
+          <Parameters>name="Standard"</Parameters>
         </FunctionNode>
         <FunctionNode>
           <Name>Setvariable</Name>
@@ -1782,6 +1820,14 @@
           <NodeDetailId>1</NodeDetailId>
           <Order>3</Order>
           <Parameters>name="vLookupXrf" value="+\XRFNodeElement.txt"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>675</Id>
+          <NodeId>8</NodeId>
+          <NodeDetailId>1</NodeDetailId>
+          <Order>1</Order>
+          <Parameters>name="GroupNumber" value="NONE"</Parameters>
         </FunctionNode>
         <FunctionNode>
           <Name>Setvariable</Name>
@@ -1924,7 +1970,7 @@
           <Id>17</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>2</NodeDetailId>
-          <Order>1</Order>
+          <Order>2</Order>
           <Parameters>name="vValue" value="@NULL"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -1932,7 +1978,7 @@
           <Id>18</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>2</NodeDetailId>
-          <Order>2</Order>
+          <Order>3</Order>
           <Parameters>name="vField" value="@NULL"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -1940,7 +1986,7 @@
           <Id>322</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>2</NodeDetailId>
-          <Order>3</Order>
+          <Order>4</Order>
           <Parameters>name="vQualfAdd" value="@NULL"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -1948,7 +1994,7 @@
           <Id>323</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>2</NodeDetailId>
-          <Order>4</Order>
+          <Order>5</Order>
           <Parameters>name="vPositionSubElement" value="@NULL"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -1956,7 +2002,7 @@
           <Id>324</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>2</NodeDetailId>
-          <Order>5</Order>
+          <Order>6</Order>
           <Parameters>name="vPositionElementAndSub" value="@NULL"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -1964,7 +2010,7 @@
           <Id>325</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>2</NodeDetailId>
-          <Order>6</Order>
+          <Order>7</Order>
           <Parameters>name="vSegmentElement" value="@NULL"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -1972,7 +2018,7 @@
           <Id>326</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>2</NodeDetailId>
-          <Order>7</Order>
+          <Order>8</Order>
           <Parameters>name="vMorO" value="@NULL"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -1980,7 +2026,7 @@
           <Id>327</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>2</NodeDetailId>
-          <Order>8</Order>
+          <Order>9</Order>
           <Parameters>name="Element" value="@NULL"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -1988,7 +2034,7 @@
           <Id>328</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>2</NodeDetailId>
-          <Order>9</Order>
+          <Order>10</Order>
           <Parameters>name="vSet3" value="@NULL"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -1996,7 +2042,7 @@
           <Id>329</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>2</NodeDetailId>
-          <Order>10</Order>
+          <Order>11</Order>
           <Parameters>name="vSet4" value="@NULL"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2004,8 +2050,24 @@
           <Id>330</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>2</NodeDetailId>
-          <Order>11</Order>
+          <Order>12</Order>
           <Parameters>name="vResult" value="@NULL"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>647</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>2</NodeDetailId>
+          <Order>1</Order>
+          <Parameters>name="vType"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>648</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>3</NodeDetailId>
+          <Order>1</Order>
+          <Parameters>name="vName"</Parameters>
         </FunctionNode>
         <FunctionNode>
           <Name>Setvariable</Name>
@@ -2020,7 +2082,7 @@
           <Id>91</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>5</Order>
+          <Order>14</Order>
           <Parameters>content="----------------Write variable message-----------------------------"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2028,7 +2090,7 @@
           <Id>92</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>6</Order>
+          <Order>15</Order>
           <Parameters>lvalue="@vValue" rvalue="" operator="!="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2036,7 +2098,7 @@
           <Id>93</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>12</Order>
+          <Order>21</Order>
           <Parameters>value="@vValue" fieldseparator="_" fieldno="3"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2044,7 +2106,7 @@
           <Id>94</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>13</Order>
+          <Order>22</Order>
           <Parameters>name="Element"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2052,7 +2114,7 @@
           <Id>95</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>14</Order>
+          <Order>23</Order>
           <Parameters>content="-------------Detail Element--------------"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2060,7 +2122,7 @@
           <Id>96</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>15</Order>
+          <Order>24</Order>
           <Parameters>value="@Element" fieldseparator="-" fieldno="1"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2068,7 +2130,7 @@
           <Id>97</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>16</Order>
+          <Order>25</Order>
           <Parameters>name="vQualifier"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2076,7 +2138,7 @@
           <Id>98</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>56</Order>
+          <Order>65</Order>
           <Parameters>value="@Element" fieldseparator="-" fieldno="2"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2084,7 +2146,7 @@
           <Id>99</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>57</Order>
+          <Order>66</Order>
           <Parameters>name="vMorO"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2092,7 +2154,7 @@
           <Id>100</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>82</Order>
+          <Order>91</Order>
           <Parameters>value="@vValue" fieldseparator="_" fieldno="4"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2100,7 +2162,7 @@
           <Id>101</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>83</Order>
+          <Order>92</Order>
           <Parameters>name="vSet3"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2108,7 +2170,7 @@
           <Id>102</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>96</Order>
+          <Order>106</Order>
           <Parameters>content="------------------------Start Message: Result---------------------------"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2116,7 +2178,7 @@
           <Id>103</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>97</Order>
+          <Order>107</Order>
           <Parameters>lvalue="@vSet3" rvalue="LEN" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2124,7 +2186,7 @@
           <Id>104</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>98</Order>
+          <Order>108</Order>
           <Parameters>value="@vValue" fieldseparator="_" fieldno="5"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2132,7 +2194,7 @@
           <Id>105</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>99</Order>
+          <Order>109</Order>
           <Parameters>name="vMin"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2140,7 +2202,7 @@
           <Id>106</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>100</Order>
+          <Order>110</Order>
           <Parameters>value="@vValue" fieldseparator="_" fieldno="6"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2148,7 +2210,7 @@
           <Id>107</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>101</Order>
+          <Order>111</Order>
           <Parameters>name="vMax"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2156,7 +2218,7 @@
           <Id>108</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>110</Order>
+          <Order>165</Order>
           <Parameters>lvalue="@vSet3" rvalue="EQUAL" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2164,7 +2226,7 @@
           <Id>109</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>111</Order>
+          <Order>166</Order>
           <Parameters>value="@vValue" fieldseparator="_" fieldno="5"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2172,7 +2234,7 @@
           <Id>110</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>112</Order>
+          <Order>167</Order>
           <Parameters>name="vEqual1"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2180,7 +2242,7 @@
           <Id>114</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>115</Order>
+          <Order>170</Order>
           <Parameters>lvalue="@vEqual1" rvalue="LIST" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2188,7 +2250,7 @@
           <Id>115</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>125</Order>
+          <Order>180</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -2196,7 +2258,7 @@
           <Id>116</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>172</Order>
+          <Order>229</Order>
           <Parameters>lvalue="@vSet3" rvalue="REQUIRED" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2204,7 +2266,7 @@
           <Id>117</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>173</Order>
+          <Order>230</Order>
           <Parameters>name="Required" value="True"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2212,7 +2274,7 @@
           <Id>118</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>174</Order>
+          <Order>243</Order>
           <Parameters>lvalue="@vSet3" rvalue="DBCHECK" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2220,7 +2282,7 @@
           <Id>119</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>175</Order>
+          <Order>244</Order>
           <Parameters>name="DBCheck" value="True"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2228,7 +2290,7 @@
           <Id>120</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>233</Order>
+          <Order>304</Order>
           <Parameters>lvalue="@vSet3" rvalue="DBCHECK_BLANK" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2236,7 +2298,7 @@
           <Id>121</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>234</Order>
+          <Order>305</Order>
           <Parameters>name="DBCheck_Blank" value="True"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2244,7 +2306,7 @@
           <Id>122</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>290</Order>
+          <Order>369</Order>
           <Parameters>lvalue="@vSet3" rvalue="MAX" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2252,7 +2314,7 @@
           <Id>123</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>291</Order>
+          <Order>370</Order>
           <Parameters>name="Max" value="True"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2260,7 +2322,7 @@
           <Id>124</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>292</Order>
+          <Order>383</Order>
           <Parameters>lvalue="@vSet3" rvalue="NOT" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2268,7 +2330,7 @@
           <Id>125</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>293</Order>
+          <Order>384</Order>
           <Parameters>name="Not" value="True"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2276,7 +2338,7 @@
           <Id>126</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>294</Order>
+          <Order>429</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -2284,7 +2346,7 @@
           <Id>127</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>295</Order>
+          <Order>430</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -2292,7 +2354,7 @@
           <Id>128</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>296</Order>
+          <Order>431</Order>
           <Parameters>content="----------------Set message--------------------------------"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2300,7 +2362,7 @@
           <Id>129</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>297</Order>
+          <Order>432</Order>
           <Parameters>lvalue="@vField" rvalue="Detail" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2308,7 +2370,7 @@
           <Id>130</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>298</Order>
+          <Order>433</Order>
           <Parameters>lvalue="@vValue" rvalue="" operator="!="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2316,7 +2378,7 @@
           <Id>131</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>299</Order>
+          <Order>434</Order>
           <Parameters>exd="Ex" table="Ex"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2324,7 +2386,7 @@
           <Id>132</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>300</Order>
+          <Order>435</Order>
           <Parameters>exd="Ex" table="Ex" field="Message" value="@vValue"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2332,7 +2394,7 @@
           <Id>133</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>301</Order>
+          <Order>436</Order>
           <Parameters>exd="Ex" table="Ex" field="Description" value="@vMessage"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2340,7 +2402,7 @@
           <Id>134</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>304</Order>
+          <Order>439</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -2348,7 +2410,7 @@
           <Id>135</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>4</Order>
+          <Order>13</Order>
           <Parameters>lvalue="@vField" rvalue="Detail" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2356,7 +2418,7 @@
           <Id>136</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>305</Order>
+          <Order>440</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -2364,7 +2426,7 @@
           <Id>140</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>113</Order>
+          <Order>168</Order>
           <Parameters>value="@vValue" fieldseparator="_" fieldno="6"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2372,7 +2434,7 @@
           <Id>141</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>114</Order>
+          <Order>169</Order>
           <Parameters>name="vEqual2"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2380,7 +2442,7 @@
           <Id>144</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>116</Order>
+          <Order>171</Order>
           <Parameters>filename="@vLookupPath" section="LISTCODE" casesensitive="False" load="False" key="@vEqual2" default="@vEqual2"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2388,7 +2450,7 @@
           <Id>148</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>121</Order>
+          <Order>176</Order>
           <Parameters>String=", " StartPosition="1" Replace="All" ReplaceString=" or "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2396,7 +2458,7 @@
           <Id>149</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>123</Order>
+          <Order>178</Order>
           <Parameters>name="vEqual2"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2404,7 +2466,7 @@
           <Id>151</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>122</Order>
+          <Order>177</Order>
           <Parameters>String="," StartPosition="1" Replace="All" ReplaceString=" or "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2412,7 +2474,7 @@
           <Id>152</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>29</Order>
+          <Order>38</Order>
           <Parameters>length="4" value="@vQualifier"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2420,7 +2482,7 @@
           <Id>153</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>30</Order>
+          <Order>39</Order>
           <Parameters>name="vPositionElementAndSub"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2428,7 +2490,7 @@
           <Id>156</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>55</Order>
+          <Order>64</Order>
           <Parameters>content="----------------M/O-----------------------------"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2436,7 +2498,7 @@
           <Id>157</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>73</Order>
+          <Order>82</Order>
           <Parameters>content="----------------QualfAdd-----------------------------"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2444,7 +2506,7 @@
           <Id>158</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>74</Order>
+          <Order>83</Order>
           <Parameters>value="@Element" fieldseparator="-" fieldno="3"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2452,7 +2514,7 @@
           <Id>159</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>75</Order>
+          <Order>84</Order>
           <Parameters>name="vQualfAdd"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2460,7 +2522,7 @@
           <Id>160</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>31</Order>
+          <Order>40</Order>
           <Parameters>value="@vPositionElementAndSub" datatype="integer" outputvariable="HasSub" severity="" message=""</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2468,7 +2530,7 @@
           <Id>161</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>32</Order>
+          <Order>41</Order>
           <Parameters>lvalue="@HasSub" rvalue="1" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2476,7 +2538,7 @@
           <Id>162</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>54</Order>
+          <Order>63</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -2484,7 +2546,7 @@
           <Id>163</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>39</Order>
+          <Order>48</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -2492,7 +2554,7 @@
           <Id>164</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>34</Order>
+          <Order>43</Order>
           <Parameters>name="vPositionSubElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2500,7 +2562,7 @@
           <Id>165</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>33</Order>
+          <Order>42</Order>
           <Parameters>length="2" value="@vPositionElementAndSub"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2508,7 +2570,7 @@
           <Id>166</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>35</Order>
+          <Order>44</Order>
           <Parameters>length="2" value="@vPositionElementAndSub"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2516,7 +2578,7 @@
           <Id>167</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>36</Order>
+          <Order>45</Order>
           <Parameters>name="vPositionElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2524,7 +2586,7 @@
           <Id>168</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>40</Order>
+          <Order>49</Order>
           <Parameters>length="2" value="@vQualifier"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2532,7 +2594,7 @@
           <Id>169</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>41</Order>
+          <Order>50</Order>
           <Parameters>name="vPositionElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2540,7 +2602,7 @@
           <Id>171</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>44</Order>
+          <Order>53</Order>
           <Parameters>value="@vQualifier" fieldseparator="@vPositionElement" fieldno="1"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2548,7 +2610,7 @@
           <Id>172</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>45</Order>
+          <Order>54</Order>
           <Parameters>name="vSegmentElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2556,7 +2618,7 @@
           <Id>173</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>37</Order>
+          <Order>46</Order>
           <Parameters>value="@vQualifier" fieldseparator="@vPositionElementAndSub" fieldno="1"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2564,7 +2626,7 @@
           <Id>174</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>38</Order>
+          <Order>47</Order>
           <Parameters>name="vSegmentElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2572,7 +2634,7 @@
           <Id>176</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>177</Order>
+          <Order>246</Order>
           <Parameters>name="vResult" value="Error line {1}: " datatype="Text"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2580,7 +2642,7 @@
           <Id>177</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>178</Order>
+          <Order>247</Order>
           <Parameters>lvalue="@vMorO" rvalue="M" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2588,15 +2650,15 @@
           <Id>178</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>179</Order>
-          <Parameters>name="vResult" value="+Mandatory element"</Parameters>
+          <Order>248</Order>
+          <Parameters>name="vResult" value="+Mandatory element "</Parameters>
         </FunctionNode>
         <FunctionNode>
           <Name>Elseif</Name>
           <Id>179</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>180</Order>
+          <Order>249</Order>
           <Parameters>lvalue="@vMorO" rvalue="O" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2604,7 +2666,7 @@
           <Id>180</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>181</Order>
+          <Order>250</Order>
           <Parameters>name="vResult" value="+Element "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2612,7 +2674,7 @@
           <Id>181</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>182</Order>
+          <Order>251</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -2620,7 +2682,7 @@
           <Id>182</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>183</Order>
+          <Order>252</Order>
           <Parameters>name="vResult" value="+@MorO"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2628,7 +2690,7 @@
           <Id>183</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>184</Order>
+          <Order>253</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -2636,7 +2698,7 @@
           <Id>184</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>185</Order>
+          <Order>254</Order>
           <Parameters>name="vResult" value="+@vSegmentElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2644,7 +2706,7 @@
           <Id>185</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>186</Order>
+          <Order>255</Order>
           <Parameters>name="vResult" value="+ position "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2652,7 +2714,7 @@
           <Id>186</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>187</Order>
+          <Order>256</Order>
           <Parameters>name="vResult" value="+@vPositionElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2660,7 +2722,7 @@
           <Id>187</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>188</Order>
+          <Order>257</Order>
           <Parameters>lvalue="@vPositionSubElement" rvalue="" operator="!="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2668,7 +2730,7 @@
           <Id>188</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>189</Order>
+          <Order>258</Order>
           <Parameters>name="vResult" value="+ and sub-position "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2676,7 +2738,7 @@
           <Id>189</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>190</Order>
+          <Order>259</Order>
           <Parameters>name="vResult" value="+@vPositionSubElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2684,7 +2746,7 @@
           <Id>190</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>191</Order>
+          <Order>260</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -2692,7 +2754,7 @@
           <Id>191</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>192</Order>
+          <Order>261</Order>
           <Parameters>lvalue="@vQualfAdd" rvalue="" operator="!="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2700,7 +2762,7 @@
           <Id>192</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>196</Order>
+          <Order>265</Order>
           <Parameters>name="vResult" value="+ qualifier "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2708,7 +2770,7 @@
           <Id>193</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>197</Order>
+          <Order>266</Order>
           <Parameters>name="vResult" value="+@vQualfAdd"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2716,7 +2778,7 @@
           <Id>194</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>198</Order>
+          <Order>267</Order>
           <Parameters>name="vResult" value="+)"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2724,7 +2786,7 @@
           <Id>195</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>199</Order>
+          <Order>268</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -2732,7 +2794,7 @@
           <Id>196</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>200</Order>
+          <Order>269</Order>
           <Parameters>lvalue="@Standard" rvalue="EDIFACT" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2740,15 +2802,15 @@
           <Id>197</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>201</Order>
-          <Parameters>name="vResult" value="+ in segment group [--GR number--] "</Parameters>
+          <Order>271</Order>
+          <Parameters>name="vResult" value="+ in segment group "</Parameters>
         </FunctionNode>
         <FunctionNode>
           <Name>EndIf</Name>
           <Id>198</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>202</Order>
+          <Order>273</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -2756,7 +2818,7 @@
           <Id>199</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>203</Order>
+          <Order>274</Order>
           <Parameters>name="vResult" value="+ must match the data found in "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2764,7 +2826,7 @@
           <Id>200</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>204</Order>
+          <Order>275</Order>
           <Parameters>name="vResult" value="+@vSegmentElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2772,7 +2834,7 @@
           <Id>201</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>205</Order>
+          <Order>276</Order>
           <Parameters>name="vResult" value="+@vPositionElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2780,7 +2842,7 @@
           <Id>202</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>206</Order>
+          <Order>277</Order>
           <Parameters>name="vResult" value="+@vPositionSubElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2788,7 +2850,7 @@
           <Id>203</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>207</Order>
+          <Order>278</Order>
           <Parameters>lvalue="@vQualfAdd" rvalue="" operator="!="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2796,7 +2858,7 @@
           <Id>205</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>212</Order>
+          <Order>283</Order>
           <Parameters>name="vResult" value="+@vQualfAdd"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2804,7 +2866,7 @@
           <Id>206</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>213</Order>
+          <Order>284</Order>
           <Parameters>name="vResult" value="+)"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2812,7 +2874,7 @@
           <Id>207</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>214</Order>
+          <Order>285</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -2820,7 +2882,7 @@
           <Id>208</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>215</Order>
+          <Order>286</Order>
           <Parameters>name="vResult" value="+ on the "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2828,7 +2890,7 @@
           <Id>209</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>218</Order>
+          <Order>289</Order>
           <Parameters>lvalue="@vMorO" rvalue="M" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2836,7 +2898,7 @@
           <Id>210</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>219</Order>
+          <Order>290</Order>
           <Parameters>name="vResult" value="+|Mandatory element "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2844,7 +2906,7 @@
           <Id>211</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>220</Order>
+          <Order>291</Order>
           <Parameters>lvalue="@vMorO" rvalue="O" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2852,7 +2914,7 @@
           <Id>212</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>221</Order>
+          <Order>292</Order>
           <Parameters>name="vResult" value="+|Element "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2860,7 +2922,7 @@
           <Id>213</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>222</Order>
+          <Order>293</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -2868,7 +2930,7 @@
           <Id>214</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>224</Order>
+          <Order>295</Order>
           <Parameters>name="vResult" value="+@vMorO"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2876,7 +2938,7 @@
           <Id>215</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>225</Order>
+          <Order>296</Order>
           <Parameters>name="vResult" value="+ "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2884,7 +2946,7 @@
           <Id>216</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>226</Order>
+          <Order>297</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -2892,7 +2954,7 @@
           <Id>220</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>230</Order>
+          <Order>301</Order>
           <Parameters>name="vResult" value="+ is invalid at line {1}."</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2900,7 +2962,7 @@
           <Id>222</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>227</Order>
+          <Order>298</Order>
           <Parameters>name="vResult" value="+@vSegmentElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2908,7 +2970,7 @@
           <Id>223</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>228</Order>
+          <Order>299</Order>
           <Parameters>name="vResult" value="+@vPositionElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2916,7 +2978,7 @@
           <Id>224</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>229</Order>
+          <Order>300</Order>
           <Parameters>name="vResult" value="+@vPositionSubElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2924,7 +2986,7 @@
           <Id>225</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>231</Order>
+          <Order>302</Order>
           <Parameters>name="vMessage" value="@vResult"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2932,7 +2994,7 @@
           <Id>228</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>232</Order>
+          <Order>303</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -2940,7 +3002,7 @@
           <Id>229</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>176</Order>
+          <Order>245</Order>
           <Parameters>description="DBCHECK-MES"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2948,7 +3010,7 @@
           <Id>230</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>235</Order>
+          <Order>306</Order>
           <Parameters>description="DBCHECK_BLANK-MES"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2956,7 +3018,7 @@
           <Id>231</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>236</Order>
+          <Order>307</Order>
           <Parameters>name="vResult" value="Error line {1}: " datatype="Text"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2964,7 +3026,7 @@
           <Id>232</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>237</Order>
+          <Order>308</Order>
           <Parameters>lvalue="@vMorO" rvalue="M" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2972,7 +3034,7 @@
           <Id>233</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>238</Order>
+          <Order>309</Order>
           <Parameters>name="vResult" value="+Mandatory element "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2980,7 +3042,7 @@
           <Id>234</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>239</Order>
+          <Order>310</Order>
           <Parameters>lvalue="@vMorO" rvalue="O" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2988,7 +3050,7 @@
           <Id>235</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>240</Order>
+          <Order>311</Order>
           <Parameters>name="vResult" value="+Element "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -2996,7 +3058,7 @@
           <Id>236</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>241</Order>
+          <Order>312</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -3004,7 +3066,7 @@
           <Id>237</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>242</Order>
+          <Order>313</Order>
           <Parameters>name="vResult" value="+@MorO"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3012,7 +3074,7 @@
           <Id>238</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>243</Order>
+          <Order>314</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -3020,7 +3082,7 @@
           <Id>239</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>244</Order>
+          <Order>315</Order>
           <Parameters>name="vResult" value="+@vSegmentElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3028,7 +3090,7 @@
           <Id>240</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>245</Order>
+          <Order>316</Order>
           <Parameters>name="vResult" value="+ position "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3036,7 +3098,7 @@
           <Id>241</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>246</Order>
+          <Order>317</Order>
           <Parameters>name="vResult" value="+@vPositionElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3044,7 +3106,7 @@
           <Id>242</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>247</Order>
+          <Order>318</Order>
           <Parameters>lvalue="@vPositionSubElement" rvalue="" operator="!="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3052,7 +3114,7 @@
           <Id>243</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>248</Order>
+          <Order>319</Order>
           <Parameters>name="vResult" value="+ and sub-position "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3060,7 +3122,7 @@
           <Id>244</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>249</Order>
+          <Order>320</Order>
           <Parameters>name="vResult" value="+@vPositionSubElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3068,7 +3130,7 @@
           <Id>245</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>250</Order>
+          <Order>321</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -3076,39 +3138,15 @@
           <Id>246</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>251</Order>
+          <Order>322</Order>
           <Parameters>lvalue="@vQualfAdd" rvalue="" operator="!="</Parameters>
-        </FunctionNode>
-        <FunctionNode>
-          <Name>Operatevariable</Name>
-          <Id>247</Id>
-          <NodeId>17</NodeId>
-          <NodeDetailId>4</NodeDetailId>
-          <Order>252</Order>
-          <Parameters>name="vResult" value="+ (Qualifier "</Parameters>
-        </FunctionNode>
-        <FunctionNode>
-          <Name>Operatevariable</Name>
-          <Id>248</Id>
-          <NodeId>17</NodeId>
-          <NodeDetailId>4</NodeDetailId>
-          <Order>253</Order>
-          <Parameters>name="vResult" value="+@vQualfAdd"</Parameters>
-        </FunctionNode>
-        <FunctionNode>
-          <Name>Operatevariable</Name>
-          <Id>249</Id>
-          <NodeId>17</NodeId>
-          <NodeDetailId>4</NodeDetailId>
-          <Order>254</Order>
-          <Parameters>name="vResult" value="+)"</Parameters>
         </FunctionNode>
         <FunctionNode>
           <Name>EndIf</Name>
           <Id>250</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>255</Order>
+          <Order>329</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -3116,23 +3154,15 @@
           <Id>251</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>256</Order>
+          <Order>330</Order>
           <Parameters>lvalue="@Standard" rvalue="EDIFACT" operator="="</Parameters>
-        </FunctionNode>
-        <FunctionNode>
-          <Name>Operatevariable</Name>
-          <Id>252</Id>
-          <NodeId>17</NodeId>
-          <NodeDetailId>4</NodeDetailId>
-          <Order>257</Order>
-          <Parameters>name="vResult" value="+ in segment group [--GR number--] "</Parameters>
         </FunctionNode>
         <FunctionNode>
           <Name>EndIf</Name>
           <Id>253</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>258</Order>
+          <Order>334</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -3140,7 +3170,7 @@
           <Id>254</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>259</Order>
+          <Order>335</Order>
           <Parameters>name="vResult" value="+ must match the data found in "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3148,7 +3178,7 @@
           <Id>255</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>260</Order>
+          <Order>336</Order>
           <Parameters>name="vResult" value="+@vSegmentElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3156,7 +3186,7 @@
           <Id>256</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>261</Order>
+          <Order>337</Order>
           <Parameters>name="vResult" value="+@vPositionElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3164,7 +3194,7 @@
           <Id>257</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>262</Order>
+          <Order>338</Order>
           <Parameters>name="vResult" value="+@vPositionSubElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3172,39 +3202,15 @@
           <Id>258</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>263</Order>
+          <Order>339</Order>
           <Parameters>lvalue="@vQualfAdd" rvalue="" operator="!="</Parameters>
-        </FunctionNode>
-        <FunctionNode>
-          <Name>Operatevariable</Name>
-          <Id>259</Id>
-          <NodeId>17</NodeId>
-          <NodeDetailId>4</NodeDetailId>
-          <Order>264</Order>
-          <Parameters>name="vResult" value="+ (Qualifier "</Parameters>
-        </FunctionNode>
-        <FunctionNode>
-          <Name>Operatevariable</Name>
-          <Id>260</Id>
-          <NodeId>17</NodeId>
-          <NodeDetailId>4</NodeDetailId>
-          <Order>265</Order>
-          <Parameters>name="vResult" value="+@vQualfAdd"</Parameters>
-        </FunctionNode>
-        <FunctionNode>
-          <Name>Operatevariable</Name>
-          <Id>261</Id>
-          <NodeId>17</NodeId>
-          <NodeDetailId>4</NodeDetailId>
-          <Order>266</Order>
-          <Parameters>name="vResult" value="+)"</Parameters>
         </FunctionNode>
         <FunctionNode>
           <Name>EndIf</Name>
           <Id>262</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>267</Order>
+          <Order>346</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -3212,7 +3218,7 @@
           <Id>263</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>268</Order>
+          <Order>347</Order>
           <Parameters>name="vResult" value="+ on the "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3220,7 +3226,7 @@
           <Id>264</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>275</Order>
+          <Order>354</Order>
           <Parameters>lvalue="@vMorO" rvalue="M" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3228,7 +3234,7 @@
           <Id>265</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>276</Order>
+          <Order>355</Order>
           <Parameters>name="vResult" value="+|Mandatory element "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3236,7 +3242,7 @@
           <Id>266</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>277</Order>
+          <Order>356</Order>
           <Parameters>lvalue="@vMorO" rvalue="O" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3244,7 +3250,7 @@
           <Id>267</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>278</Order>
+          <Order>357</Order>
           <Parameters>name="vResult" value="+|Element "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3252,7 +3258,7 @@
           <Id>268</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>279</Order>
+          <Order>358</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -3260,7 +3266,7 @@
           <Id>269</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>281</Order>
+          <Order>360</Order>
           <Parameters>name="vResult" value="+@vMorO"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3268,7 +3274,7 @@
           <Id>270</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>282</Order>
+          <Order>361</Order>
           <Parameters>name="vResult" value="+ "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3276,7 +3282,7 @@
           <Id>271</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>283</Order>
+          <Order>362</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -3284,7 +3290,7 @@
           <Id>272</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>284</Order>
+          <Order>363</Order>
           <Parameters>name="vResult" value="+@vSegmentElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3292,7 +3298,7 @@
           <Id>273</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>285</Order>
+          <Order>364</Order>
           <Parameters>name="vResult" value="+@vPositionElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3300,7 +3306,7 @@
           <Id>274</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>286</Order>
+          <Order>365</Order>
           <Parameters>name="vResult" value="+@vPositionSubElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3308,7 +3314,7 @@
           <Id>275</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>287</Order>
+          <Order>366</Order>
           <Parameters>name="vResult" value="+ is invalid at line {1}."</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3316,7 +3322,7 @@
           <Id>276</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>288</Order>
+          <Order>367</Order>
           <Parameters>name="vMessage" value="@vResult"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3324,7 +3330,7 @@
           <Id>277</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>289</Order>
+          <Order>368</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -3332,7 +3338,7 @@
           <Id>278</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>270</Order>
+          <Order>349</Order>
           <Parameters>name="vResult" value="+. Please reference to the Sample "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3340,7 +3346,7 @@
           <Id>296</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>216</Order>
+          <Order>287</Order>
           <Parameters>name="vResult" value="+@PartnerTransactionName"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3348,7 +3354,7 @@
           <Id>297</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>217</Order>
+          <Order>288</Order>
           <Parameters>name="vResult" value="+. Expected Value: {0}."</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3356,7 +3362,7 @@
           <Id>298</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>269</Order>
+          <Order>348</Order>
           <Parameters>name="vResult" value="+@PartnerTransactionName"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3364,7 +3370,7 @@
           <Id>300</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>271</Order>
+          <Order>350</Order>
           <Parameters>name="vResult" value="+@TransactionName"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3372,7 +3378,7 @@
           <Id>301</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>272</Order>
+          <Order>351</Order>
           <Parameters>name="vResult" value="+ and resubmit "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3380,7 +3386,7 @@
           <Id>302</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>273</Order>
+          <Order>352</Order>
           <Parameters>name="vResult" value="+@PartnerTransactionName"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3388,7 +3394,7 @@
           <Id>303</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>274</Order>
+          <Order>353</Order>
           <Parameters>name="vResult" value="+."</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3396,7 +3402,7 @@
           <Id>304</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>89</Order>
+          <Order>99</Order>
           <Parameters>lvalue="@vSet3" rvalue="DBCHECK" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3404,7 +3410,7 @@
           <Id>305</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>95</Order>
+          <Order>105</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -3412,7 +3418,7 @@
           <Id>306</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>90</Order>
+          <Order>100</Order>
           <Parameters>value="@vValue" fieldseparator="_" fieldno="5"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3420,7 +3426,7 @@
           <Id>307</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>91</Order>
+          <Order>101</Order>
           <Parameters>name="vSet4"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3428,7 +3434,7 @@
           <Id>308</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>92</Order>
+          <Order>102</Order>
           <Parameters>lvalue="@vSet4" rvalue="BLANK" operator=""</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3436,7 +3442,7 @@
           <Id>309</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>94</Order>
+          <Order>104</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -3444,7 +3450,7 @@
           <Id>310</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>93</Order>
+          <Order>103</Order>
           <Parameters>name="vSet3" value="DBCHECK_BLANK"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3452,7 +3458,7 @@
           <Id>311</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>280</Order>
+          <Order>359</Order>
           <Parameters>name="vResult" value="+|"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3460,7 +3466,7 @@
           <Id>312</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>223</Order>
+          <Order>294</Order>
           <Parameters>name="vResult" value="+|"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3468,7 +3474,7 @@
           <Id>333</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>102</Order>
+          <Order>112</Order>
           <Parameters>lvalue="@vMax" rvalue="" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3476,7 +3482,7 @@
           <Id>334</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>109</Order>
+          <Order>119</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -3484,7 +3490,7 @@
           <Id>335</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>103</Order>
+          <Order>113</Order>
           <Parameters>name="vMax" value="@vMin"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3492,7 +3498,7 @@
           <Id>336</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>193</Order>
+          <Order>262</Order>
           <Parameters>name="vResult" value="+ ("</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3500,7 +3506,7 @@
           <Id>337</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>194</Order>
+          <Order>263</Order>
           <Parameters>name="vResult" value="+@vSegmentElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3508,7 +3514,7 @@
           <Id>338</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>195</Order>
+          <Order>264</Order>
           <Parameters>name="vResult" value="+01"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3516,7 +3522,7 @@
           <Id>339</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>42</Order>
+          <Order>51</Order>
           <Parameters>value="@vPositionElement" datatype="integer" outputvariable="HasElm" severity="" message=""</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3524,7 +3530,7 @@
           <Id>340</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>43</Order>
+          <Order>52</Order>
           <Parameters>lvalue="@HasElm" rvalue="1" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3532,7 +3538,7 @@
           <Id>341</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>53</Order>
+          <Order>62</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -3540,7 +3546,7 @@
           <Id>342</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>46</Order>
+          <Order>55</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -3548,7 +3554,7 @@
           <Id>343</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>47</Order>
+          <Order>56</Order>
           <Parameters>name="vSegmentElement" value="@vQualifier"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3556,7 +3562,7 @@
           <Id>353</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>302</Order>
+          <Order>437</Order>
           <Parameters>exd="Ex" table="Ex" field="Status" value="@vStatus"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3564,7 +3570,7 @@
           <Id>354</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>303</Order>
+          <Order>438</Order>
           <Parameters>exd="Ex" table="Ex" field="Note" value="@vNote"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3588,7 +3594,7 @@
           <Id>358</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>7</Order>
+          <Order>16</Order>
           <Parameters>value="@vValue" fieldseparator="_" fieldno="2"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3596,7 +3602,7 @@
           <Id>359</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>8</Order>
+          <Order>17</Order>
           <Parameters>name="vProjectName"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3604,7 +3610,7 @@
           <Id>360</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>9</Order>
+          <Order>18</Order>
           <Parameters>lvalue="@vProjectName" rvalue="" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3612,7 +3618,7 @@
           <Id>361</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>11</Order>
+          <Order>20</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -3620,7 +3626,7 @@
           <Id>362</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>10</Order>
+          <Order>19</Order>
           <Parameters>name="vStatus" value="NULL"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3628,7 +3634,7 @@
           <Id>364</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>17</Order>
+          <Order>26</Order>
           <Parameters>content="--------------------Lookup element---------------------------------------------"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3636,7 +3642,7 @@
           <Id>365</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>28</Order>
+          <Order>37</Order>
           <Parameters>content="-----------------------------------------------------------------------------------"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3644,7 +3650,7 @@
           <Id>366</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>18</Order>
+          <Order>27</Order>
           <Parameters>filename="@vLookupXrf" section="SEG" casesensitive="False" load="False" key="@vQualifier"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3652,7 +3658,7 @@
           <Id>367</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>19</Order>
+          <Order>28</Order>
           <Parameters>name="vSegName"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3660,7 +3666,7 @@
           <Id>368</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>20</Order>
+          <Order>29</Order>
           <Parameters>lvalue="@vSegName" rvalue="" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3668,7 +3674,7 @@
           <Id>369</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>27</Order>
+          <Order>36</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -3676,7 +3682,7 @@
           <Id>370</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>23</Order>
+          <Order>32</Order>
           <Parameters>name="vStatus" value="ERROR"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3684,7 +3690,7 @@
           <Id>371</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>24</Order>
+          <Order>33</Order>
           <Parameters>name="vNote" value="Not found description:"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3692,7 +3698,7 @@
           <Id>372</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>25</Order>
+          <Order>34</Order>
           <Parameters>name="vNote" value="+@vQualifier"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3700,7 +3706,7 @@
           <Id>374</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>49</Order>
+          <Order>58</Order>
           <Parameters>name="vStatus" value="INFO"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3708,7 +3714,7 @@
           <Id>375</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>50</Order>
+          <Order>59</Order>
           <Parameters>name="vNote" value="Only segment and no element: "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3716,7 +3722,7 @@
           <Id>376</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>51</Order>
+          <Order>60</Order>
           <Parameters>name="vNote" value="+@vQualifier"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3724,7 +3730,7 @@
           <Id>378</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>84</Order>
+          <Order>93</Order>
           <Parameters>lvalue="@vQualfAdd" rvalue="" operator="!="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3732,15 +3738,15 @@
           <Id>379</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>85</Order>
-          <Parameters>name="vStatus" value="INFO"</Parameters>
+          <Order>94</Order>
+          <Parameters>name="vStatus" value="WARNING"</Parameters>
         </FunctionNode>
         <FunctionNode>
           <Name>Operatevariable</Name>
           <Id>380</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>86</Order>
+          <Order>95</Order>
           <Parameters>name="vNote" value="Found Qualifier segment in message:"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3748,15 +3754,15 @@
           <Id>381</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>87</Order>
-          <Parameters>name="vNote" value="+@vQualfAdd"</Parameters>
+          <Order>97</Order>
+          <Parameters>name="vNote" value="+01"</Parameters>
         </FunctionNode>
         <FunctionNode>
           <Name>EndIf</Name>
           <Id>382</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>88</Order>
+          <Order>98</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -3764,7 +3770,7 @@
           <Id>383</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>104</Order>
+          <Order>114</Order>
           <Parameters>lvalue="@vQualfAdd" rvalue="" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3772,7 +3778,7 @@
           <Id>384</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>105</Order>
+          <Order>115</Order>
           <Parameters>name="vStatus" value="INFO"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3780,7 +3786,7 @@
           <Id>385</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>106</Order>
+          <Order>116</Order>
           <Parameters>name="vNote" value="Min = Max:"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3788,7 +3794,7 @@
           <Id>386</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>107</Order>
+          <Order>117</Order>
           <Parameters>name="vNote" value="+@vMax"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3796,7 +3802,7 @@
           <Id>387</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>108</Order>
+          <Order>118</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -3804,7 +3810,7 @@
           <Id>389</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>117</Order>
+          <Order>172</Order>
           <Parameters>lvalue="@vEqual2" rvalue="" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3812,7 +3818,7 @@
           <Id>390</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>120</Order>
+          <Order>175</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -3820,7 +3826,7 @@
           <Id>391</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>118</Order>
+          <Order>173</Order>
           <Parameters>name="vStatus" value="ERROR"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3828,7 +3834,7 @@
           <Id>392</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>119</Order>
+          <Order>174</Order>
           <Parameters>name="vNote" value="Not found LIST in XRefCode table"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3836,7 +3842,7 @@
           <Id>394</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>59</Order>
+          <Order>68</Order>
           <Parameters>lvalue="@vMorO" rvalue="" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3844,7 +3850,7 @@
           <Id>395</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>69</Order>
+          <Order>78</Order>
           <Parameters>name="vStatus" value="ERROR"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3852,7 +3858,7 @@
           <Id>396</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>70</Order>
+          <Order>79</Order>
           <Parameters>name="vNote" value="Unknown element is O/M"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3860,7 +3866,7 @@
           <Id>398</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>72</Order>
+          <Order>81</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -3868,7 +3874,7 @@
           <Id>399</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>68</Order>
+          <Order>77</Order>
           <Parameters>lvalue="@vStatus" rvalue="" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3876,7 +3882,7 @@
           <Id>400</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>22</Order>
+          <Order>31</Order>
           <Parameters>lvalue="@vProjectName" rvalue="" operator="!="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3884,7 +3890,7 @@
           <Id>401</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>126</Order>
+          <Order>181</Order>
           <Parameters>description="EQUAL-MES"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3892,7 +3898,7 @@
           <Id>402</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>127</Order>
+          <Order>182</Order>
           <Parameters>name="vResult" value="Error line {0}: " datatype="Text"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3900,7 +3906,7 @@
           <Id>410</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>128</Order>
+          <Order>183</Order>
           <Parameters>name="vResult" value="+@vSegName"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3908,7 +3914,7 @@
           <Id>411</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>131</Order>
+          <Order>186</Order>
           <Parameters>name="vResult" value="+ position "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3916,7 +3922,7 @@
           <Id>412</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>132</Order>
+          <Order>187</Order>
           <Parameters>name="vResult" value="+@vPositionElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3924,7 +3930,7 @@
           <Id>413</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>133</Order>
+          <Order>188</Order>
           <Parameters>lvalue="@vPositionSubElement" rvalue="" operator="!="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3932,7 +3938,7 @@
           <Id>414</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>134</Order>
+          <Order>189</Order>
           <Parameters>name="vResult" value="+ and sub-position "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3940,7 +3946,7 @@
           <Id>415</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>135</Order>
+          <Order>190</Order>
           <Parameters>name="vResult" value="+@vPositionSubElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3948,7 +3954,7 @@
           <Id>416</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>136</Order>
+          <Order>191</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -3956,7 +3962,7 @@
           <Id>417</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>137</Order>
+          <Order>192</Order>
           <Parameters>lvalue="@vQualfAdd" rvalue="" operator="!="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3964,7 +3970,7 @@
           <Id>418</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>138</Order>
+          <Order>193</Order>
           <Parameters>name="vResult" value="+ ("</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3972,7 +3978,7 @@
           <Id>419</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>139</Order>
+          <Order>194</Order>
           <Parameters>name="vResult" value="+@vSegmentElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3980,7 +3986,7 @@
           <Id>420</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>140</Order>
+          <Order>195</Order>
           <Parameters>name="vResult" value="+01"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3988,7 +3994,7 @@
           <Id>421</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>141</Order>
+          <Order>196</Order>
           <Parameters>name="vResult" value="+ qualifier "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -3996,7 +4002,7 @@
           <Id>422</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>142</Order>
+          <Order>197</Order>
           <Parameters>name="vResult" value="+@vQualfAdd"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4004,7 +4010,7 @@
           <Id>423</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>143</Order>
+          <Order>198</Order>
           <Parameters>name="vResult" value="+)"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4012,7 +4018,7 @@
           <Id>424</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>144</Order>
+          <Order>199</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -4020,23 +4026,15 @@
           <Id>425</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>145</Order>
+          <Order>200</Order>
           <Parameters>lvalue="@Standard" rvalue="EDIFACT" operator="="</Parameters>
-        </FunctionNode>
-        <FunctionNode>
-          <Name>Operatevariable</Name>
-          <Id>426</Id>
-          <NodeId>17</NodeId>
-          <NodeDetailId>4</NodeDetailId>
-          <Order>146</Order>
-          <Parameters>name="vResult" value="+ in segment group [--GR number--] "</Parameters>
         </FunctionNode>
         <FunctionNode>
           <Name>EndIf</Name>
           <Id>427</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>149</Order>
+          <Order>206</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -4044,7 +4042,7 @@
           <Id>428</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>150</Order>
+          <Order>207</Order>
           <Parameters>name="vResult" value="+ must be "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4052,7 +4050,7 @@
           <Id>429</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>151</Order>
+          <Order>208</Order>
           <Parameters>name="vResult" value="+@vEqual1"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4060,7 +4058,7 @@
           <Id>440</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>157</Order>
+          <Order>214</Order>
           <Parameters>lvalue="@vMorO" rvalue="M" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4068,7 +4066,7 @@
           <Id>441</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>158</Order>
+          <Order>215</Order>
           <Parameters>name="vResult" value="+|Mandatory element "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4076,7 +4074,7 @@
           <Id>442</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>159</Order>
+          <Order>216</Order>
           <Parameters>lvalue="@vMorO" rvalue="O" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4084,7 +4082,7 @@
           <Id>443</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>160</Order>
+          <Order>217</Order>
           <Parameters>name="vResult" value="+|Element "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4092,7 +4090,7 @@
           <Id>444</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>161</Order>
+          <Order>218</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -4100,7 +4098,7 @@
           <Id>445</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>162</Order>
+          <Order>219</Order>
           <Parameters>name="vResult" value="+|"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4108,7 +4106,7 @@
           <Id>446</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>163</Order>
+          <Order>220</Order>
           <Parameters>name="vResult" value="+@vMorO"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4116,7 +4114,7 @@
           <Id>447</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>164</Order>
+          <Order>221</Order>
           <Parameters>name="vResult" value="+ "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4124,7 +4122,7 @@
           <Id>448</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>165</Order>
+          <Order>222</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -4132,7 +4130,7 @@
           <Id>449</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>166</Order>
+          <Order>223</Order>
           <Parameters>name="vResult" value="+@vSegmentElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4140,7 +4138,7 @@
           <Id>450</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>167</Order>
+          <Order>224</Order>
           <Parameters>name="vResult" value="+@vPositionElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4148,7 +4146,7 @@
           <Id>451</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>168</Order>
+          <Order>225</Order>
           <Parameters>name="vResult" value="+@vPositionSubElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4156,7 +4154,7 @@
           <Id>452</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>169</Order>
+          <Order>226</Order>
           <Parameters>name="vResult" value="+ is invalid at line {0}."</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4164,7 +4162,7 @@
           <Id>453</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>170</Order>
+          <Order>227</Order>
           <Parameters>name="vMessage" value="@vResult"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4172,7 +4170,7 @@
           <Id>454</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>171</Order>
+          <Order>228</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -4180,7 +4178,7 @@
           <Id>455</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>124</Order>
+          <Order>179</Order>
           <Parameters>name="vEqual1" value="@NULL"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4188,7 +4186,7 @@
           <Id>456</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>26</Order>
+          <Order>35</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -4196,7 +4194,7 @@
           <Id>457</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>21</Order>
+          <Order>30</Order>
           <Parameters>name="vSegName" value="[----Name----]"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4204,7 +4202,7 @@
           <Id>458</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>130</Order>
+          <Order>185</Order>
           <Parameters>name="vResult" value="+@vSegmentElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4212,7 +4210,7 @@
           <Id>459</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>129</Order>
+          <Order>184</Order>
           <Parameters>name="vResult" value="+ at "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4220,7 +4218,7 @@
           <Id>460</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>147</Order>
+          <Order>204</Order>
           <Parameters>name="vStatus" value="ERROR"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4228,7 +4226,7 @@
           <Id>461</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>148</Order>
+          <Order>205</Order>
           <Parameters>name="vNote" value="Not found Group Number of Segment"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4236,7 +4234,7 @@
           <Id>462</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>156</Order>
+          <Order>213</Order>
           <Parameters>name="vResult" value="+@vEqual2"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4244,7 +4242,7 @@
           <Id>463</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>154</Order>
+          <Order>211</Order>
           <Parameters>name="vResult" value="+ or "</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4252,7 +4250,7 @@
           <Id>464</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>152</Order>
+          <Order>209</Order>
           <Parameters>lvalue="@vEqual2" rvalue="" operator="!="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4260,7 +4258,7 @@
           <Id>465</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>155</Order>
+          <Order>212</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -4268,7 +4266,7 @@
           <Id>466</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>153</Order>
+          <Order>210</Order>
           <Parameters>lvalue="@vEqual1" rvalue="" operator="!="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4276,7 +4274,7 @@
           <Id>467</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>48</Order>
+          <Order>57</Order>
           <Parameters>lvalue="@vProjectName" rvalue="" operator="!="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4284,7 +4282,7 @@
           <Id>468</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>52</Order>
+          <Order>61</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -4292,7 +4290,7 @@
           <Id>469</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>71</Order>
+          <Order>80</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -4300,7 +4298,7 @@
           <Id>470</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>67</Order>
+          <Order>76</Order>
           <Parameters>name="vMorO" value="O"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4308,7 +4306,7 @@
           <Id>472</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>66</Order>
+          <Order>75</Order>
           <Parameters>lvalue="@vMorO" rvalue="M" operator="!="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4316,7 +4314,7 @@
           <Id>473</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>58</Order>
+          <Order>67</Order>
           <Parameters>name="vQualfAddTemp"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4324,7 +4322,7 @@
           <Id>474</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>76</Order>
+          <Order>85</Order>
           <Parameters>lvalue="@vQualfAdd" rvalue="" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4332,7 +4330,7 @@
           <Id>477</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>81</Order>
+          <Order>90</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -4340,7 +4338,7 @@
           <Id>482</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>60</Order>
+          <Order>69</Order>
           <Parameters>name="vMorO" value="O"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4348,7 +4346,7 @@
           <Id>483</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>65</Order>
+          <Order>74</Order>
           <Parameters>lvalue="@vMorO" rvalue="O" operator="!="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4356,7 +4354,7 @@
           <Id>484</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>61</Order>
+          <Order>70</Order>
           <Parameters>lvalue="@vStatus" rvalue="" operator="="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4364,7 +4362,7 @@
           <Id>485</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>62</Order>
+          <Order>71</Order>
           <Parameters>name="vStatus" value="ERROR"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4372,7 +4370,7 @@
           <Id>486</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>63</Order>
+          <Order>72</Order>
           <Parameters>name="vNote" value="Unknown element is O/M"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4380,7 +4378,7 @@
           <Id>487</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>64</Order>
+          <Order>73</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -4388,7 +4386,7 @@
           <Id>488</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>77</Order>
+          <Order>86</Order>
           <Parameters>lvalue="@vQualfAddTemp" rvalue="O" operator="!="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4396,7 +4394,7 @@
           <Id>489</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>78</Order>
+          <Order>87</Order>
           <Parameters>lvalue="@vQualfAddTemp" rvalue="M" operator="!="</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4404,7 +4402,7 @@
           <Id>490</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>79</Order>
+          <Order>88</Order>
           <Parameters>name="vQualfAdd" value="@vQualfAddTemp"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4412,7 +4410,7 @@
           <Id>491</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>80</Order>
+          <Order>89</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -4420,7 +4418,7 @@
           <Id>492</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>208</Order>
+          <Order>279</Order>
           <Parameters>name="vResult" value="+ ("</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4428,7 +4426,7 @@
           <Id>493</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>209</Order>
+          <Order>280</Order>
           <Parameters>name="vResult" value="+@vSegmentElement"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4436,7 +4434,7 @@
           <Id>494</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>210</Order>
+          <Order>281</Order>
           <Parameters>name="vResult" value="+01"</Parameters>
         </FunctionNode>
         <FunctionNode>
@@ -4444,8 +4442,1152 @@
           <Id>495</Id>
           <NodeId>17</NodeId>
           <NodeDetailId>4</NodeDetailId>
-          <Order>211</Order>
+          <Order>282</Order>
           <Parameters>name="vResult" value="+ qualifier "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>496</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>96</Order>
+          <Parameters>name="vNote" value="+@vSegmentElement"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Region</Name>
+          <Id>497</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>371</Order>
+          <Parameters>description="MAX-MES"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>EndRegion</Name>
+          <Id>498</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>382</Order>
+          <Parameters />
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>499</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>372</Order>
+          <Parameters>name="vResult" value="Multiple " datatype="Text"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>501</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>374</Order>
+          <Parameters>name="vResult" value="+ reporting is not supported on the"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>502</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>376</Order>
+          <Parameters>name="vResult" value="+. Please remove additional segments. Critical Error:"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Region</Name>
+          <Id>510</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>385</Order>
+          <Parameters>description="NOT-MES"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>EndRegion</Name>
+          <Id>511</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>428</Order>
+          <Parameters />
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>512</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>386</Order>
+          <Parameters>name="vResult" value="Error line {0}: " datatype="Text"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>513</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>392</Order>
+          <Parameters>name="vResult" value="+ does not match one of the expected values list in the mapping specs. Expected Value:"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>515</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>387</Order>
+          <Parameters>name="vResult" value="+@vSegName"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>516</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>388</Order>
+          <Parameters>name="vResult" value="+ at "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>517</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>389</Order>
+          <Parameters>name="vResult" value="+@vSegmentElement"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>518</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>390</Order>
+          <Parameters>name="vResult" value="+ position "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>519</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>391</Order>
+          <Parameters>name="vResult" value="+@vPositionElement"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>DelimitedMid</Name>
+          <Id>520</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>393</Order>
+          <Parameters>value="@vValue" fieldseparator="_" fieldno="5"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>521</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>394</Order>
+          <Parameters>name="vEqual1"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>DelimitedMid</Name>
+          <Id>522</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>395</Order>
+          <Parameters>value="@vValue" fieldseparator="_" fieldno="6"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>523</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>396</Order>
+          <Parameters>name="vEqual2"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>If</Name>
+          <Id>524</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>397</Order>
+          <Parameters>lvalue="@vEqual1" rvalue="LIST" operator="="</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Lookup</Name>
+          <Id>525</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>398</Order>
+          <Parameters>filename="@vLookupPath" section="LISTCODE" casesensitive="False" load="False" key="@vEqual2" default="@vEqual2"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>If</Name>
+          <Id>526</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>399</Order>
+          <Parameters>lvalue="@vEqual2" rvalue="" operator="="</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>527</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>400</Order>
+          <Parameters>name="vStatus" value="ERROR"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>528</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>401</Order>
+          <Parameters>name="vNote" value="Not found LIST in XRefCode table"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>EndIf</Name>
+          <Id>529</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>402</Order>
+          <Parameters />
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Find</Name>
+          <Id>530</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>403</Order>
+          <Parameters>String=", " StartPosition="1" Replace="All" ReplaceString=" or "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Find</Name>
+          <Id>531</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>404</Order>
+          <Parameters>String="," StartPosition="1" Replace="All" ReplaceString=" or "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>532</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>405</Order>
+          <Parameters>name="vEqual2"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>533</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>406</Order>
+          <Parameters>name="vEqual1" value="@NULL"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>EndIf</Name>
+          <Id>534</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>407</Order>
+          <Parameters />
+        </FunctionNode>
+        <FunctionNode>
+          <Name>If</Name>
+          <Id>535</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>409</Order>
+          <Parameters>lvalue="@vEqual1" rvalue="" operator="!="</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>537</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>410</Order>
+          <Parameters>name="vResult" value="+ or "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>EndIf</Name>
+          <Id>538</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>411</Order>
+          <Parameters />
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>540</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>413</Order>
+          <Parameters>name="vResult" value="+."</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>If</Name>
+          <Id>541</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>414</Order>
+          <Parameters>lvalue="@vMorO" rvalue="M" operator="="</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>542</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>415</Order>
+          <Parameters>name="vResult" value="+|Mandatory element "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Elseif</Name>
+          <Id>543</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>416</Order>
+          <Parameters>lvalue="@vMorO" rvalue="O" operator="="</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>544</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>417</Order>
+          <Parameters>name="vResult" value="+|Element "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Else</Name>
+          <Id>545</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>418</Order>
+          <Parameters />
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>546</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>419</Order>
+          <Parameters>name="vResult" value="+|"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>547</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>420</Order>
+          <Parameters>name="vResult" value="+@vMorO"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>548</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>421</Order>
+          <Parameters>name="vResult" value="+ "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>EndIf</Name>
+          <Id>549</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>422</Order>
+          <Parameters />
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>550</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>423</Order>
+          <Parameters>name="vResult" value="+@vSegmentElement"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>551</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>424</Order>
+          <Parameters>name="vResult" value="+@vPositionElement"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>552</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>425</Order>
+          <Parameters>name="vResult" value="+@vPositionSubElement"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>553</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>426</Order>
+          <Parameters>name="vResult" value="+ is invalid at line {0}."</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>554</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>427</Order>
+          <Parameters>name="vMessage" value="@vResult"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>555</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>381</Order>
+          <Parameters>name="vMessage" value="@vResult"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>556</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>373</Order>
+          <Parameters>name="vResult" value="+@vSegName"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>557</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>375</Order>
+          <Parameters>name="vResult" value="+@TransactionName"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>558</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>379</Order>
+          <Parameters>name="vResult" value="+@vSegName"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>559</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>378</Order>
+          <Parameters>name="vResult" value="+ includes an additional "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>560</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>377</Order>
+          <Parameters>name="vResult" value="+@TransactionName"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>561</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>380</Order>
+          <Parameters>name="vResult" value="+ at line {0}"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>562</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>232</Order>
+          <Parameters>name="vResult" value="Mandatory " datatype="Text"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Region</Name>
+          <Id>563</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>231</Order>
+          <Parameters>description="REQUIRED-MES"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>EndRegion</Name>
+          <Id>565</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>242</Order>
+          <Parameters />
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>566</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>233</Order>
+          <Parameters>name="vResult" value="+@vSegmentElement"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>567</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>234</Order>
+          <Parameters>name="vResult" value="+ segment is missing from the submitted file."</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>568</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>235</Order>
+          <Parameters>name="vResult" value="+@vSegName"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>569</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>236</Order>
+          <Parameters>name="vResult" value="+ is required on all "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>570</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>237</Order>
+          <Parameters>name="vResult" value="+@Transaction"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>571</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>238</Order>
+          <Parameters>name="vResult" value="+.|Mandatory "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>572</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>239</Order>
+          <Parameters>name="vResult" value="+@vSegmentElement"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>573</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>240</Order>
+          <Parameters>name="vResult" value="+ segment is missing."</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>574</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>241</Order>
+          <Parameters>name="vMessage" value="@vResult"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Region</Name>
+          <Id>575</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>120</Order>
+          <Parameters>description="LEN-MES"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>576</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>121</Order>
+          <Parameters>name="vResult" value="Error line {0}: Data found at " datatype="Text"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>577</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>122</Order>
+          <Parameters>name="vResult" value="+@vSegName"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>578</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>123</Order>
+          <Parameters>name="vResult" value="+ at "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>579</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>124</Order>
+          <Parameters>name="vResult" value="+@vSegmentElement"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>580</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>125</Order>
+          <Parameters>name="vResult" value="+ position "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>581</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>126</Order>
+          <Parameters>name="vResult" value="+@vPositionElement"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>If</Name>
+          <Id>582</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>127</Order>
+          <Parameters>lvalue="@vPositionSubElement" rvalue="" operator="!="</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>583</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>128</Order>
+          <Parameters>name="vResult" value="+ and sub-position "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>584</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>129</Order>
+          <Parameters>name="vResult" value="+@vPositionSubElement"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>EndIf</Name>
+          <Id>585</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>130</Order>
+          <Parameters />
+        </FunctionNode>
+        <FunctionNode>
+          <Name>If</Name>
+          <Id>586</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>131</Order>
+          <Parameters>lvalue="@vQualfAdd" rvalue="" operator="!="</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>587</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>132</Order>
+          <Parameters>name="vResult" value="+ ("</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>588</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>133</Order>
+          <Parameters>name="vResult" value="+@vSegmentElement"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>589</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>134</Order>
+          <Parameters>name="vResult" value="+01"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>590</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>135</Order>
+          <Parameters>name="vResult" value="+ qualifier "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>591</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>136</Order>
+          <Parameters>name="vResult" value="+@vQualfAdd"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>592</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>137</Order>
+          <Parameters>name="vResult" value="+)"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>EndIf</Name>
+          <Id>593</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>138</Order>
+          <Parameters />
+        </FunctionNode>
+        <FunctionNode>
+          <Name>If</Name>
+          <Id>594</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>139</Order>
+          <Parameters>lvalue="@Standard" rvalue="EDIFACT" operator="="</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>596</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>143</Order>
+          <Parameters>name="vStatus" value="ERROR"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>597</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>144</Order>
+          <Parameters>name="vNote" value="Not found Group Number of Segment"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>EndIf</Name>
+          <Id>598</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>145</Order>
+          <Parameters />
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>599</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>146</Order>
+          <Parameters>name="vResult" value="+ does not meet the Min/Max requirement of "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>600</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>147</Order>
+          <Parameters>name="vResult" value="+@vMin"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>615</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>159</Order>
+          <Parameters>name="vResult" value="+@vSegmentElement"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>616</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>160</Order>
+          <Parameters>name="vResult" value="+@vPositionElement"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>617</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>161</Order>
+          <Parameters>name="vResult" value="+@vPositionSubElement"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>618</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>162</Order>
+          <Parameters>name="vResult" value="+ is invalid at line {0}."</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>619</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>163</Order>
+          <Parameters>name="vMessage" value="@vResult"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>EndRegion</Name>
+          <Id>620</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>164</Order>
+          <Parameters />
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>621</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>148</Order>
+          <Parameters>name="vResult" value="+/"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>622</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>149</Order>
+          <Parameters>name="vResult" value="+@vMax"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>623</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>150</Order>
+          <Parameters>name="vResult" value="+. "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>624</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>151</Order>
+          <Parameters>name="vResult" value="+@vSegName"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>625</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>152</Order>
+          <Parameters>name="vResult" value="+ must be "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>If</Name>
+          <Id>626</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>154</Order>
+          <Parameters>lvalue="@vMin" rvalue="@vMax" operator="!="</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>EndIf</Name>
+          <Id>627</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>157</Order>
+          <Parameters />
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>628</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>155</Order>
+          <Parameters>name="vResult" value="+ to "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>630</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>153</Order>
+          <Parameters>name="vResult" value="+@vMin"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>631</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>156</Order>
+          <Parameters>name="vResult" value="+@vMax"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>632</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>158</Order>
+          <Parameters>name="vResult" value="+ characters.|Min/Max Error: The length of "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>633</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>412</Order>
+          <Parameters>name="vResult" value="+@Equal2"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>634</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>408</Order>
+          <Parameters>name="vResult" value="+@vEqual1"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>635</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>323</Order>
+          <Parameters>name="vResult" value="+ ("</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>636</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>324</Order>
+          <Parameters>name="vResult" value="+@vSegmentElement"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>637</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>325</Order>
+          <Parameters>name="vResult" value="+01"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>638</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>326</Order>
+          <Parameters>name="vResult" value="+ qualifier "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>639</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>327</Order>
+          <Parameters>name="vResult" value="+@vQualfAdd"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>640</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>328</Order>
+          <Parameters>name="vResult" value="+)"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>641</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>340</Order>
+          <Parameters>name="vResult" value="+ ("</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>642</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>341</Order>
+          <Parameters>name="vResult" value="+@vSegmentElement"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>643</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>342</Order>
+          <Parameters>name="vResult" value="+01"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>644</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>343</Order>
+          <Parameters>name="vResult" value="+ qualifier "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>645</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>344</Order>
+          <Parameters>name="vResult" value="+@vQualfAdd"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>646</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>345</Order>
+          <Parameters>name="vResult" value="+)"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>If</Name>
+          <Id>649</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>5</Order>
+          <Parameters>lvalue="@vType" rvalue="Operatevariable" operator="="</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>EndIf</Name>
+          <Id>650</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>11</Order>
+          <Parameters />
+        </FunctionNode>
+        <FunctionNode>
+          <Name>OrIf</Name>
+          <Id>651</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>6</Order>
+          <Parameters>lvalue="@vType" rvalue="Setvariable" operator="="</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>If</Name>
+          <Id>652</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>4</Order>
+          <Parameters>lvalue="@Standard" rvalue="EDIFACT" operator="="</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>EndIf</Name>
+          <Id>653</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>10</Order>
+          <Parameters />
+        </FunctionNode>
+        <FunctionNode>
+          <Name>If</Name>
+          <Id>654</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>7</Order>
+          <Parameters>lvalue="@vName" rvalue="vGroupNumber" operator="="</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>EndIf</Name>
+          <Id>655</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>12</Order>
+          <Parameters />
+        </FunctionNode>
+        <FunctionNode>
+          <Name>AndIf</Name>
+          <Id>656</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>8</Order>
+          <Parameters>lvalue="@vValue" rvalue="" operator="!="</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>657</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>9</Order>
+          <Parameters>name="GroupNumber" value="@vValue"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>662</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>272</Order>
+          <Parameters>name="vResult" value="+@GroupNumber"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>663</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>141</Order>
+          <Parameters>name="vResult" value="+ in segment group "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>664</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>142</Order>
+          <Parameters>name="vResult" value="+@GroupNumber"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>665</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>332</Order>
+          <Parameters>name="vResult" value="+ in segment group "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>666</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>333</Order>
+          <Parameters>name="vResult" value="+@GroupNumber"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>667</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>202</Order>
+          <Parameters>name="vResult" value="+ in segment group "</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>668</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>203</Order>
+          <Parameters>name="vResult" value="+@GroupNumber"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>AndIf</Name>
+          <Id>671</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>140</Order>
+          <Parameters>lvalue="@GroupNumber" rvalue="NONE" operator="!="</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>AndIf</Name>
+          <Id>672</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>201</Order>
+          <Parameters>lvalue="@GroupNumber" rvalue="NONE" operator="!="</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>AndIf</Name>
+          <Id>673</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>270</Order>
+          <Parameters>lvalue="@GroupNumber" rvalue="NONE" operator="!="</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>AndIf</Name>
+          <Id>674</Id>
+          <NodeId>17</NodeId>
+          <NodeDetailId>4</NodeDetailId>
+          <Order>331</Order>
+          <Parameters>lvalue="@GroupNumber" rvalue="NONE" operator="!="</Parameters>
         </FunctionNode>
         <FunctionNode>
           <Name>Setvariable</Name>
@@ -4456,7 +5598,6 @@
           <Parameters>name="vField"</Parameters>
         </FunctionNode>
       </FunctionNodes>
-      <DbTransactionInfoes />
     </Map>
     <Map>
       <Name>Tgt</Name>
@@ -4589,7 +5730,6 @@
           <Parameters>exd="Ex" table="Ex" field="Note"</Parameters>
         </FunctionNode>
       </FunctionNodes>
-      <DbTransactionInfoes />
     </Map>
     <Map>
       <Name>XRFMap</Name>
@@ -4817,7 +5957,7 @@
           <Id>21</Id>
           <NodeId>1</NodeId>
           <NodeDetailId>4881</NodeDetailId>
-          <Order>7</Order>
+          <Order>13</Order>
           <Parameters />
         </FunctionNode>
         <FunctionNode>
@@ -4828,8 +5968,55 @@
           <Order>1</Order>
           <Parameters />
         </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>25</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>4881</NodeDetailId>
+          <Order>7</Order>
+          <Parameters>name="vLookupPathSrc" value="@Address_Input" datatype="Text"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>26</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>4881</NodeDetailId>
+          <Order>8</Order>
+          <Parameters>name="vLookupPathSrc" value="+\XRefCode.txt"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Lookup</Name>
+          <Id>27</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>4881</NodeDetailId>
+          <Order>9</Order>
+          <Parameters>filename="@vLookupPathSrc" section="OPTION" casesensitive="False" load="False" key="Jobname"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>28</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>4881</NodeDetailId>
+          <Order>10</Order>
+          <Parameters>name="Jobname"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>29</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>4881</NodeDetailId>
+          <Order>11</Order>
+          <Parameters>name="Address_Source" value="C:\DiCentral\DiUnite\jobs\"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>30</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>4881</NodeDetailId>
+          <Order>12</Order>
+          <Parameters>name="Address_Source" value="+@Jobname"</Parameters>
+        </FunctionNode>
       </FunctionNodes>
-      <DbTransactionInfoes />
     </Map>
     <Map>
       <Name>XRFtoLookup</Name>
@@ -4916,7 +6103,236 @@
           <Parameters>exd="XRFExc" table="Exc" field="Descripton"</Parameters>
         </FunctionNode>
       </FunctionNodes>
-      <DbTransactionInfoes />
+    </Map>
+    <Map>
+      <Name>GetMap2</Name>
+      <Id>33</Id>
+      <MapType>Source</MapType>
+      <DocumentId>51</DocumentId>
+      <DocumentType>Flat file</DocumentType>
+      <DocumentMessageType>TAB</DocumentMessageType>
+      <DocumentOffsetStart>0</DocumentOffsetStart>
+      <DocumentDelimiter>NEWLINE</DocumentDelimiter>
+      <ExchangeDocumentInfoes>
+        <ExchangeDocumentInfo>
+          <DocumentId>41</DocumentId>
+          <DocumentType>Flat file</DocumentType>
+          <IsMaster>1</IsMaster>
+        </ExchangeDocumentInfo>
+      </ExchangeDocumentInfoes>
+      <MapNodes>
+        <MapNode>
+          <Name>FF</Name>
+          <Id>1</Id>
+          <DetailId>0</DetailId>
+          <Order>1</Order>
+          <DetailOrder>0</DetailOrder>
+          <NodeType>Container</NodeType>
+          <NodeTypeName>record</NodeTypeName>
+          <Level>1</Level>
+          <IsDetailQual>-1</IsDetailQual>
+          <BaseId>1</BaseId>
+          <BaseDetailId>0</BaseDetailId>
+        </MapNode>
+        <MapNode>
+          <Name>F1</Name>
+          <Id>1</Id>
+          <DetailId>1</DetailId>
+          <Order>0</Order>
+          <DetailOrder>1</DetailOrder>
+          <NodeType>Detail</NodeType>
+          <NodeTypeName>field</NodeTypeName>
+          <Level>1</Level>
+          <IsDetailQual>-1</IsDetailQual>
+          <Delimiter>TAB</Delimiter>
+          <BaseId>1</BaseId>
+          <BaseDetailId>1</BaseDetailId>
+        </MapNode>
+        <MapNode>
+          <Name>F2</Name>
+          <Id>1</Id>
+          <DetailId>2</DetailId>
+          <Order>0</Order>
+          <DetailOrder>2</DetailOrder>
+          <NodeType>Detail</NodeType>
+          <NodeTypeName>field</NodeTypeName>
+          <Level>1</Level>
+          <IsDetailQual>-1</IsDetailQual>
+          <Delimiter>TAB</Delimiter>
+          <BaseId>1</BaseId>
+          <BaseDetailId>2</BaseDetailId>
+        </MapNode>
+      </MapNodes>
+      <FunctionNodes>
+        <FunctionNode>
+          <Name>CurrentFileName</Name>
+          <Id>1</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>1</NodeDetailId>
+          <Order>2</Order>
+          <Parameters>filepart="Filename"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>2</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>1</NodeDetailId>
+          <Order>3</Order>
+          <Parameters>name="vFileMap2"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Left</Name>
+          <Id>3</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>1</NodeDetailId>
+          <Order>4</Order>
+          <Parameters>length="5" value="@vFileMap2"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>4</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>1</NodeDetailId>
+          <Order>5</Order>
+          <Parameters>name="vSubFileMap2"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>If</Name>
+          <Id>5</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>1</NodeDetailId>
+          <Order>6</Order>
+          <Parameters>lvalue="@vSubFileMap2" rvalue="map_2_" operator="="</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>OrIf</Name>
+          <Id>6</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>1</NodeDetailId>
+          <Order>7</Order>
+          <Parameters>lvalue="@vSubFileMap2" rvalue="map_2" operator="="</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>7</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>1</NodeDetailId>
+          <Order>8</Order>
+          <Parameters>name="SourceInputMap2" value="@vFileMap2"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>EndIf</Name>
+          <Id>8</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>1</NodeDetailId>
+          <Order>20</Order>
+          <Parameters />
+        </FunctionNode>
+        <FunctionNode>
+          <Name>FileRead</Name>
+          <Id>21</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>1</NodeDetailId>
+          <Order>16</Order>
+          <Parameters>filename="@vInSource" variable=""</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>29</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>1</NodeDetailId>
+          <Order>9</Order>
+          <Parameters>name="vInSource" value="@Address_Source"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>30</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>1</NodeDetailId>
+          <Order>11</Order>
+          <Parameters>name="vInSource" value="+@SourceInputMap2"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>31</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>1</NodeDetailId>
+          <Order>10</Order>
+          <Parameters>name="vInSource" value="+\"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>FileWrite</Name>
+          <Id>32</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>1</NodeDetailId>
+          <Order>18</Order>
+          <Parameters>filename="@vCopySource" mode="w" text="@vContentInSource"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>33</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>1</NodeDetailId>
+          <Order>13</Order>
+          <Parameters>name="vCopySource" value="@Address_Input"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>34</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>1</NodeDetailId>
+          <Order>14</Order>
+          <Parameters>name="vCopySource" value="+\"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>37</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>1</NodeDetailId>
+          <Order>12</Order>
+          <Parameters>name="SourceInputMap2" value="Input.xml"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>38</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>1</NodeDetailId>
+          <Order>15</Order>
+          <Parameters>name="vCopySource" value="+@SourceInputMap2"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Setvariable</Name>
+          <Id>39</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>1</NodeDetailId>
+          <Order>17</Order>
+          <Parameters>name="vContentInSource"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>If</Name>
+          <Id>41</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>1</NodeDetailId>
+          <Order>1</Order>
+          <Parameters>lvalue="@vRun" rvalue="START" operator="="</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>Operatevariable</Name>
+          <Id>42</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>1</NodeDetailId>
+          <Order>19</Order>
+          <Parameters>name="vRun" value="STOP"</Parameters>
+        </FunctionNode>
+        <FunctionNode>
+          <Name>EndIf</Name>
+          <Id>44</Id>
+          <NodeId>1</NodeId>
+          <NodeDetailId>1</NodeDetailId>
+          <Order>21</Order>
+          <Parameters />
+        </FunctionNode>
+      </FunctionNodes>
     </Map>
     <Document>
       <Name>SourceMap2</Name>
@@ -6339,6 +7755,47 @@
         </DocumentNode>
       </DocumentNodes>
     </Document>
+    <Document>
+      <Name>GetMap2</Name>
+      <Id>51</Id>
+      <DocumentType>Flat file</DocumentType>
+      <MessageType>TAB</MessageType>
+      <OffsetStart>0</OffsetStart>
+      <Delimiter>NEWLINE</Delimiter>
+      <DocumentNodes>
+        <DocumentNode>
+          <Name>FF</Name>
+          <Id>1</Id>
+          <DetailId>0</DetailId>
+          <Order>1</Order>
+          <DetailOrder>0</DetailOrder>
+          <NodeType>Container</NodeType>
+          <NodeTypeName>record</NodeTypeName>
+          <Level>1</Level>
+        </DocumentNode>
+        <DocumentNode>
+          <Name>F1</Name>
+          <Id>1</Id>
+          <DetailId>1</DetailId>
+          <Order>0</Order>
+          <DetailOrder>1</DetailOrder>
+          <NodeType>Detail</NodeType>
+          <NodeTypeName>field</NodeTypeName>
+          <Level>1</Level>
+          <Delimiter>TAB</Delimiter>
+        </DocumentNode>
+        <DocumentNode>
+          <Name>F2</Name>
+          <Id>1</Id>
+          <DetailId>2</DetailId>
+          <Order>0</Order>
+          <DetailOrder>2</DetailOrder>
+          <NodeType>Detail</NodeType>
+          <NodeTypeName>field</NodeTypeName>
+          <Level>1</Level>
+          <Delimiter>TAB</Delimiter>
+        </DocumentNode>
+      </DocumentNodes>
+    </Document>
   </Components>
-  <FunctionGroups />
 </DiUniteSchema>

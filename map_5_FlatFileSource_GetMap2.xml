@@ -1,0 +1,46 @@
+<xmap>
+<doc type="ffsrc" name="GetMap2">
+<message></message>
+<exd>../jobs/DITEST/exd_XRFExc.xml#XRFExc</exd>
+<Category>GetMap2</Category>
+<RightTrim>true</RightTrim>
+<SkipUnknownIdentifier>True</SkipUnknownIdentifier>
+<recordend>NEWLINE</recordend>
+<offsetbegin>0</offsetbegin>
+<node type="record" name="FF" level="1">
+<node type="field" order="1" name="F1">
+<separator>TAB</separator>
+<functions FunctionCount="21">
+<function type="If" lvalue="@vRun" rvalue="START" operator="="/>
+<function type="CurrentFileName" filepart="Filename"/>
+<function type="Setvariable" name="vFileMap2"/>
+<function type="Left" length="5" value="@vFileMap2"/>
+<function type="Setvariable" name="vSubFileMap2"/>
+<function type="If" lvalue="@vSubFileMap2" rvalue="map_2_" operator="="/>
+<function type="OrIf" lvalue="@vSubFileMap2" rvalue="map_2" operator="="/>
+<function type="Setvariable" name="SourceInputMap2" value="@vFileMap2"/>
+<function type="Setvariable" name="vInSource" value="@Address_Source"/>
+<function type="Operatevariable" name="vInSource" value="+\"/>
+<function type="Operatevariable" name="vInSource" value="+@SourceInputMap2"/>
+<function type="Setvariable" name="SourceInputMap2" value="Input.xml"/>
+<function type="Setvariable" name="vCopySource" value="@Address_Input"/>
+<function type="Operatevariable" name="vCopySource" value="+\"/>
+<function type="Operatevariable" name="vCopySource" value="+@SourceInputMap2"/>
+<function type="FileRead" filename="@vInSource" variable=""/>
+<function type="Setvariable" name="vContentInSource"/>
+<function type="FileWrite" filename="@vCopySource" mode="w" text="@vContentInSource"/>
+<function type="Operatevariable" name="vRun" value="STOP"/>
+<function type="EndIf" />
+<function type="EndIf" />
+</functions>
+</node>
+<node type="field" order="2" name="F2">
+<separator>TAB</separator>
+</node>
+</node>
+<node type="function" name="PostProcessing">
+<functions FunctionCount="1">
+<function type="Debug" variable="@currentvalue" tracefile="C:\DiCentral\DiUnite\jobs\DITEST\DEBUG.html" traceall="Y" />
+</functions>
+</node></doc>
+</xmap>

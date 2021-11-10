@@ -1,6 +1,6 @@
 <xmap>
 <doc type="collectsrcfiles" name="Files">
-<Filepattern>@Input</Filepattern>
+<Filepattern>@SourceInputMap2</Filepattern>
 <SourceDirectory>@Address_Input</SourceDirectory>
 <WorkingDirectory>@Address_Input</WorkingDirectory>
 <TargetDirectory>@Address_Input</TargetDirectory>

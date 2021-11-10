@@ -5,6 +5,7 @@ Version	D07A
 ProjectName	FLACONI
 TransactionName	INVOIC
 PartnerTransactionName	ORDERS
+Jobname	DITEST_FLACONI_INVOIC_D96A
 [LISTCODE]
 RFFNAD	VA,FC,IT,API
 NAD01	SU,UC,IV,BY,DP

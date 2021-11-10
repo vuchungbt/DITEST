@@ -16,7 +16,8 @@
 <function type="SetDynamicName" variable="temp" format="_[C].csv" />
 <function type="Operatevariable" name="output" value="+@temp" datatype="Text" />
 </functions>
-</node><recordend>NEWLINE</recordend>
+</node>
+<recordend>NEWLINE</recordend>
 <offsetbegin>0</offsetbegin>
 <node type="record" name="Tgt" level="1">
 <node type="field" order="1" name="Status">
