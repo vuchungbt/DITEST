@@ -8,3 +8,4 @@
 *.bk
 #ignore Input
 Input.xml
+XRFNodeElement.txt
